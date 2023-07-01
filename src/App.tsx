@@ -1,8 +1,10 @@
+import {  RouterProvider } from 'react-router';
+import BrowserRouter from './router/browser-router-config';
+
+
 const App = () => {
   return (
-    <>
-      <h1>Its time</h1>
-    </>
+    <RouterProvider router={BrowserRouter} ></RouterProvider>
   )
 }
 
