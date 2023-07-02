@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul, ul li {
+	list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+:root {
+  --gird-width: 30px;
+  --gird-height: 30px;
+  --line-color: #999;
+  --dot-color: rgba(255, 255, 255, 0.483);
+  --dot-size: 2px;
+  --point-gap-width: calc(var(
+  --gird-width) * 4);
+  --point-gap-height: calc(var(
+  --gird-height) * 4);
+  --animate-duration: 1s;
+  --animate-delay: 1s;
+  --animate-repeat: 1;
+}
+
+img {
+  display: block;
+}
+
+body {
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+}

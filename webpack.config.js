@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 module.exports = {
   entry: "./src/index.tsx",
   output: {
+    publicPath: '/',
     filename: "main.js",
     path: path.resolve(__dirname, "build"),
   },
@@ -34,7 +35,8 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ["*", ".js", ".jsx", ".ts", ".tsx", '.css', '.scss']
+
+    extensions: [".*", ".js", ".jsx", ".ts", ".tsx", '.css', '.scss']
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -42,6 +44,7 @@ module.exports = {
     }),
   ],
   devServer: {
+    historyApiFallback: true,
     static: {
       directory: path.join(__dirname, "build"),
     },

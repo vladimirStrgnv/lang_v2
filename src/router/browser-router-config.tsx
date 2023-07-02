@@ -1,14 +1,21 @@
 import { createBrowserRouter } from "react-router-dom";
-import Header from '../components/layouts/Header/index';
+import Layout from "../shared/components/layout";
 
  const BrowserRouter = createBrowserRouter([
   {
     path: "/",
     element: (
-      <Header />
+      <Layout />
     ),
     children: [
-     
+      {
+        index: true,
+        lazy: () => import("../pages/MainPage/index"),
+      },
+      {
+        path: "/teach",
+        lazy: () => import("../pages/BookPage"),
+      },
     ]
   }
 ]);
