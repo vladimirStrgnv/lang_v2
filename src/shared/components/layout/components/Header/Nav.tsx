@@ -16,7 +16,7 @@ const Nav = () => {
           ></NavItem>
         ))}
       </ul>
-      <NavButton />
+      <NavButton text={'Войти'}/>
     </nav>
   );
 };
