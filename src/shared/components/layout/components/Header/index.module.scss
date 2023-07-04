@@ -1,0 +1,14 @@
+.header {
+    &__wrapper {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+}
