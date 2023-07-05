@@ -1,15 +1,17 @@
-import React from 'react';
 import styles from './NavItem.module.scss';
-import { Link } from 'react-router-dom';
+import { NavLink  } from 'react-router-dom';
 
 const NavItem = (props) => {
   return (
-    <Link to={props.path}>
-        <li className={styles['links-list__item']}>
-            {props.text}
-        </li>
-    </Link>
-  )
-}
+    <NavLink
+      to={props.path}
+      className={({ isActive, isPending }) =>
+        isPending ? styles.nav__link : styles.nav__link
+      }
+    >
+      {props.text}
+    </NavLink>
+  );
+};
 
 export default NavItem;

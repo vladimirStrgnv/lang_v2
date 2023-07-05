@@ -9,11 +9,13 @@ const Nav = () => {
     <nav className={styles.nav}>
       <ul className={styles["nav__links-list"]}>
         {NavItemsValue.map((itemValue, index) => (
-          <NavItem
-            key={index}
-            path={itemValue.path}
-            text={itemValue.text}
-          ></NavItem>
+          <li className={styles["nav__list-item"]}>
+            <NavItem
+              key={index}
+              path={itemValue.path}
+              text={itemValue.text}
+            ></NavItem>
+          </li>
         ))}
       </ul>
       <NavButton text={'Войти'}/>

@@ -1,7 +1,59 @@
+:root {
+    --gird-width: 30px;
+    --gird-height: 30px;
+    --line-color: #999;
+    --dot-color: rgba(255, 255, 255, 0.483);
+    --dot-size: 2px;
+    --point-gap-width: calc(var(
+    --gird-width) * 4);
+    --point-gap-height: calc(var(
+    --gird-height) * 4);
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+  }
+
 .wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(180, 52, 153);
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #595ed6, #6b61dc, #5047ae, #595ed6) ;
+    position: relative;
+
 }
 
+.inner {
+    position: relative;
+    z-index: 10;
+}
+
+.wrapper:before{
+    background-image: radial-gradient(var(--dot-color) 1.5px, transparent 2px);
+    background-size: var(--point-gap-width) var(--point-gap-height);
+}
+
+.wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+
+
+.wrapper:before {
+    animation: 3.2s linear move infinite;
+}
+
+
+
+@keyframes move {
+    0% {
+        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);
+    }
+
+    100% {
+        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2 * -1);
+    }
+}
