@@ -1,8 +1,8 @@
-import styles from './style.scss';
+import styles from './style.module.scss';
 
 const MainPage = () => {
   return (
-    <section>
+    <section className={styles.main__wrapper}>
           dfdsa
     </section>
   )

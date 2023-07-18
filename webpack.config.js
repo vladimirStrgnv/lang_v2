@@ -23,11 +23,17 @@ module.exports = {
         test: /\.(c|sa|sc)ss$/i,
         use: [
           "style-loader", 
-          "css-loader",
+          {
+            loader: "css-loader",
+            options: {
+              modules: {localIdentName: "[name]__[local]___[hash:base64:5]"},              
+            },
+          }
+          ,
           {
             loader: "sass-loader",
             options: {
-              implementation: require.resolve("sass"),
+              implementation: require.resolve("sass")
             },
           },
         ],
