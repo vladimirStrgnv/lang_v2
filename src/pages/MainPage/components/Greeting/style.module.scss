@@ -1,16 +1,17 @@
 .greeting {
-    height: 100vh;
+    height: 90vh;
     max-height: 900px;
     position: relative;
     color: #fff;
     overflow: hidden;
+    width: 100%;
+
 }
 
-
 .greeting__wrapper {
+    margin: 0 auto;
     max-width: 1200px;
     width: 90%;
-    margin: 0 auto;
     height: 100%;
 
 }
@@ -31,7 +32,6 @@
 .greeting__title {
     margin-bottom: 20px;
     font-size: 32px;
-    color: white;
     font-family: "Gilroy-Bold";
 }
 

@@ -1,0 +1,36 @@
+.advantages-item {
+    padding: 20px;
+    height: 400px;
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f8fa;
+
+}
+
+.advantages-item__img {
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.advantages-item__title {
+    font-family: 'Gilroy-Heavy';
+    color: #29244e;
+    margin-bottom: 20px;
+
+}
+
+.advantages-item__text {
+    font-family: 'Gilroy-Medium';
+    color: #29244e;
+}
