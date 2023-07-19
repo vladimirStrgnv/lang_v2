@@ -1,23 +1,48 @@
-import React from 'react';
 import styles from './style.module.scss';
+import { motion } from 'framer-motion';
+
+const textAnimation = { 
+  hidden: {
+    y: 200,
+    opacity: 0,
+    
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+    }
+  }
+}
 
 const Greeting = () => {
   return (
-    <section className={styles.greeting}>
+    <motion.section 
+      className={styles.greeting}
+      initial='hidden'
+      whileInView='visible'
+      >
         <div className={`${styles.greeting__wrapper} `}>
           <div className={`${styles.greeting__inner} `}>
             <div className={styles.greeting__description}>
-                <h1 className={styles.greeting__title}>
+                <motion.h1 
+                  className={styles.greeting__title}
+                  variants={textAnimation}
+                >
                   Изучай английский c <br/>Lang.
-                </h1>
-                <p className={styles.greeting__text}>
+                </motion.h1>
+                <motion.p 
+                  className={styles.greeting__text}
+                  variants={textAnimation}
+                >
                   Приложение для эффективного изучения иностранных слов в игровой форме. Всегда под рукой. На любом устройстве.
-                </p>
+                </motion.p>
             </div>
             <img className={styles.greeting__img} src={require('../../assets/greeting.png')} alt="greeting-img" />
           </div>
         </div>
-    </section>
+    </motion.section>
   )
 }
 
