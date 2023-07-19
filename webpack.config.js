@@ -20,6 +20,19 @@ module.exports = {
         loader: "ts-loader",
       },
       {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192,
+              esModule: false,
+
+            }
+          }
+        ]
+      },
+      {
         test: /\.(c|sa|sc)ss$/i,
         use: [
           "style-loader", 

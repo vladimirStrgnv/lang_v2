@@ -1,0 +1,52 @@
+.greeting {
+    height: 100vh;
+    max-height: 900px;
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+
+.greeting__wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+.greeting__inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.greeting__description {
+    width: 40%;
+}
+
+.greeting__title {
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: white;
+    font-family: "Gilroy-Bold";
+}
+
+.greeting__img {
+    width: 70%;
+    position: absolute;
+    right: -10%;
+    bottom: 12%;
+    max-width: 900px;
+    z-index: 10;
+}
+
+.greeting__text {
+    font-size: 20px;
+    font-family: "Gilroy-Regular";
+
+}
+
