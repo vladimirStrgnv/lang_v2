@@ -1,5 +1,6 @@
 import styles from './style.module.scss';
 import { motion } from 'framer-motion';
+import SvgBottom from './assets/SvgBottom';
 
 const textAnimation = { 
   hidden: {
@@ -42,6 +43,7 @@ const Greeting = () => {
             <img className={styles.greeting__img} src={require('../../assets/greeting.png')} alt="greeting-img" />
           </div>
         </div>
+        <SvgBottom />
     </motion.section>
   )
 }

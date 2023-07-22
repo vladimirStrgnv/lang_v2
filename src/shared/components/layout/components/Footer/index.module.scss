@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  overflow: hidden;
+  color: #fff;
+  position: relative;
+ 
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+
+
+
+.footer__title {
+  margin-top: 15px;
+  font-family: "Gilroy-Bold";
+  font-size: 12px;
+}
+
+.footer__nav {
+  margin-left: 140px;
+}
+
+
+.footer__nav-item {
+  margin-bottom: 20px;
+  font-size: 12px;
+  cursor: pointer;
+}

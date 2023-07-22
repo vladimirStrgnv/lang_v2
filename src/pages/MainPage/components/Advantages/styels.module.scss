@@ -1,6 +1,6 @@
 .advantages {
     width: 100%;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
 }
 
 .advantages__wrapper {
@@ -31,6 +31,7 @@
 }
 
 .advantages__list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
