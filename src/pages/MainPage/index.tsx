@@ -1,1 +1,1 @@
-export {default as Component} from './components/MainPage';
+export {default as Component} from './components';
