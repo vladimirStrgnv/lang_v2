@@ -34,3 +34,9 @@
     font-family: 'Gilroy-Medium';
     color: #29244e;
 }
+
+@media (max-width: 768px) { 
+    .advantages-item {
+        margin-bottom: 15px;
+    }
+}

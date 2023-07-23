@@ -8,3 +8,9 @@
         transition: 1s;
     }
 }
+
+@media (max-width: 768px) { 
+    .nav__link {
+        font-size: 13px;
+    }
+}
