@@ -1,6 +1,6 @@
 import styles from './styels.module.scss';
 import AdvantagesItem from './AdvantagesItem';
-import { cardsInfo } from '../../consts/index';
+import { cardsInfo } from '../../utils/consts/index';
 
 const Advantages = () => {
   return (

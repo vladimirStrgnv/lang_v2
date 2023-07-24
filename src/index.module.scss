@@ -40,20 +40,7 @@ button {
   cursor: pointer;
 }
 
-:root {
-  --gird-width: 30px;
-  --gird-height: 30px;
-  --line-color: #999;
-  --dot-color: rgba(255, 255, 255, 0.483);
-  --dot-size: 2px;
-  --point-gap-width: calc(var(
-  --gird-width) * 4);
-  --point-gap-height: calc(var(
-  --gird-height) * 4);
-  --animate-duration: 1s;
-  --animate-delay: 1s;
-  --animate-repeat: 1;
-}
+
 
 img {
   display: block;
@@ -81,4 +68,14 @@ body::-webkit-scrollbar-thumb {
   outline: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 10px;
 
+}
+
+:root {
+  --gird-width: 30px;
+  --gird-height: 30px;
+  --dot-color: rgba(255, 255, 255, 0.483);
+  --point-gap-width: calc(var(
+  --gird-width) * 4);
+  --point-gap-height: calc(var(
+  --gird-height) * 4);
 }

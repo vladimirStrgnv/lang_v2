@@ -1,0 +1,42 @@
+.wrapper {
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #595ed6, #6b61dc, #5047ae, #595ed6) ;
+    position: relative;
+
+}
+
+.inner {
+    position: relative;
+    z-index: 10;
+}
+
+.wrapper:before{
+    background-image: radial-gradient(var(--dot-color) 1.5px, transparent 2px);
+    background-size: var(--point-gap-width) var(--point-gap-height);
+}
+
+.wrapper:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.wrapper:before {
+    animation: 3.2s linear move infinite;
+}
+
+
+
+@keyframes move {
+    0% {
+        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);
+    }
+
+    100% {
+        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2 * -1);
+    }
+}

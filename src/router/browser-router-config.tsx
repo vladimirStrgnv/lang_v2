@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "../shared/components/layout";
-import Registration from "../pages/Registration/components/index";
+import Layout from "../shared/components/MainLayout";
+import Registration from "../pages/SignUp/index";
 
  const BrowserRouter = createBrowserRouter([
   {
@@ -20,7 +20,7 @@ import Registration from "../pages/Registration/components/index";
     ]
   },
   {
-    path: '/registration',
+    path: '/sign-up',
     element: (
       <Registration />
     )

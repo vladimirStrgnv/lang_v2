@@ -18,7 +18,7 @@ const Nav = () => {
           </li>
         ))}
       </ul>
-      <NavButton text={'Войти'}/>
+      <NavButton text={'Войти'} path={'sign-up'}/>
     </nav>
   );
 };

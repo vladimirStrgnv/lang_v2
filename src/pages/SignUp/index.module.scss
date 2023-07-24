@@ -1,23 +1,14 @@
-:root {
-    --gird-width: 30px;
-    --gird-height: 30px;
-    --line-color: #999;
-    --dot-color: rgba(255, 255, 255, 0.483);
-    --dot-size: 2px;
-    --point-gap-width: calc(var(
-    --gird-width) * 4);
-    --point-gap-height: calc(var(
-    --gird-height) * 4);
-    --animate-duration: 1s;
-    --animate-delay: 1s;
-    --animate-repeat: 1;
-  }
-
 .wrapper {
     min-height: 100vh;
-    background: linear-gradient(-45deg, #595ed6, #6b61dc, #5047ae, #595ed6) ;
+    background: #15b4a7;
     position: relative;
 
+}
+
+.main {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .inner {
@@ -40,13 +31,9 @@
     z-index: 1;
 }
 
-
-
 .wrapper:before {
     animation: 3.2s linear move infinite;
 }
-
-
 
 @keyframes move {
     0% {
