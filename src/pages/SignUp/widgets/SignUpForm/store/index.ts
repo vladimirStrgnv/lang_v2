@@ -12,7 +12,7 @@ const signUpSlice = createSlice({
     reducers: {
         inputMail(state, action) {
             state.email = action.payload.value
-            console.log(state.email);
+            console.log(action);
 
         }
     },
