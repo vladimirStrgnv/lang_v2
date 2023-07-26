@@ -1,18 +1,48 @@
-.reg-form {
+.signup-form {
     max-width: 500px;
+
+    &__title {
+        margin-bottom: 20px;
+        color: #2c2647;
+        font-size: 32px;
+        font-family: 'Gilroy-Heavy';
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-family: "Gilroy-Regular";
+        color: rgb(255, 255, 255)
+    }
+
+    &__container-input {
+        margin-top: 20px;
+    }
+
+    &__btn {
+        margin-top: 20px;
+        padding: 10px 0;
+        width: 100%;
+        border-radius: 5px;
+        background-color: #2c2647;
+        font-family: "Gilroy-Regular";
+        color: rgb(255, 255, 255)
+    }
+
+    &__btn:hover {
+        background-color: #ffffff;
+        color: #2c2647;
+        transition: 0.5s;
+    }
+    
 }
 
-.reg__title {
-    margin-bottom: 20px;
-    color: #2c2647;
-    font-size: 32px;
-    font-family: 'Gilroy-Heavy';
-}
-
-.reg__subtitle {
-    margin-bottom: 20px;
-    font-size: 20px;
+.login-info{
     font-family: "Gilroy-Regular";
-    color: rgb(255, 255, 255)
+    margin-top: 20px;
+    font-size: 15px;
 }
 
+.login-link {
+    text-decoration: underline;
+}

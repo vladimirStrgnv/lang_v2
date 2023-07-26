@@ -1,54 +1,54 @@
-.input__wrapper {
-    height: 53px;
-    position: relative;
-    max-width: 100%;
-}
-
 .input {
     width: 100%;
     padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.87);
+    border: 1px solid rgba(77, 72, 72, 0.87);
     background: none;
     border-radius: 5px;
     outline: none;
-    transition: 0.5s;
+
+    &__wrapper {
+        height: 53px;
+        position: relative;
+        max-width: 100%;
+    }
+
+    &__label {
+        position: absolute;
+        left: 0;
+        padding: 10px;
+        font-size: 1em;
+        color: rgba(0, 0, 0, 0.87);
+        text-transform: lowercase;
+        transition: 0.3s;
+        pointer-events: none;
+        font-family: "Gilroy-Regular";
+    }
+
+    &__label-active {
+        color: #dfd4d4;
+        transform: translateX(-7px) translateY(-15px);
+        font-size: 0.85em;
+        padding: 0 10px;
+        background: transparent;
+    }
+
+    &__warn {
+        margin: 0;
+        color: rgb(182, 91, 91);
+        font-size: 14px;
+        font-family: "Gilroy-Regular";
+    }
+
+    &:focus {
+        border-color: #dfd4d4;
+    }
+
+    &:focus ~ &__label {
+        color: #dfd4d4;
+        transform: translateX(-7px) translateY(-15px);
+        font-size: 0.85em;
+        padding: 0 10px;
+    }
 }
 
-.input__placeholder {
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    font-size: 1em;
-    color: rgba(0, 0, 0, 0.87);
-    text-transform: lowercase;
-    transition: 0.5s;
-    pointer-events: none;
 
-}
-
-.input__placeholder-active {
-    color: #dfd4d4;
-    transform: translateX(-5px) translateY(-14px);
-    font-size: 0.85em;
-    padding: 0 10px;
-    background: transparent;
-}
-
-.input:focus ~ .input__placeholder {
-    color: #dfd4d4;
-    transform: translateX(-5px) translateY(-14px);
-    font-size: 0.85em;
-    padding: 0 10px;
-}
-
-.input:focus {
-    border-color: #dfd4d4;
-
-}
-
-.input__warn {
-    margin: 0;
-    color: rgb(182, 91, 91);
-    font-size: 14px;
-    font-family: "Gilroy-Regular";
-}

@@ -1,25 +1,35 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { signUpState } from './types';
+
+const initialState: signUpState =  {
+    email: '',
+    userName: '',
+    password: '',
+    repeatPassword: ''
+
+}
 
 const signUpSlice = createSlice({
     name: 'signUp',
-    initialState: {
-        email: '',
-        userName: '',
-        password: '',
-        repeatPassword: ''
-
-    },
+    initialState,
     reducers: {
-        inputMail(state, action) {
+        inputMail(state, action: PayloadAction<{value: string}>) {
             state.email = action.payload.value
-            console.log(action);
-
+        },
+        inputUserName(state, action: PayloadAction<{value: string}>) {
+            state.userName = action.payload.value
+        },
+        inputPassword(state, action: PayloadAction<{value: string}>) {
+            state.password = action.payload.value
+        },
+        inputrepeatPassword(state, action: PayloadAction<{value: string}>) {
+            state.repeatPassword = action.payload.value
         }
     },
 });
 
 
-export const {inputMail} = signUpSlice.actions;
+export const {inputMail, inputUserName, inputPassword, inputrepeatPassword} = signUpSlice.actions;
 
 
 export default signUpSlice.reducer;
