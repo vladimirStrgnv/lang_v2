@@ -1,5 +1,5 @@
 import styles from  './index.module.scss';
-import Input from './components/Input';
+import Input from '../../../../shared/components/Input';
 import { inputMail, inputUserName, inputPassword, inputrepeatPassword  } from './store';
 import { useDispatch  } from 'react-redux';
 import { useAppSelector } from '../../../../shared/stores/types/index';
@@ -8,9 +8,12 @@ import { Link } from 'react-router-dom';
 const SignUpForm = () => {
   const dispatch = useDispatch();
   const {email, userName, password, repeatPassword } = useAppSelector((store) => store.signUp);
-
   const onChangeDispatch = (action) => {
     return (e: React.ChangeEvent<HTMLInputElement>):void => dispatch(action({value: e.target.value}))
+  };
+
+  const sendRequest = (e) => {
+    e.preventDefault;
   };
 
   return (
@@ -48,9 +51,14 @@ const SignUpForm = () => {
             labelText='повторите пароль *' 
             onChange={onChangeDispatch(inputrepeatPassword)} 
             value={repeatPassword}
+            isValid={repeatPassword === password}
+            noValidTxt={'пароли не совпадают'}
           ></Input>
           </div> 
-          <button className={styles['signup-form__btn']}>Зарегестрироваться</button>
+          <button 
+            className={styles['signup-form__btn']}
+            onClick={sendRequest}
+          >Зарегестрироваться</button>
       </form>
       <div className={styles['login-info']}>
           <span>Уже с нами? </span>

@@ -33,7 +33,8 @@
     }
 
     &__warn {
-        margin: 0;
+        position: absolute;
+        bottom: -10px;
         color: rgb(182, 91, 91);
         font-size: 14px;
         font-family: "Gilroy-Regular";

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './AdvantagesItem.module.scss';
+import styles from './index.module.scss';
 
 const AdvantagesItem = (props) => {
   return (

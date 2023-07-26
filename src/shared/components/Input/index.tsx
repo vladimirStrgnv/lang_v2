@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 import { SignUpInputProps } from './types';
 
-const Input: React.FC<SignUpInputProps> = ({labelText, type, onChange, value}) => {
+const Input: React.FC<SignUpInputProps> = ({labelText, type, onChange, value, isValid, noValidTxt}) => {
 
     return (
       <div className={`${styles.input__wrapper} `}>
@@ -13,6 +13,8 @@ const Input: React.FC<SignUpInputProps> = ({labelText, type, onChange, value}) =
           >
             {labelText}
         </label>
+        {!isValid && value && <p className={`${styles.input__warn}`}>{noValidTxt}</p>}
+
       </div>
     )
   }
