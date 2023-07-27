@@ -2,10 +2,22 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { signUpState } from './types';
 
 const initialState: signUpState =  {
-    email: '',
-    userName: '',
-    password: '',
-    repeatPassword: ''
+    email: {
+        value: '',
+        isValid: ''
+    },
+    userName: {
+        value: '',
+        isValid: ''
+    },
+    password: {
+        value: '',
+        isValid: ''
+    },
+    repeatPassword: {
+        value: '',
+        isValid: ''
+    }
 
 }
 

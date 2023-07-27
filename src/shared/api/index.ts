@@ -2,11 +2,15 @@ import { IUser } from "./types";
 
 class Api {
 
-    static baseUrl: "http://localhost:2000/"
+    baseUrl: string;
+
+    constructor() {
+        this.baseUrl =  "http://localhost:2000/";
+    }
       
-    static createUser = async (userInfo:IUser) =>  {
+    createUser = async (userInfo:IUser) =>  {
         try {
-            const response = await fetch(`http://localhost:2000/users`, {
+            const response = await fetch(`${this.baseUrl}users`, {
                 method: "POST",
                 headers: {
                     Accept: "application/json",
@@ -27,4 +31,4 @@ class Api {
 
   
   
-  export default Api;
+  export default new Api();
