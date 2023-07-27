@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import styles from "./NavButton.module.scss";
+import styles from "./index.module.scss";
 
 const Button = (props) => {
   return (

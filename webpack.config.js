@@ -53,9 +53,14 @@ module.exports = {
       }
     ],
   },
+  resolveLoader: {
+      modules: [
+          path.join(__dirname, 'node_modules')
+      ]
+  },
   resolve: {
+    extensions: [".*", ".js", ".jsx", ".ts", ".tsx", '.css', '.scss'],
 
-    extensions: [".*", ".js", ".jsx", ".ts", ".tsx", '.css', '.scss']
   },
   plugins: [
     new HtmlWebpackPlugin({

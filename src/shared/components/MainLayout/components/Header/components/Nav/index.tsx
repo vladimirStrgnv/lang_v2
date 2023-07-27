@@ -1,7 +1,7 @@
-import styles from './Nav.module.scss';
-import NavItemsValue from '../../utils/consts';
-import NavItem from './NavItem';
-import NavButton from './NavButton';
+import styles from './index.module.scss';
+import NavItemsValue from '../../../../utils/consts';
+import NavItem from '../NavItem';
+import NavButton from '../NavButton';
 
 const Nav = () => {
 
@@ -9,9 +9,8 @@ const Nav = () => {
     <nav className={styles.nav}>
       <ul className={styles["nav__links-list"]}>
         {NavItemsValue.map((itemValue, index) => (
-          <li className={styles["nav__list-item"]}>
+          <li className={styles["nav__list-item"]} key={itemValue.text}>
             <NavItem
-              key={index}
               path={itemValue.path}
               text={itemValue.text}
             ></NavItem>

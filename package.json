@@ -9,7 +9,8 @@
     "start": "webpack serve --mode development",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start:serv": "node ./server/src/server.js"
+    "start:serv": "node ./lang-server/src/server.js",
+    "start:app" : "concurrently \"npm run start\" \"npm run start:serv\""
   },
   "keywords": [],
   "author": "",

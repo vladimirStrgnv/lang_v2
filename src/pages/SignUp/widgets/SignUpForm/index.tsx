@@ -4,6 +4,7 @@ import { inputMail, inputUserName, inputPassword, inputrepeatPassword  } from '.
 import { useDispatch  } from 'react-redux';
 import { useAppSelector } from '../../../../shared/stores/types/index';
 import { Link } from 'react-router-dom';
+import api from '../../../../shared/api';
 
 const SignUpForm = () => {
   const dispatch = useDispatch();
@@ -12,8 +13,10 @@ const SignUpForm = () => {
     return (e: React.ChangeEvent<HTMLInputElement>):void => dispatch(action({value: e.target.value}))
   };
 
-  const sendRequest = (e) => {
-    e.preventDefault;
+  const sendRequest =  (event: React.FormEvent<EventTarget>): void => {
+    event.preventDefault()
+    console.log({email, name: userName, password})
+    api.createUser({email, name: userName, password});
   };
 
   return (

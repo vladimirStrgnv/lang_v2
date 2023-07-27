@@ -71752,3 +71752,43 @@
   level: 'info',
   timestamp: '2023-07-18T18:37:52.136Z'
 }
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-07-27T11:57:25.967Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-07-27T11:57:25.982Z'
+}
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-07-27T11:58:14.935Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-07-27T11:58:14.948Z'
+}
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-07-27T12:31:18.583Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-07-27T12:31:18.600Z'
+}
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-07-27T12:45:55.374Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-07-27T12:45:55.387Z'
+}

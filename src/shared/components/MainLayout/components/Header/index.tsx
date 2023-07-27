@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import Nav from './Nav';
+import Nav from './components/Nav';
 import Logo from '../../../logo/index';
 
 const Hedaer = () => {

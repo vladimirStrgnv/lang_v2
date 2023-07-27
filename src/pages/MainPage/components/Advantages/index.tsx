@@ -10,7 +10,7 @@ const Advantages = () => {
             <h3 className={styles.advantages__subtitle}>Зарегистрируйтесь, чтобы использовать все возможности.</h3>
             <ul className={styles.advantages__list}>
                 {cardsInfo.map((cardsInfo, index) => 
-                <li>
+                <li key={cardsInfo.title}>
                     <AdvantagesItem
                         key={index}
                         img={cardsInfo.img}

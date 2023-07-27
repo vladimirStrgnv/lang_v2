@@ -1,4 +1,4 @@
-import styles from './NavItem.module.scss';
+import styles from './index.module.scss';
 import { NavLink  } from 'react-router-dom';
 
 const NavItem = (props) => {
