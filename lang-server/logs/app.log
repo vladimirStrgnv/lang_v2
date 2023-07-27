@@ -71792,3 +71792,43 @@
   level: 'info',
   timestamp: '2023-07-27T12:45:55.387Z'
 }
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-07-27T15:02:52.198Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-07-27T15:02:52.214Z'
+}
+{
+  message: 'POST 422 /users - size req 66 res 103 - 3.349 ms\n',
+  level: 'info',
+  timestamp: '2023-07-27T15:05:25.362Z'
+}
+{
+  message: 'POST 422 /users - size req 60 res 103 - 0.838 ms\n',
+  level: 'info',
+  timestamp: '2023-07-27T15:07:26.175Z'
+}
+{
+  message: 'POST 422 /users - size req 61 res 103 - 1.643 ms\n',
+  level: 'info',
+  timestamp: '2023-07-27T15:07:39.584Z'
+}
+{
+  message: 'POST 422 /users - size req 62 res 103 - 2.333 ms\n',
+  level: 'info',
+  timestamp: '2023-07-27T15:07:43.015Z'
+}
+{
+  message: 'POST 200 /users - size req 68 res 78 - 229.882 ms\n',
+  level: 'info',
+  timestamp: '2023-07-27T15:07:49.881Z'
+}
+{
+  message: 'POST 200 /users - size req 84 res 86 - 146.408 ms\n',
+  level: 'info',
+  timestamp: '2023-07-27T15:09:45.656Z'
+}
