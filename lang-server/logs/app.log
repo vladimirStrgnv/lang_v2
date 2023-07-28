@@ -72062,3 +72062,188 @@
   level: 'info',
   timestamp: '2023-07-28T12:05:45.984Z'
 }
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-07-28T12:15:49.538Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-07-28T12:15:49.550Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 184.527 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:04.549Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 159.035 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:06.541Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 181.027 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:07.817Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 165.545 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:09.125Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 158.447 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:10.429Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 158.198 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:26.683Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 157.184 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:28.111Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 149.729 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:29.263Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 153.836 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:30.860Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 152.274 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:32.302Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 179.082 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:38.027Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 148.203 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:39.292Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 146.451 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:50.862Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 154.168 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:52.003Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 140.158 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:16:53.106Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 148.009 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:17:42.880Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 152.430 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:17:47.586Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 153.121 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:05.258Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 141.562 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:08.656Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 145.418 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:10.134Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 143.187 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:25.095Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 143.871 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:35.092Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 150.514 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:36.316Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 250.548 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:40.259Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 142.203 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:41.662Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 142.619 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:46.152Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 139.985 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:50.542Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 143.745 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:52.121Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 151.084 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:53.344Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 146.293 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:54.928Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 158.460 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:56.320Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 150.248 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:18:57.725Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 143.027 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:19:02.998Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 157.653 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:23:56.088Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 150.602 ms\n',
+  level: 'info',
+  timestamp: '2023-07-28T12:23:57.649Z'
+}
