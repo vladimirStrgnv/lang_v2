@@ -1,11 +1,11 @@
 import styles from './index.module.scss';
 import { SignUpInputProps } from './types';
 
-const Input: React.FC<SignUpInputProps> = ({labelText, type, onChange, value, isValid, noValidTxt}) => {
+const Input: React.FC<SignUpInputProps> = ({labelText, type, onChange, value, isValid, noValidTxt, required}) => {
 
     return (
       <div className={`${styles.input__wrapper} `}>
-        <input type={type} required className={styles.input} onChange={onChange}/>
+        <input type={type}  className={styles.input} onChange={onChange} autoComplete="off" required={required}/>
         <label 
             className={value === ''?
             styles.input__label :

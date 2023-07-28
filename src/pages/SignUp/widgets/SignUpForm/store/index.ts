@@ -1,22 +1,23 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { signUpState } from './types';
+import { Validators } from '../../../../../shared/utils/services/validators';
 
 const initialState: signUpState =  {
     email: {
         value: '',
-        isValid: ''
+        isValid: true
     },
     userName: {
         value: '',
-        isValid: ''
+        isValid: true
     },
     password: {
         value: '',
-        isValid: ''
+        isValid: true
     },
     repeatPassword: {
         value: '',
-        isValid: ''
+        isValid: true
     }
 
 }
@@ -26,16 +27,20 @@ const signUpSlice = createSlice({
     initialState,
     reducers: {
         inputMail(state, action: PayloadAction<{value: string}>) {
-            state.email = action.payload.value
+            state.email.value = action.payload.value;
+            state.email.isValid = Validators.validateEmail(action.payload.value);
         },
         inputUserName(state, action: PayloadAction<{value: string}>) {
-            state.userName = action.payload.value
+            state.userName.value = action.payload.value;
+            state.userName.isValid = Validators.checkLength(action.payload.value, 5);
         },
         inputPassword(state, action: PayloadAction<{value: string}>) {
-            state.password = action.payload.value
+            state.password.value = action.payload.value;
+            state.password.isValid = Validators.checkLength(action.payload.value, 5);
         },
         inputrepeatPassword(state, action: PayloadAction<{value: string}>) {
-            state.repeatPassword = action.payload.value
+            state.repeatPassword.value = action.payload.value;
+            state.repeatPassword.isValid = state.password.value === action.payload.value;
         }
     },
 });

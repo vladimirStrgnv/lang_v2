@@ -4,5 +4,6 @@ export interface SignUpInputProps {
     onChange: (e: React.ChangeEvent<HTMLInputElement>) => void,
     value: string,
     isValid?: boolean,
-    noValidTxt?: string
+    noValidTxt?: string,
+    required?: boolean
 }

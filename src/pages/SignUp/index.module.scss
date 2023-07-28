@@ -1,8 +1,13 @@
 .wrapper {
-    min-height: 100vh;
     background: #15b4a7;
-    position: relative;
 
+}
+
+.inner {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 }
 
 .main {
@@ -11,9 +16,17 @@
     margin: 0 auto;
 }
 
-.inner {
-    position: relative;
-    z-index: 10;
+.signup {
+    display: flex;
+}
+
+.signup__img {
+    width: 100%;
+    position: absolute;
+    right: 5%;
+    top: 300px;
+    max-width: 700px;
+    z-index: 0;
 }
 
 .wrapper:before{

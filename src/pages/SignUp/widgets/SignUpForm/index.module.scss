@@ -1,5 +1,6 @@
 .signup-form {
     max-width: 500px;
+    z-index: 10;
 
     &__title {
         margin-bottom: 20px;
@@ -16,7 +17,7 @@
     }
 
     &__container-input {
-        margin-top: 20px;
+        margin-top: 25px;
     }
 
     &__btn {
