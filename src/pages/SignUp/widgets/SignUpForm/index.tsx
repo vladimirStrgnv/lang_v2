@@ -23,7 +23,7 @@ const SignUpForm = () => {
     event.preventDefault()
     const creaeUserRequest = await api.createUser({email: email.value, name: userName.value, password: password.value});
     if (creaeUserRequest.ok) {
-      // navigate("/");
+      navigate("/sign-in");
     } else if (creaeUserRequest.status === 417) {
       setPopUpOption({isActive: true, text: 'Данный электронный ящик уже использовался при регистрации'})
     } else {
@@ -34,7 +34,6 @@ const SignUpForm = () => {
   const setPopUpActive = () => {
     setPopUpOption({...popUpOption, isActive: !popUpOption.isActive});
   };
-  console.log(1)
   return (
     <form className={styles['signup-form']} onSubmit={sendRequest}>
       <PopUp text={popUpOption.text} isOpen={popUpOption.isActive} setActive={setPopUpActive}></PopUp>
@@ -89,7 +88,7 @@ const SignUpForm = () => {
       >Зарегестрироваться</button>
       <div className={styles['login-info']}>
         <span>Уже с нами? </span>
-        <Link to='/login' className={styles['login-link']}>Да, Войти!</Link>
+        <Link to='/sign-in' className={styles['login-link']}>Да, Войти!</Link>
       </div>
     </form>
   )

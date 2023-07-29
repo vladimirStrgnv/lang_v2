@@ -1,5 +1,5 @@
 .wrapper {
-    background: #15b4a7;
+    background: linear-gradient(-45deg, #595ed6, #6b61dc, #5047ae, #595ed6) ;
 }
 
 .inner {
@@ -13,19 +13,6 @@
     max-width: 1400px;
     width: 90%;
     margin: 0 auto;
-}
-
-.signup {
-    display: flex;
-}
-
-.signup__img {
-    width: 100%;
-    position: absolute;
-    right: 5%;
-    top: 250px;
-    max-width: 700px;
-    z-index: 0;
 }
 
 .wrapper:before{
