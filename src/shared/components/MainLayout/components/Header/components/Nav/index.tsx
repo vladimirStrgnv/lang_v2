@@ -2,9 +2,19 @@ import styles from './index.module.scss';
 import NavItemsValue from '../../../../utils/consts';
 import NavItem from '../NavItem';
 import NavButton from '../NavButton';
+import { useAppSelector } from '../../../../../../stores/types';
+import { useDispatch } from 'react-redux';
+import { setAuthData } from '../../../../../../../pages/SignIn/widgets/SignInForm/store';
 
 const Nav = () => {
+  const { authData } = useAppSelector((store) => store.signIn);
+  const dicpatch = useDispatch();
 
+  const logOut = () => {
+    localStorage.removeItem("authData");
+    dicpatch(setAuthData({value: null}));
+  }
+  
   return (
     <nav className={styles.nav}>
       <ul className={styles["nav__links-list"]}>
@@ -17,7 +27,7 @@ const Nav = () => {
           </li>
         ))}
       </ul>
-      <NavButton text={'Войти'} path={'sign-up'}/>
+      {authData?<NavButton text={'Выйти'} path={'sign-in'} callBack={logOut}/> : <NavButton text={'Войти'} path={'sign-up'} />}
     </nav>
   );
 };

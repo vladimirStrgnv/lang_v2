@@ -5,7 +5,7 @@ const Input: React.FC<SignUpInputProps> = ({labelText, type, onChange, value, is
 
     return (
       <div className={`${styles.input__wrapper} `}>
-        <input type={type}  className={styles.input} onChange={onChange} autoComplete="off" required={required}/>
+        <input type={type}  className={styles.input} onChange={onChange} autoComplete="off" required={required} value={value}/>
         <label 
             className={value === ''?
             styles.input__label :

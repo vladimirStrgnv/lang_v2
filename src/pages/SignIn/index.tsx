@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
 import Hedaer from './components/Header';
 import SignInForm from './widgets/SignInForm';
+import Footer from './components/Footer';
 
 const SignIn = () => {
   return (
@@ -12,6 +13,7 @@ const SignIn = () => {
                 <SignInForm />
             </section>
         </main>
+        <Footer />
     </div>
   </div>
   )

@@ -17,13 +17,13 @@
     }
 
     &__container-input {
-        margin-top: 25px;
+        margin-bottom: 20px;
     }
 
     &__btn {
-        margin-top: 20px;
-        padding: 10px 0;
         width: 100%;
+        margin-bottom: 20px;
+        padding: 10px 0;
         border-radius: 5px;
         background-color: #2c2647;
         font-family: "Gilroy-Regular";
@@ -35,15 +35,15 @@
         color: #2c2647;
         transition: 0.5s;
     }
+
+    &__login-info {
+        font-family: "Gilroy-Regular";
+        font-size: 15px;
+    }
+
+    &__login-link {
+        text-decoration: underline;
+    }
     
 }
 
-.login-info{
-    font-family: "Gilroy-Regular";
-    margin-top: 20px;
-    font-size: 15px;
-}
-
-.login-link {
-    text-decoration: underline;
-}

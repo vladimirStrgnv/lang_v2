@@ -1,8 +1,13 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { signUpState } from './types';
+import { signInState, authData } from './types';
 import { Validators } from '../../../../../shared/utils/services/validators';
 
-const initialState: signUpState =  {
+const authData = localStorage.getItem('authData')
+  ? JSON.parse(localStorage.getItem('authData'))
+  : null;
+
+
+const initialState: signInState =  {
     email: {
         value: '',
         isValid: true
@@ -10,11 +15,12 @@ const initialState: signUpState =  {
     password: {
         value: '',
         isValid: true
-    }
+    },
+    authData
 }
 
 const signUpSlice = createSlice({
-    name: 'signUp',
+    name: 'signIn',
     initialState,
     reducers: {
         inputMail(state, action: PayloadAction<{value: string}>) {
@@ -24,12 +30,16 @@ const signUpSlice = createSlice({
         inputPassword(state, action: PayloadAction<{value: string}>) {
             state.password.value = action.payload.value;
             state.password.isValid = Validators.checkLength(action.payload.value, 5);
+        },
+        setAuthData(state, action: PayloadAction<{value: authData}>) {
+            state.authData = action.payload.value;
+            console.log(state.authData)
         }
     },
 });
 
 
-export const {inputMail, inputPassword} = signUpSlice.actions;
+export const {inputMail, inputPassword, setAuthData} = signUpSlice.actions;
 
 
 export default signUpSlice.reducer;

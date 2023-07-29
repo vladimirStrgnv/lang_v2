@@ -8,7 +8,7 @@ class Api {
         this.baseUrl =  "http://localhost:2000/";
     }
       
-    createUser = async (userInfo:IUser) =>  {
+    createUser = async (userName:string, userEmail: string, userPass: string) =>  {
         try {
             const response = await fetch(`${this.baseUrl}users`, {
                 method: "POST",
@@ -16,7 +16,11 @@ class Api {
                     Accept: "application/json",
                     "Content-Type": "application/json",
                 },
-                body: JSON.stringify(userInfo),
+                body: JSON.stringify({
+                    name: userName,
+                    email: userEmail,
+                    password: userPass
+                }),
             });
 
             return response;
@@ -26,6 +30,25 @@ class Api {
             return err;
 
         }
+    }
+
+    signIn = async (userEmail: string, userPass: string) => {
+        try {
+            const response = await fetch(`http://localhost:2000/signin`, {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                email: userEmail,
+                password: userPass
+              }),
+            });
+            return response;
+          } catch (err) {
+            return err;
+          }
     }
 }
 

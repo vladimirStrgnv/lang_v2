@@ -21,7 +21,7 @@ const SignUpForm = () => {
 
   const sendRequest =  async (event: React.FormEvent<EventTarget>): Promise<void> => {
     event.preventDefault()
-    const creaeUserRequest = await api.createUser({email: email.value, name: userName.value, password: password.value});
+    const creaeUserRequest = await api.createUser(userName.value, email.value, password.value);
     if (creaeUserRequest.ok) {
       navigate("/sign-in");
     } else if (creaeUserRequest.status === 417) {
@@ -34,6 +34,7 @@ const SignUpForm = () => {
   const setPopUpActive = () => {
     setPopUpOption({...popUpOption, isActive: !popUpOption.isActive});
   };
+  
   return (
     <form className={styles['signup-form']} onSubmit={sendRequest}>
       <PopUp text={popUpOption.text} isOpen={popUpOption.isActive} setActive={setPopUpActive}></PopUp>
@@ -86,9 +87,9 @@ const SignUpForm = () => {
       <button
         className={styles['signup-form__btn']}
       >Зарегестрироваться</button>
-      <div className={styles['login-info']}>
+      <div className={styles['signup-form__login-info']}>
         <span>Уже с нами? </span>
-        <Link to='/sign-in' className={styles['login-link']}>Да, Войти!</Link>
+        <Link to='/sign-in' className={styles['signup-form__login-link']}>Да, Войти!</Link>
       </div>
     </form>
   )

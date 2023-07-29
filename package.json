@@ -10,7 +10,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start:serv": "node ./lang-server/src/server.js",
-    "start:app" : "concurrently \"npm run start\" \"npm run start:serv\""
+    "start:app": "concurrently \"npm run start\" \"npm run start:serv\""
   },
   "keywords": [],
   "author": "",
