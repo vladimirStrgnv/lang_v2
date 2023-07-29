@@ -1,6 +1,6 @@
 const NavItemsValue =  [
     {text:"Главная" , path: '/'},
-    {text:'Учебник' , path: '/teach/book'},
+    {text:'Учебник' , path: '/book'},
     {text:'Игры' , path: '/games'},
     {text:'Статистика' , path: '/stats'}
 ]

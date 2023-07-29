@@ -15,7 +15,7 @@ import SignIn from "../pages/SignIn";
         lazy: () => import("../pages/MainPage/index"),
       },
       {
-        path: "/teach",
+        path: "/book",
         lazy: () => import("../pages/BookPage"),
       },
     ]
