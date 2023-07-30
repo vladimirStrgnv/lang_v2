@@ -4,10 +4,10 @@ import Advantages from './Advantages';
 
 const MainPage = () => {
   return (
-    <section className={styles.main__wrapper}>
+    <>
       <Greeting />
       <Advantages />  
-    </section>
+    </>
   )
 }
 

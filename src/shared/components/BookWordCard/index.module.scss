@@ -1,0 +1,48 @@
+.gamecard {
+    background-color: #f3f4f8;
+    border-radius: 0.5rem;
+    width: 250px;
+    height: 325px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 1rem;
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+    &__img {
+        width: 400px;
+    }
+
+    &__descrpt {
+        display: inline-block;
+        background-color: #FFC53D;
+        width: fit-content;
+        font-family: 'Open Sans';
+        font-size: 12px;
+        padding: 0.2rem;
+        border-radius: 5px;
+        color: #2c2647;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+        font-family: 'Gilroy-Bold';
+    }
+
+    p {
+        font-size: 0.9rem;
+        font-family: 'Gilroy-Regular';
+        color: #2c2647;
+    }
+}
+
+

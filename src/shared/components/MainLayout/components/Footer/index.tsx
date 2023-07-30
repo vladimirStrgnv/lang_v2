@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import Logo from '../../../logo/index';
+import Logo from '../../../Logo/index';
 import FooterTopSvg from './assets/FooterTopSvg';
 
 const Footer = () => {

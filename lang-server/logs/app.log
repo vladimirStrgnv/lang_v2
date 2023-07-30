@@ -72247,3 +72247,196 @@
   level: 'info',
   timestamp: '2023-07-28T12:23:57.649Z'
 }
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-07-29T13:34:23.923Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-07-29T13:34:23.929Z'
+}
+{
+  message: 'ValidationError: users validation failed: password: Path `password` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\document.js:2689:32)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\document.js:2509:17\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\schematype.js:1259:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  level: 'error',
+  timestamp: '2023-07-29T13:45:48.072Z'
+}
+{
+  message: 'POST 500 /users - size req 120 res 12 - 9.713 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:45:48.074Z'
+}
+{
+  message: 'POST 417 /users - size req 120 res 28 - 137.683 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:46:21.695Z'
+}
+{
+  message: 'POST 200 /users - size req 120 res 110 - 125.555 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:46:46.971Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:46:50.514Z'
+}
+{
+  message: 'POST 500 /signin - size req 82 res 12 - 75.227 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:46:50.519Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:47:37.990Z'
+}
+{
+  message: 'POST 500 /signin - size req 82 res 12 - 83.904 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:47:37.997Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:50:36.635Z'
+}
+{
+  message: 'POST 500 /signin - size req 82 res 12 - 74.648 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:50:36.638Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 207.214 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:51:26.448Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 214.221 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T13:51:52.410Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 209.358 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T14:29:45.181Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 202.313 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T14:30:57.924Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 604.376 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T18:19:13.028Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 226.404 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:14:12.503Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 209.556 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:23:42.135Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 205.686 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:24:04.243Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 218.610 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:24:59.316Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 210.800 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:25:39.383Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 210.094 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:32:22.012Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 216.704 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:36:40.095Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 215.209 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:39:42.956Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 209.808 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T19:46:56.165Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 236.454 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T20:16:24.077Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 208.578 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T20:17:44.191Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 219.127 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T20:20:46.604Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 199.868 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T20:21:25.152Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 200.424 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T20:30:15.385Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 192.365 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T20:30:23.631Z'
+}
+{
+  message: 'POST 200 /signin - size req 82 res 537 - 193.559 ms\n',
+  level: 'info',
+  timestamp: '2023-07-29T20:30:28.563Z'
+}

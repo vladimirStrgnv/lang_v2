@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import Logo from '../../../../shared/components/logo';
+import Logo from '../../../../shared/components/Logo';
 
 const Hedaer = () => {
   return (

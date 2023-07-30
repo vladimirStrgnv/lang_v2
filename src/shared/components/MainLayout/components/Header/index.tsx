@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 import Nav from './components/Nav';
-import Logo from '../../../logo/index';
+import Logo from '../../../Logo/index';
 
 const Hedaer = () => {
   return (

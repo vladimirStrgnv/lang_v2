@@ -1432,3 +1432,51 @@
   level: 'error',
   timestamp: '2023-05-09T20:26:57.895Z'
 }
+{
+  message: 'ValidationError: users validation failed: password: Path `password` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\document.js:2689:32)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\document.js:2509:17\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\schematype.js:1259:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  level: 'error',
+  timestamp: '2023-07-29T13:45:48.071Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:46:50.514Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:47:37.990Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:50:36.634Z'
+}

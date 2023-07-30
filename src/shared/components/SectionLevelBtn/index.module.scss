@@ -1,0 +1,56 @@
+.card {
+    padding-left: 1rem;
+    padding-right: 1.2rem;
+    padding: 0.5rem;
+
+    height: 70px;
+    width: 220px;
+    border-radius: 0.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+    background-color: #f3f4f8;
+    color: #2c2647;
+    font-size: 1rem;
+    font-family: 'Gilroy-Bold';
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.card__descrpt {
+    text-align: left;
+    z-index: 2;
+}
+
+.card__descrpt p {
+    font-family: 'Gilroy-RegularItalic';
+    font-size: 0.8rem;
+}
+
+.card__level {
+    z-index: 2;
+}
+
+.card__level h3 {
+    font-family: 'Gilroy-Heavy';
+    font-size: 1.5rem;
+    color: #2c2647;
+}
+
+.card__circle {
+    border-radius: 53px;
+    height: 110px;
+    width: 110px;
+    position: absolute;
+    top: -1rem;
+    right: -2.5rem;
+    overflow: hidden;
+}
+
+.card__active {
+    background-color: #FFC53D;
+}
