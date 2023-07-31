@@ -25,6 +25,7 @@ function reducer(state, action) {
     case "CHANGE_PAGE":
       return { ...state, page:  action.value };
     case "CHANGE_WORD":
+      console.log(1)
       return { ...state, word: action.value };
     case "CHANGE_WORD_ID":
       return { ...state, wordId: action.value };

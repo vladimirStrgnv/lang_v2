@@ -24,14 +24,14 @@
     }
 
     &__navbtns-wrapper {
-        // margin-bottom: 15px;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: row;
         gap: 1rem;
     }
 
     &__page {
-
+        display: flex;
     }
 
     &__page-title {
@@ -41,10 +41,14 @@
     }
 
     &__page-words-list {
-        width: 65%;
         padding-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
         gap: 50px 5px;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
     }
 }

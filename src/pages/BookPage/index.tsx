@@ -7,20 +7,25 @@ import useCreateStore from './store/index';
 import { useEffect } from 'react';
 import api from '../../shared/api';
 import BookWordItem from '../../shared/components/BookWordItem';
-import Pagination from '../../shared/components/Pagination';
+import BookWordCard from '../../shared/components/BookWordCard';
+import { Pagination } from '@mui/material';
 
 const BookPage = () => {
   const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordIdDispatch, wordDataDispatch, state} = useCreateStore();
-  const { page, words, section} = state;
+  const { page, words, section, word} = state;
 
   useEffect(()=>{
     const fetch = async () => {
       const wordsRequest = await api.getWords(section, page-1);
       wordsDispatch(wordsRequest);  
+      wordDispatch(wordsRequest[0]);
+      console.log(wordsRequest[0])
     };
     fetch();
   }, [section, page]);
-
+  const changepage = (e, page) => {
+    pageDispatch(page);
+  }
   return (
     <section className={styles.book}>
       <SvgBottom />
@@ -43,25 +48,30 @@ const BookPage = () => {
             </div>
           </nav>
           <div className={styles['book__page']}>
-            <h3 className={styles['book__page-title']}>Слова</h3>
-            <ul className={styles['book__page-words-list']}>
-              {words.map(word => 
-                  <li key={word.id}>
-                    <BookWordItem
-                      id={word.id}
-                      word={word.word}
-                      translate={word.wordTranslate}
-                      difficulty={word.difficulty}
-                    ></BookWordItem>
-                  </li>
-              )}
-            </ul>
-            <Pagination 
-              startPage={1}
-              currentPage={page} 
-              pagesCount={30} 
-              setCurrentPage={pageDispatch}
-            ></Pagination>
+            <div className={styles['book__page-wrapper']}>
+              <h3 className={styles['book__page-title']}>Слова</h3>
+              <ul className={styles['book__page-words-list']}>
+                {words.map(word => 
+                    <li key={word.id}>
+                      <BookWordItem
+                        id={word.id}
+                        word={word.word}
+                        translate={word.wordTranslate}
+                        difficulty={word.difficulty}
+                      ></BookWordItem>
+                    </li>
+                )}
+              </ul>
+            </div>
+            <div>
+              <BookWordCard 
+                wordData={word}
+
+              ></BookWordCard> 
+            </div>
+          </div>
+          <div className={styles.book__pagination}>
+            <Pagination count={30} page={page} onChange={changepage} color="primary"/>
           </div>
         </div>
       </div>
