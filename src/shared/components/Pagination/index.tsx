@@ -1,83 +1,127 @@
 import React, { useEffect, useState } from 'react';
 import styles from './index.module.scss';
-import { type } from 'os';
 
-const Pagination = ({currentPage, pagesCount, setCurrentPage}) => {
-//   const [page, setCurrentPage] = useState(page+1);
-  const [arrOfCurrButtons, setArrOfCurrButtons] = useState([]);
+const Pagination = ({startPage, currentPage, pagesCount, setCurrentPage}) => {
+  const [arrOfCurrButtons, setArrOfCurrButtons] = useState([2,3,4]);
 
-  const numberOfPages = [];
-  for (let i = 1; i <= pagesCount; i++) {
-    numberOfPages.push(i);
-  }
+  const paginationControl = {
 
-  useEffect(()=>{
-    let tempNumberOfPages = [...arrOfCurrButtons];
-    let dotsInitial = '...';
-    let dotsLeft = '... ';
-    let dotsRight = '...';
+    startBtns: [2,3,4],
+    endBtns: [27,28,29],
+    getBtnsNextStep (currentPage: number, step = 1)  {
+      return [currentPage + step - 1, currentPage +  step, currentPage + 1];
+    },
+    getBtnsPrevState (currentPage: number)  {
+      return [currentPage - 3, currentPage - 2, currentPage - 1];
+    },
+    switchToStart()  {
+      setCurrentPage(startPage);
+      // setArrOfCurrButtons(this.getBtnsNextStep(this.startBtns));
+    },
+    switchToPrev () {
+      setCurrentPage(currentPage === startPage ? currentPage : currentPage - 1);
+      if (currentPage  < 4) {
+        setArrOfCurrButtons(this.getBtnsNextState(startPage));
+      } else if (currentPage > 27) {
+        setArrOfCurrButtons(this.getBtnsPrevState(currentPage));
+      } else {
+        setArrOfCurrButtons([currentPage - 2, currentPage - 1, currentPage]);
+      }
+    },
+    switchPrevStep ()  {
+      setCurrentPage(currentPage - 2);
+      if (currentPage < 5) {
+        setArrOfCurrButtons(this.getBtnsNextState(startPage));
+      }
+      else {
+        setArrOfCurrButtons(this.getBtnsPrevState(currentPage));
+      }
+    },
+    switchPage(page) {
+      setCurrentPage(page);
+      if (page === startPage + 1) {
+        setArrOfCurrButtons([page, page + 1, page + 2]);
+      } else if (page === pagesCount - 1) {
+        setArrOfCurrButtons(this.getBtnsPrevState(currentPage));
+      } else {
+        setArrOfCurrButtons([page - 1, page, page + 1]);
+      }
+    },
+    switchNextStep () {
+      setCurrentPage(currentPage + 2);
+      if (currentPage === 27) {
+        setArrOfCurrButtons(this.getBtnsPrevState(currentPage));
+      }
+      else {
+        setArrOfCurrButtons(this.getBtnsNextState(startPage))
+      };
 
-    if (numberOfPages.length < 6) {
-      tempNumberOfPages = numberOfPages;
+    },
+    switchToEnd()  {
+      console.log(this.endBtns)
+
+      setCurrentPage(pagesCount);
+      setArrOfCurrButtons(this.getBtnsPrevState(this.endBtns));
+    },
+    switchToNext()  {
+      setCurrentPage(currentPage === pagesCount ? pagesCount : currentPage + 1);
+      if (currentPage > 27) {
+        setArrOfCurrButtons(this.getBtnsPrevState(currentPage));
+      } else if (currentPage < 3) {
+        setArrOfCurrButtons(this.getBtnsNextState(startPage));
+      }
+      else {
+        setArrOfCurrButtons([currentPage, currentPage + 1, currentPage + 2]);
+      }
     }
-
-    if (currentPage >=1 && currentPage <= 3) {
-      tempNumberOfPages = [1,2,3,4, '...', numberOfPages.length];
-    }
-
-    else if (currentPage === 4) {
-      const sliced = numberOfPages.slice(0, 5);
-      tempNumberOfPages = [...sliced, dotsInitial, numberOfPages.length];
-    }
-
-    else if (currentPage > 4 && currentPage < numberOfPages.length - 2) {          
-      const sliced1 = numberOfPages.slice(currentPage - 2, currentPage) ;           
-      const sliced2 = numberOfPages.slice(currentPage, currentPage + 1);                 
-      tempNumberOfPages = ([1, dotsLeft, ...sliced1, ...sliced2, dotsRight, numberOfPages.length]); 
-    }
-
-    else if (currentPage > numberOfPages.length - 3) {               
-      const sliced = numberOfPages.slice(numberOfPages.length - 4);      
-      tempNumberOfPages = ([1, dotsLeft, ...sliced]);                        
-    }
-
-    else if (String(currentPage) === dotsInitial) {
-      setCurrentPage(arrOfCurrButtons[arrOfCurrButtons.length-3] + 1); 
-    }
-
-    else if (String(currentPage) === dotsRight) {
-      setCurrentPage(arrOfCurrButtons[3] + 2);
-    }
-
-    else if (String(currentPage) === dotsLeft) {
-      setCurrentPage(arrOfCurrButtons[3] - 2);
-    }
-
-    setArrOfCurrButtons(tempNumberOfPages)
-
-  }, [currentPage]);
+  };
 
   return (
     <div className={styles['pagination-container']}>
-        <a href="#!" 
-          className={`${currentPage === 1 ? styles.disabled : ''}`}
-          onClick = {() => setCurrentPage(currentPage === 1? currentPage : currentPage - 1)}
-        >Prev</a>
-        {arrOfCurrButtons.map((page, index) => {
-            console.log(page)
-          return (
-            <a href="#!" 
+
+      <button
+        className={`${currentPage === startPage ? styles.disabled : ''}`}
+        onClick={() => { paginationControl.switchToPrev()}}
+      >Prev
+      </button>
+
+      <button
+        className={startPage === currentPage ? styles.active : ''}
+        onClick={() => { paginationControl.switchToStart() }}
+      >{startPage}
+      </button>
+
+      { currentPage > 3 && <button
+        onClick={() => { paginationControl.switchPrevStep() }}
+      >{'...'}
+      </button>}
+
+      {arrOfCurrButtons.map((page, index) => {
+        return (
+          <button
             key={index}
             className={page === currentPage ? styles.active : ''}
-            onClick = {() => {typeof page !== 'string'?setCurrentPage(page):setCurrentPage(currentPage)}}
-            >{page}</a>
-          )
-        })}
-        <a href="#!" 
-          className={`${currentPage === numberOfPages.length ? styles.disabled : ''}`}
-          onClick = {() => setCurrentPage(currentPage === numberOfPages.length? currentPage : currentPage + 1)}
-        >Next</a>
-    </div>  
+            onClick={() => { paginationControl.switchPage(page)}} 
+          >{page}
+          </button>
+        )
+      })}
+      {currentPage < 28 && <button
+        onClick={() => {paginationControl.switchNextStep() }}
+      >{'...'}
+      </button>}
+      <button
+        className={pagesCount === currentPage ? styles.active : ''}
+        onClick={() => { 
+          paginationControl.switchToEnd();
+        }}
+      >{pagesCount}
+      </button>
+      <button
+        className={`${currentPage === pagesCount ? styles.disabled : ''}`}
+        onClick={() => { paginationControl.switchToNext() }}
+      >Next</button>
+    </div>
   )
 }
 

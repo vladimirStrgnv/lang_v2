@@ -55,8 +55,13 @@ const BookPage = () => {
                     ></BookWordItem>
                   </li>
               )}
-            </ul> 
-            <Pagination currentPage={page} pagesCount={30} setCurrentPage={pageDispatch}></Pagination>
+            </ul>
+            <Pagination 
+              startPage={1}
+              currentPage={page} 
+              pagesCount={30} 
+              setCurrentPage={pageDispatch}
+            ></Pagination>
           </div>
         </div>
       </div>
