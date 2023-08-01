@@ -4,28 +4,34 @@ import SvgBottom from './assets/SvgBottom';
 import SectionLevelBtn from '../../shared/components/SectionLevelBtn';
 import btnsData from './utils/consts';
 import useCreateStore from './store/index';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import api from '../../shared/api';
 import BookWordItem from '../../shared/components/BookWordItem';
 import BookWordCard from '../../shared/components/BookWordCard';
 import { Pagination } from '@mui/material';
+import { useAppSelector } from '../../shared/stores/types';
 
 const BookPage = () => {
-  const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordIdDispatch, wordDataDispatch, state} = useCreateStore();
-  const { page, words, section, word} = state;
-
+  const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordDataDispatch, state} = useCreateStore();
+  const isAuth = useAppSelector((store) => store.signIn.authData);
+  console.log(isAuth);
+  const { page, words, section, curentWord } = state;
+  const [loadStatus, setLoadStatus ] = useState(false);
   useEffect(()=>{
     const fetch = async () => {
       const wordsRequest = await api.getWords(section, page-1);
       wordsDispatch(wordsRequest);  
-      wordDispatch(wordsRequest[0]);
-      console.log(wordsRequest[0])
+      setLoadStatus(true)
     };
     fetch();
   }, [section, page]);
+
   const changepage = (e, page) => {
     pageDispatch(page);
   }
+
+ 
+
   return (
     <section className={styles.book}>
       <SvgBottom />
@@ -58,16 +64,17 @@ const BookPage = () => {
                         word={word.word}
                         translate={word.wordTranslate}
                         difficulty={word.difficulty}
+                        isChoosen={curentWord.id === word.id}
+                        onClick={wordDispatch}
                       ></BookWordItem>
                     </li>
                 )}
               </ul>
             </div>
-            <div>
-              <BookWordCard 
-                wordData={word}
-
-              ></BookWordCard> 
+            <div className={styles['book__card-wrapper']}>
+              { loadStatus && <BookWordCard 
+                wordData={curentWord}
+              ></BookWordCard>} 
             </div>
           </div>
           <div className={styles.book__pagination}>

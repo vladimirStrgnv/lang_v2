@@ -106385,3 +106385,18 @@
   level: 'info',
   timestamp: '2023-07-30T21:11:36.433Z'
 }
+{
+  message: 'Successfully connect to DB',
+  level: 'info',
+  timestamp: '2023-08-01T12:58:51.897Z'
+}
+{
+  message: 'App is running on http://localhost:2000',
+  level: 'info',
+  timestamp: '2023-08-01T12:58:51.911Z'
+}
+{
+  message: 'GET 304 /words/?group=0&page=0 - size req - res - - 116.479 ms\n',
+  level: 'info',
+  timestamp: '2023-08-01T13:00:39.420Z'
+}

@@ -1,10 +1,15 @@
 import { IUser } from "./types";
+import store from "../stores";
 
 class Api {
   baseUrl: string;
+  storeSubscription: any;
 
   constructor() {
     this.baseUrl = "http://localhost:2000/";
+    this.storeSubscription = store.subscribe(()=> {
+      console.log(store.getState().signIn.authData)
+    })
   }
 
   createUser = async (

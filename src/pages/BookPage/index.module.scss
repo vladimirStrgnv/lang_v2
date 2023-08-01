@@ -32,6 +32,12 @@
 
     &__page {
         display: flex;
+        max-height: 550px;
+        margin-bottom: 25px;
+    }
+
+    &__page-wrapper {
+        width: 75%;
     }
 
     &__page-title {
@@ -41,10 +47,15 @@
     }
 
     &__page-words-list {
-        padding-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
-        gap: 50px 5px;
+        gap: 65px 10px;
+    }
+
+    &__card-wrapper {
+        display: flex;
+        width: 25%;
+        justify-content: flex-end;
     }
 
     &__pagination {
