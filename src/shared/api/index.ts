@@ -1,10 +1,15 @@
 import { IUser } from "./types";
+import store from "../stores";
 
 class Api {
   baseUrl: string;
+  storeSubscription: any;
 
   constructor() {
     this.baseUrl = "http://localhost:2000/";
+    this.storeSubscription = store.subscribe(()=> {
+      console.log(store.getState().signIn.authData)
+    })
   }
 
   createUser = async (
@@ -52,11 +57,15 @@ class Api {
   };
 
   getWords = async (group, page) => {
-    const response = await fetch(
-      `${this.baseUrl}words/?group=${group}&page=${page}`
-    );
-    const data = await response.json();
-    return data;
+    try {
+      const response = await fetch(
+        `${this.baseUrl}words/?group=${group}&page=${page}`
+      );
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      return new Error();
+    }
   };
 
 

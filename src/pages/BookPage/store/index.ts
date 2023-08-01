@@ -4,16 +4,14 @@ type BookState = {
     section: number,
     page: number,
     words: any[],
-    wordId: string,
-    word: any
+    curentWord: any
 }
 
 const initialState: BookState = {
   section: 0,
   page: 1,
   words: [],
-  wordId: '',
-  word: {}
+  curentWord: {}
 }
 
 function reducer(state, action) {
@@ -21,14 +19,11 @@ function reducer(state, action) {
     case "CHANGE_SECTION":
       return { ...state, section: action.value, page: 1 };
     case "CHANGE_WORDS":
-      return { ...state, words: action.value };
+      return { ...state, words: action.value, curentWord:  action.value[0]};
     case "CHANGE_PAGE":
-      return { ...state, page:  action.value };
+      return { ...state, page:  action.value};
     case "CHANGE_WORD":
-      console.log(1)
-      return { ...state, word: action.value };
-    case "CHANGE_WORD_ID":
-      return { ...state, wordId: action.value };
+      return { ...state, curentWord: state.words.find(word => word.id === action.value), };
     case "CHANGE_WORD_DATA":
       state.words.forEach((word) => {
         if (word._id === action.value.id) {
@@ -73,13 +68,6 @@ const useCreateStore = () => {
     });
   };
 
-  const wordIdDispatch = (value) => {
-    dispatch({
-      type: "CHANGE_WORD_ID",
-      value: value,
-    });
-  };
-
   const wordDataDispatch = (id, difficulty) => {
     dispatch({
       type: "CHANGE_WORD_DATA",
@@ -92,7 +80,6 @@ const useCreateStore = () => {
     wordsDispatch,
     pageDispatch,
     wordDispatch,
-    wordIdDispatch,
     wordDataDispatch,
     state,
   };

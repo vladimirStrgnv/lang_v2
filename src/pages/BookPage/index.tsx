@@ -4,28 +4,34 @@ import SvgBottom from './assets/SvgBottom';
 import SectionLevelBtn from '../../shared/components/SectionLevelBtn';
 import btnsData from './utils/consts';
 import useCreateStore from './store/index';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import api from '../../shared/api';
 import BookWordItem from '../../shared/components/BookWordItem';
 import BookWordCard from '../../shared/components/BookWordCard';
 import { Pagination } from '@mui/material';
+import { useAppSelector } from '../../shared/stores/types';
+import { ErrorBoundary } from 'react-error-boundary';
+import Fallback from '../../shared/components/ErrorFallBack';
 
 const BookPage = () => {
-  const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordIdDispatch, wordDataDispatch, state} = useCreateStore();
-  const { page, words, section, word} = state;
-
+  const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordDataDispatch, state} = useCreateStore();
+  const isAuth = useAppSelector((store) => store.signIn.authData);
+  const { page, words, section, curentWord } = state;
+  const [loadStatus, setLoadStatus ] = useState(false);
   useEffect(()=>{
     const fetch = async () => {
       const wordsRequest = await api.getWords(section, page-1);
+      console.log(wordsRequest);
       wordsDispatch(wordsRequest);  
-      wordDispatch(wordsRequest[0]);
-      console.log(wordsRequest[0])
+      setLoadStatus(true)
     };
     fetch();
   }, [section, page]);
+
   const changepage = (e, page) => {
     pageDispatch(page);
   }
+
   return (
     <section className={styles.book}>
       <SvgBottom />
@@ -48,27 +54,32 @@ const BookPage = () => {
             </div>
           </nav>
           <div className={styles['book__page']}>
-            <div className={styles['book__page-wrapper']}>
-              <h3 className={styles['book__page-title']}>Слова</h3>
-              <ul className={styles['book__page-words-list']}>
-                {words.map(word => 
-                    <li key={word.id}>
-                      <BookWordItem
-                        id={word.id}
-                        word={word.word}
-                        translate={word.wordTranslate}
-                        difficulty={word.difficulty}
-                      ></BookWordItem>
-                    </li>
-                )}
-              </ul>
-            </div>
-            <div>
-              <BookWordCard 
-                wordData={word}
-
-              ></BookWordCard> 
-            </div>
+            <ErrorBoundary
+             FallbackComponent={Fallback}
+             >
+              <div className={styles['book__page-wrapper']}>
+                <h3 className={styles['book__page-title']}>Слова</h3>
+                <ul className={styles['book__page-words-list']}>
+                  {words.map(word => 
+                      <li key={word.id}>
+                        <BookWordItem
+                          id={word.id}
+                          word={word.word}
+                          translate={word.wordTranslate}
+                          difficulty={word.difficulty}
+                          isChoosen={curentWord.id === word.id}
+                          onClick={wordDispatch}
+                        ></BookWordItem>
+                      </li>
+                  )}
+                </ul>
+              </div>
+              <div className={styles['book__card-wrapper']}>
+                { loadStatus && <BookWordCard 
+                  wordData={curentWord}
+                ></BookWordCard>} 
+              </div>
+            </ErrorBoundary>
           </div>
           <div className={styles.book__pagination}>
             <Pagination count={30} page={page} onChange={changepage} color="primary"/>

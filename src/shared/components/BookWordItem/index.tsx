@@ -1,14 +1,15 @@
 import styles from './index.module.scss';
 
-const BookWordItem = ({word, id,  translate, difficulty}) => {
+const BookWordItem = ({word, id,  translate, difficulty, isChoosen, onClick}) => {
   return (
-    <div 
-      className={id == 1 ? `${styles['word__container']} ${styles.active}` : `${styles['word__container']}`}
+    <button 
+      className={isChoosen ? `${styles['word__container']} ${styles.active}` : `${styles['word__container']}`}
+      onClick={() => onClick(id)}
     >
         <div>{word}</div>
         <div>{translate}</div>
         <div className={difficulty?`${styles.word__circle}  ${styles[difficulty]}`: `${styles.word__circle} `}></div>
-    </div>  
+    </button>  
     )
 }
 

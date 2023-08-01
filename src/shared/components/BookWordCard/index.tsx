@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import styles from './index.module.scss';
-import { useAppSelector } from '../../stores/types';
 
 function createMarkup(text) { return {__html: text}; };
 
 const BookWordCard = (props) => {
-  const url = useAppSelector((state) => state);
-  if (props.wordData.id || props.wordData._id) {
     return (
       <article className={styles.wordcard}>
         <div className={styles.wordcard__container}>
@@ -30,20 +27,16 @@ const BookWordCard = (props) => {
               />
             </div>
             <div className={styles["wordcard__btns-container"]}>
-              {props.auth && props.btnsData.map((btnData, index) => {
-                return (
                   <button
-                    key={index}
                     className={props.wordData.userWord?.difficulty?`${styles.inactive} ${styles["wordcard__btn"]}` : styles["wordcard__btn"]}
-                    onClick={() => {
-                      btnData.reqFunc(
-                        props.wordData.id || props.wordData._id,
-                        btnData.difficulty
-                      );
-                    }}
-                  >{btnData.title}</button>
-                );
-              })}
+                    onClick={() => {}}
+                  >Изученое
+                  </button>
+                  <button
+                    className={props.wordData.userWord?.difficulty?`${styles.inactive} ${styles["wordcard__btn"]}` : styles["wordcard__btn"]}
+                    onClick={() => {}}
+                  >Сложное
+                  </button>
             </div>
             <h3>Значение</h3>
             <p
@@ -67,13 +60,7 @@ const BookWordCard = (props) => {
         </div>
       </article>
     );
-  } else {
-    return (
-      <article className={styles.wordcard}>
-        <div className={styles.wordcard__container}></div>
-      </article>
-    );
-  }
-}
+ } 
+
 
 export default BookWordCard;
