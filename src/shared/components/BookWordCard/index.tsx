@@ -4,6 +4,7 @@ import styles from './index.module.scss';
 function createMarkup(text) { return {__html: text}; };
 
 const BookWordCard = (props) => {
+ 
     return (
       <article className={styles.wordcard}>
         <div className={styles.wordcard__container}>

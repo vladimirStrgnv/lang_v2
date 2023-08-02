@@ -33,7 +33,6 @@ const signUpSlice = createSlice({
         },
         setAuthData(state, action: PayloadAction<{value: authData}>) {
             state.authData = action.payload.value;
-            console.log(state.authData)
         }
     },
 });

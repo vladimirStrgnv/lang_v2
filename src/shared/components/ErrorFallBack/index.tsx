@@ -4,7 +4,7 @@ function Fallback({ error, resetErrorBoundary }) {
 
   return (
     <div role="alert">
-      <p>Something went wrong:</p>
+      <p>Что то пошло не так:</p>
       <pre style={{ color: "red" }}>{error.message}</pre>
     </div>
   );
