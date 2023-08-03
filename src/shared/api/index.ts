@@ -9,22 +9,15 @@ class Api {
   userId: string;
   state: any;
 
-  constructor(store) {
+  constructor(auth) {
     this.baseUrl = "http://localhost:2000/";
-    this.state = store.getState();
+    this.state = auth;
+    console.log(store.getState())
     this.token = '';
     this.userId = '';
     this.refreshToken = '';
 
-    this.storeSubscription = store.subscribe(()=> {
-      const authData = store.getState().signIn.authData;
-      if (authData) {
-      this.refreshToken = authData.refreshToken
-      this.token = authData.token
-      this.userId = authData.userId
-      this.state = store.getState();
-    }
-    })
+
   }
 
   createUser = async (
@@ -84,23 +77,35 @@ class Api {
   };
 
   getAggregatedWords = async (section, page, wordsPerPage = 20) => {
-    console.log(this.state.signIn.authData.token)
     try {
       const filter = `%7B%22$and%22%3A%5B%7B%22group%22%3A${section}%7D%2C%7B%22page%22%3A${page}%7D%5D%7D`;
-      const response = await fetch(`${this.baseUrl}users/${this.state.signIn.authData.userId}/aggregatedWords?wordsPerPage=${wordsPerPage}&filter=${filter}`, {
+      const response = await fetch(`${this.baseUrl}users/${this.state.userId}/aggregatedWords?wordsPerPage=${wordsPerPage}&filter=${filter}`, {
         method: 'GET',
         headers: {
-          'Authorization': `Bearer ${this.state.signIn.authData.token}`,
+          'Authorization': `Bearer ${this.state.token}`,
           'Accept': 'application/json',
           'Content-Type': 'application/json',
         },
       });
       const data = await response.json();
-      console.log(data)
-      return data[0].paginatedResults;
+      return data[0].paginatedResults.map(word => {return {...word, id: word._id}} );
     } catch (e) {
       console.log(e);
     }
+  }
+
+  createUserWord = async (wordId, difficulty = '' ) => {
+    const response = await fetch(`${this.baseUrl}users/${this.state.userId}/words/${wordId}`, {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${this.state.token}`,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({difficulty: difficulty}),
+    });
+    const data = await response.json();
+    return data;
   }
 
 
@@ -108,4 +113,4 @@ class Api {
 
   
   
-export default new Api(store);
+export default Api;

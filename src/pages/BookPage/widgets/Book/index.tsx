@@ -5,7 +5,7 @@ import SectionLevelBtn from '../../../../shared/components/SectionLevelBtn';
 import btnsData from './utils/consts';
 import useCreateStore from './store/index';
 import { useEffect, useState } from 'react';
-import api from '../../../../shared/api';
+import Api from '../../../../shared/api';
 import BookWordItem from '../../../../shared/components/BookWordItem';
 import BookWordCard from '../../../../shared/components/BookWordCard';
 import { Pagination } from '@mui/material';
@@ -15,22 +15,28 @@ import Fallback from '../../../../shared/components/ErrorFallBack';
 
 const Book = () => {
   const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordDataDispatch, state} = useCreateStore();
-  const isAuth = useAppSelector((store) => store.signIn.authData);
+  const auth = useAppSelector((store) => store.signIn.authData);
   const { page, words, section, curentWord } = state;
   const [loadStatus, setLoadStatus ] = useState(false);
   useEffect(()=>{
     const fetch = async () => {
-      const wordsRequest = await api.getAggregatedWords(section, page);
-      console.log(isAuth)
+      const api  = new Api(auth);
+      const wordsRequest = auth?await api.getAggregatedWords(section, page): await api.getWords(section, page);
+      console.log(wordsRequest)
 
-    //   wordsDispatch(wo   rdsRequest);  
-    //   setLoadStatus(true)
+      wordsDispatch(wordsRequest);  
+      setLoadStatus(true)
     };
     fetch();
   }, [section, page]);
 
   const changepage = (e, page) => {
     pageDispatch(page);
+  }
+
+  const addWordStatus = (id, status) => {
+    const api  = new Api(auth);
+    api.createUserWord(id, status);
   }
 
   return (
@@ -76,8 +82,22 @@ const Book = () => {
                 </ul>
               </div>
               <div className={styles['book__card-wrapper']}>
-                { loadStatus && <BookWordCard 
-                  wordData={curentWord}
+                { loadStatus && 
+                <BookWordCard 
+                  id={curentWord.id}
+                  image={curentWord.image}
+                  word={curentWord.word}
+                  textMeaning={curentWord.textMeaning}
+                  wordTranslate={curentWord.wordTranslate}
+                  textMeaningTranslate={curentWord.textMeaningTranslate}
+                  userWord={curentWord.userWord}
+                  textExample={curentWord.textExample}
+                  textExampleTranslate={curentWord.textExampleTranslate}
+                  isAuth={auth}
+                  transcription={curentWord.transcription}
+                  audio={curentWord.audio}
+                  createOnClick={addWordStatus}
+                  // deleteOnClick={}
                 ></BookWordCard>} 
               </div>
             </ErrorBoundary>

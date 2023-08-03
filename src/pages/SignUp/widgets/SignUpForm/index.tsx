@@ -4,7 +4,7 @@ import { inputMail, inputUserName, inputPassword, inputrepeatPassword  } from '.
 import { useDispatch  } from 'react-redux';
 import { useAppSelector } from '../../../../shared/stores/types/index';
 import { Link } from 'react-router-dom';
-import api from '../../../../shared/api';
+import Api from '../../../../shared/api';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import PopUp from '../../../../shared/components/PopUp';
@@ -14,6 +14,7 @@ const SignUpForm = () => {
   const dispatch = useDispatch();
   const [popUpOption, setPopUpOption] = useState({isActive: false, text: ''});
   const {email, userName, password, repeatPassword } = useAppSelector((store) => store.signUp);
+  const { authData } = useAppSelector((store) => store.signIn);
 
   const onChangeDispatch = (action) => {
     return (e: React.ChangeEvent<HTMLInputElement>):void => dispatch(action({value: e.target.value}))
@@ -21,6 +22,7 @@ const SignUpForm = () => {
 
   const sendRequest =  async (event: React.FormEvent<EventTarget>): Promise<void> => {
     event.preventDefault()
+    const api = new Api(authData);
     const creaeUserRequest = await api.createUser(userName.value, email.value, password.value);
     if (creaeUserRequest.ok) {
       navigate("/sign-in");

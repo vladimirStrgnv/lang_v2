@@ -6,7 +6,7 @@ import { useAppSelector } from '../../../../shared/stores/types';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import api from '../../../../shared/api';
+import Api from '../../../../shared/api';
 import PopUp from '../../../../shared/components/PopUp';
 
 const SignInForm = () => {
@@ -24,6 +24,7 @@ const SignInForm = () => {
     event: React.FormEvent<EventTarget>
   ): Promise<void> => {
     event.preventDefault();
+    const api = new Api(authData)
     const signInRequest = await api.signIn(email.value, password.value);
     if (signInRequest.ok) {
         const authData = await signInRequest.json();
