@@ -8,7 +8,7 @@ const BookWordItem = ({word, id,  translate, difficulty, isChoosen, onClick}) =>
     >
         <div>{word}</div>
         <div>{translate}</div>
-        <div className={difficulty?`${styles.word__circle}  ${styles[difficulty]}`: `${styles.word__circle} `}></div>
+        <div className={difficulty?`${styles.word__circle}  ${styles.difficulty}`: `${styles.word__circle} `}></div>
     </button>  
     )
 }

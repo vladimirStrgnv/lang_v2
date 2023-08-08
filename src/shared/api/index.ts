@@ -78,8 +78,8 @@ class Api {
 
   getAggregatedWords = async (section, page, wordsPerPage = 20) => {
     try {
-      const filter = `%7B%22$and%22%3A%5B%7B%22group%22%3A${section}%7D%2C%7B%22page%22%3A${page}%7D%5D%7D`;
-      const response = await fetch(`${this.baseUrl}users/${this.state.userId}/aggregatedWords?wordsPerPage=${wordsPerPage}&filter=${filter}`, {
+      const filter = `%7B%22%24and%22%3A%5B%7B%22userWord.difficulty%22%3A%22difficult%22%7D%5D%7D`;
+      const response = await fetch(`${this.baseUrl}users/${this.state.userId}/aggregatedWords?group=${section}&page=${page}&wordsPerPage=${wordsPerPage}&filter=`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${this.state.token}`,

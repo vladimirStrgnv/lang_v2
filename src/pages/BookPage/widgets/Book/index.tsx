@@ -14,7 +14,7 @@ import { ErrorBoundary } from 'react-error-boundary';
 import Fallback from '../../../../shared/components/ErrorFallBack';
 
 const Book = () => {
-  const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordDataDispatch, state} = useCreateStore();
+  const {sectionDispatch, wordsDispatch, pageDispatch, wordDispatch, wordDifficultyDispatch, state} = useCreateStore();
   const auth = useAppSelector((store) => store.signIn.authData);
   const { page, words, section, curentWord } = state;
   const [loadStatus, setLoadStatus ] = useState(false);
@@ -31,12 +31,13 @@ const Book = () => {
   }, [section, page]);
 
   const changepage = (e, page) => {
-    pageDispatch(page);
+    pageDispatch(page-1);
   }
 
   const addWordStatus = (id, status) => {
     const api  = new Api(auth);
     api.createUserWord(id, status);
+    wordDifficultyDispatch(id,status);
   }
 
   return (
@@ -73,7 +74,7 @@ const Book = () => {
                           id={word.id}
                           word={word.word}
                           translate={word.wordTranslate}
-                          difficulty={word.difficulty}
+                          difficulty={word.userWord?.difficulty}
                           isChoosen={curentWord.id === word.id}
                           onClick={wordDispatch}
                         ></BookWordItem>
@@ -96,14 +97,13 @@ const Book = () => {
                   isAuth={auth}
                   transcription={curentWord.transcription}
                   audio={curentWord.audio}
-                  createOnClick={addWordStatus}
-                  // deleteOnClick={}
+                  addWordStatus={addWordStatus}
                 ></BookWordCard>} 
               </div>
             </ErrorBoundary>
           </div>
           <div className={styles.book__pagination}>
-            <Pagination count={30} page={page} onChange={changepage} color="primary"/>
+            <Pagination count={30} page={page+1} onChange={changepage} color="primary"/>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ type BookState = {
 
 const initialState: BookState = {
   section: 0,
-  page: 1,
+  page: 0,
   words: [],
   curentWord: {}
 }
@@ -17,21 +17,24 @@ const initialState: BookState = {
 function reducer(state, action) {
   switch (action.type) {
     case "CHANGE_SECTION":
-      return { ...state, section: action.value, page: 1 };
+      return { ...state, section: action.value, page: 0 };
     case "CHANGE_WORDS":
       return { ...state, words: action.value, curentWord:  action.value[0]};
     case "CHANGE_PAGE":
       return { ...state, page:  action.value};
     case "CHANGE_WORD":
-      return { ...state, curentWord: state.words.find(word => word.id === action.value), };
-    case "CHANGE_WORD_DATA":
-      state.words.forEach((word) => {
-        if (word._id === action.value.id) {
-          word.userWord = {difficulty: action.value.difficulty};
+      return { ...state, curentWord: state.words.find(word => word.id === action.value) };
+    case "CHANGE_WORD_DIFFICULTY":
+      return { 
+        ...state, 
+        curentWord: {...state.curentWord, userWord: {difficulty: action.value.difficulty}},
+        words: state.words.map(word => {
+        if (word.id === action.value.id) {
+          return {...word, userWord: {difficulty: action.value.difficulty}};
+        } else {
+          return word;
         }
-      })
-      state.word.userWord = {difficulty: action.value.difficulty};
-      return { ...state};
+      })};
     default:
       return state;
   }
@@ -68,9 +71,9 @@ const useCreateStore = () => {
     });
   };
 
-  const wordDataDispatch = (id, difficulty) => {
+  const wordDifficultyDispatch = (id, difficulty) => {
     dispatch({
-      type: "CHANGE_WORD_DATA",
+      type: "CHANGE_WORD_DIFFICULTY",
       value: {id, difficulty}
     });
   };
@@ -80,7 +83,7 @@ const useCreateStore = () => {
     wordsDispatch,
     pageDispatch,
     wordDispatch,
-    wordDataDispatch,
+    wordDifficultyDispatch,
     state,
   };
 };

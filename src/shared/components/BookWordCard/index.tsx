@@ -18,7 +18,7 @@ const BookWordCard = ({
   textExampleTranslate,
   audio,
   isAuth,
-  createOnClick
+  addWordStatus,
 }) => {
   return (
     <article className={styles.wordcard}>
@@ -42,6 +42,12 @@ const BookWordCard = ({
               }}
             />
           </div>
+          <h3>Значение</h3>
+          <p dangerouslySetInnerHTML={createMarkup(textMeaning)}></p>
+          <p dangerouslySetInnerHTML={createMarkup(textMeaningTranslate)}></p>
+          <h3>Пример</h3>
+          <p dangerouslySetInnerHTML={createMarkup(textExample)}></p>
+          <p dangerouslySetInnerHTML={createMarkup(textExampleTranslate)}></p>
           {isAuth && (
             <div className={styles["wordcard__btns-container"]}>
               <button
@@ -50,29 +56,12 @@ const BookWordCard = ({
                     ? `${styles.inactive} ${styles["wordcard__btn"]}`
                     : styles["wordcard__btn"]
                 }
-                onClick={()=> {createOnClick(id, 'learned')}}
+                onClick={() => {addWordStatus(id, 'difficult')}}
               >
-                Изученое
-              </button>
-              <button
-                className={
-                  userWord?.difficulty
-                    ? `${styles.inactive} ${styles["wordcard__btn"]}`
-                    : styles["wordcard__btn"]
-                }
-                onClick={() => {}}
-              >
-                Сложное
+                Отметить как сложное
               </button>
             </div>
           )}
-
-          <h3>Значение</h3>
-          <p dangerouslySetInnerHTML={createMarkup(textMeaning)}></p>
-          <p dangerouslySetInnerHTML={createMarkup(textMeaningTranslate)}></p>
-          <h3>Пример</h3>
-          <p dangerouslySetInnerHTML={createMarkup(textExample)}></p>
-          <p dangerouslySetInnerHTML={createMarkup(textExampleTranslate)}></p>
         </div>
       </div>
     </article>
