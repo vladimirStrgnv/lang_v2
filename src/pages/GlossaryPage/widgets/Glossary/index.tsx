@@ -1,17 +1,17 @@
-
-import styles from './index.module.scss';
-import SvgBottom from './assets/SvgBottom';
-import SectionLevelBtn from '../../../../shared/components/SectionLevelBtn';
-import btnsData from './utils/consts';
-import useCreateStore from './store/index';
-import { useEffect, useState } from 'react';
-import Api from "../../../../shared/api";
+import styles from "./index.module.scss";
+import SvgBottom from "./assets/SvgBottom";
+import { btnsData, filterBtnsData } from "./utils/consts";
+import SectionLevelBtn from "../../../../shared/components/SectionLevelBtn";
+import useCreateStore from "./store/index";
 import BookWordItem from "../../../../shared/components/BookWordItem";
 import BookWordCard from "../../../../shared/components/BookWordCard";
-import { Pagination } from "@mui/material";
+import Api from "../../../../shared/api";
+import StatusFilterBtn from "./components/StatusFilterBtn";
+import { useEffect, useState } from 'react';
 import { useAppSelector } from "../../../../shared/stores/types";
+import { Pagination } from "@mui/material";
 
-const Book = () => {
+const Glossary = () => {
   const {
     sectionDispatch,
     wordsDispatch,
@@ -20,16 +20,17 @@ const Book = () => {
     wordDifficultyDispatch,
     state,
   } = useCreateStore();
-  const auth = useAppSelector((store) => store.signIn.authData);
   const { page, words, section, curentWord } = state;
+  const auth = useAppSelector((store) => store.signIn.authData);
   const [loadStatus, setLoadStatus] = useState(false);
+
   useEffect(() => {
     const fetch = async () => {
       const api = new Api(auth);
       const wordsRequest = auth
         ? await api.getAggregatedWords(section, page)
         : await api.getWords(section, page);
-      console.log(wordsRequest);
+
       wordsDispatch(wordsRequest);
       setLoadStatus(true);
     };
@@ -47,15 +48,15 @@ const Book = () => {
   };
 
   return (
-    <section className={styles.book}>
+    <section className={styles.glossary}>
       <SvgBottom />
-      <div className={styles.book__wrapper}>
-        <div className={styles.book__inner}>
+      <div className={styles.glossary__wrapper}>
+        <div className={styles.glossary__inner}>
           <nav>
-            <h2 className={styles["book__level-title"]}>
+            <h2 className={styles["glossary__level-title"]}>
               Уровни сложности слов
             </h2>
-            <div className={styles["book__navbtns-wrapper"]}>
+            <div className={styles["glossary__navbtns-wrapper"]}>
               {btnsData.map((btnData, index) => (
                 <SectionLevelBtn
                   key={index}
@@ -69,10 +70,22 @@ const Book = () => {
               ))}
             </div>
           </nav>
-          <div className={styles["book__page"]}>
-            <div className={styles["book__page-wrapper"]}>
-              <h3 className={styles["book__page-title"]}>Слова</h3>
-              <ul className={styles["book__page-words-list"]}>
+
+          <div className={styles["glossary__status-filter-btns-container"]}>
+          {filterBtnsData.map((btnData, index) => (
+                <StatusFilterBtn
+                  isCurrentFilter={false}
+                  title={btnData.title}
+                  abbreviation={btnData.abbreviation}
+                  setGlossaryFilter={()=>{}}
+                ></StatusFilterBtn>
+              ))}
+          </div>
+
+          <div className={styles["glossary__page"]}>
+            <div className={styles["glossary__page-wrapper"]}>
+              <h3 className={styles["glossary__page-title"]}>Слова</h3>
+              <ul className={styles["glossary__page-words-list"]}>
                 {words.map((word) => (
                   <li key={word.id}>
                     <BookWordItem
@@ -87,7 +100,7 @@ const Book = () => {
                 ))}
               </ul>
             </div>
-            <div className={styles["book__card-wrapper"]}>
+            <div className={styles["glossary__card-wrapper"]}>
               {loadStatus && (
                 <BookWordCard
                   id={curentWord.id}
@@ -107,7 +120,7 @@ const Book = () => {
               )}
             </div>
           </div>
-          <div className={styles.book__pagination}>
+          <div className={styles.glossary__pagination}>
             <Pagination
               count={30}
               page={page + 1}
@@ -121,4 +134,4 @@ const Book = () => {
   );
 };
 
-export default Book;
+export default Glossary;

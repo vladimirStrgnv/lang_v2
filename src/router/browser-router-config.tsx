@@ -18,6 +18,10 @@ import SignIn from "../pages/SignIn";
         path: "/book",
         lazy: () => import("../pages/BookPage"),
       },
+      {
+        path: "/glossary",
+        lazy: () => import("../pages/GlossaryPage"),
+      },
     ]
   },
   {
