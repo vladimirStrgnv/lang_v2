@@ -1,40 +1,38 @@
 import { useReducer } from 'react';
 
-type BookState = {
+type GlossaryState = {
     section: number,
     page: number,
     words: any[],
-    curentWord: any
+    totalCount: number,
+    curentWord: any,
+    currentFilter: string
 }
 
-const initialState: BookState = {
+const initialState: GlossaryState = {
   section: 0,
   page: 0,
+  totalCount: 0,
   words: [],
+  currentFilter: 'difficult',
   curentWord: {}
 }
 
 function reducer(state, action) {
+  console.log(action.value)
   switch (action.type) {
     case "CHANGE_SECTION":
       return { ...state, section: action.value, page: 0 };
     case "CHANGE_WORDS":
-      return { ...state, words: action.value, curentWord:  action.value[0]};
+      return { ...state, words: action.value.words, curentWord:  action.value.words[0], totalCount: action.value.count};
     case "CHANGE_PAGE":
       return { ...state, page:  action.value};
     case "CHANGE_WORD":
       return { ...state, curentWord: state.words.find(word => word.id === action.value) };
-    case "CHANGE_WORD_DIFFICULTY":
-      return { 
-        ...state, 
-        curentWord: {...state.curentWord, userWord: {difficulty: action.value.difficulty}},
-        words: state.words.map(word => {
-        if (word.id === action.value.id) {
-          return {...word, userWord: {difficulty: action.value.difficulty}};
-        } else {
-          return word;
-        }
-      })};
+    case "DELETE_WORD":
+      return { ...state, words: state.words.filter(word => word.id !== action.value), curentWord:  state.words[0] };
+    case "CHANGE_FILTER":
+      return { ...state, words: action.value.words, curentWord:  action.value.words[0], totalCount: action.value.count};
     default:
       return state;
   }
@@ -71,10 +69,17 @@ const useCreateStore = () => {
     });
   };
 
-  const wordDifficultyDispatch = (id, difficulty) => {
+  const wordDeleteDispatch = (id) => {
     dispatch({
-      type: "CHANGE_WORD_DIFFICULTY",
-      value: {id, difficulty}
+      type: "DELETE_WORD",
+      value: id
+    });
+  };
+
+  const filterDispatch = (value) => {
+    dispatch({
+      type: "CHANGE_FILTER",
+      value: value,
     });
   };
 
@@ -83,7 +88,8 @@ const useCreateStore = () => {
     wordsDispatch,
     pageDispatch,
     wordDispatch,
-    wordDifficultyDispatch,
+    wordDeleteDispatch,
+    filterDispatch,
     state,
   };
 };

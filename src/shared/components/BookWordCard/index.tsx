@@ -11,14 +11,13 @@ const BookWordCard = ({
   word,
   wordTranslate,
   transcription,
-  userWord,
   textMeaning,
   textMeaningTranslate,
   textExample,
   textExampleTranslate,
   audio,
   isAuth,
-  addWordStatus,
+  btnsConfig
 }) => {
   return (
     <article className={styles.wordcard}>
@@ -50,16 +49,22 @@ const BookWordCard = ({
           <p dangerouslySetInnerHTML={createMarkup(textExampleTranslate)}></p>
           {isAuth && (
             <div className={styles["wordcard__btns-container"]}>
-              <button
-                className={
-                  userWord?.difficulty
-                    ? `${styles.inactive} ${styles["wordcard__btn"]}`
-                    : styles["wordcard__btn"]
-                }
-                onClick={() => {addWordStatus(id, 'difficult')}}
-              >
-                Отметить как сложное
-              </button>
+              
+              {btnsConfig.map((btnConfig, index) => (
+                <button
+                  key={index}
+                  className={
+                    btnConfig.isActive
+                      ? styles["wordcard__btn"]
+                      : `${styles.inactive} ${styles["wordcard__btn"]}`
+                  }
+                  onClick={() => {
+                    btnConfig.onClick(id)
+                  }}
+                >
+                  {btnConfig.text}
+                </button>
+              ))}
             </div>
           )}
         </div>

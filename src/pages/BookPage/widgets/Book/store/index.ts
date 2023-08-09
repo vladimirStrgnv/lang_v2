@@ -19,7 +19,7 @@ function reducer(state, action) {
     case "CHANGE_SECTION":
       return { ...state, section: action.value, page: 0 };
     case "CHANGE_WORDS":
-      return { ...state, words: action.value, curentWord:  action.value[0]};
+      return { ...state, words: action.value.words, curentWord:  action.value.words[0]};
     case "CHANGE_PAGE":
       return { ...state, page:  action.value};
     case "CHANGE_WORD":

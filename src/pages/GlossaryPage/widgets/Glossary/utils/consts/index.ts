@@ -42,14 +42,17 @@ export const filterBtnsData = [
     {
         title: 'Изучаемые',
         abbreviation: 'И',
+        filter: 'studied'
     },
     {
         title: 'Сложные',
         abbreviation: 'С',
+        filter: 'difficult'
     },
     {
-        title: 'Изученные',
+        title: 'Выученные',
         abbreviation: 'И',
+        filter: 'learned'
     },
 ]
 

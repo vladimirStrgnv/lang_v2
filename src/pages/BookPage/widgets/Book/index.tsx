@@ -96,14 +96,13 @@ const Book = () => {
                   textMeaning={curentWord.textMeaning}
                   wordTranslate={curentWord.wordTranslate}
                   textMeaningTranslate={curentWord.textMeaningTranslate}
-                  userWord={curentWord.userWord}
                   textExample={curentWord.textExample}
                   textExampleTranslate={curentWord.textExampleTranslate}
                   isAuth={auth}
                   transcription={curentWord.transcription}
                   audio={curentWord.audio}
-                  addWordStatus={addWordStatus}
-                ></BookWordCard>
+                  btnsConfig={[{text: 'удалить из раздела', onclick: console.log(1), isActive: true}]}
+                  ></BookWordCard>
               )}
             </div>
           </div>

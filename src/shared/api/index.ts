@@ -12,7 +12,6 @@ class Api {
   constructor(auth) {
     this.baseUrl = "http://localhost:2000/";
     this.state = auth;
-    console.log(store.getState())
     this.token = '';
     this.userId = '';
     this.refreshToken = '';
@@ -76,10 +75,10 @@ class Api {
     }
   };
 
-  getAggregatedWords = async (section, page, wordsPerPage = 20) => {
+  getAggregatedWords = async (section, page, wordsPerPage = 20, filterParams='') => {
     try {
-      const filter = `%7B%22%24and%22%3A%5B%7B%22userWord.difficulty%22%3A%22difficult%22%7D%5D%7D`;
-      const response = await fetch(`${this.baseUrl}users/${this.state.userId}/aggregatedWords?group=${section}&page=${page}&wordsPerPage=${wordsPerPage}&filter=`, {
+      const filter = filterParams?`%7B%22%24and%22%3A%5B%7B%22userWord.difficulty%22%3A%22${filterParams}%22%7D%5D%7D`: '';
+      const response = await fetch(`${this.baseUrl}users/${this.state.userId}/aggregatedWords?group=${section}&page=${page}&wordsPerPage=${wordsPerPage}&filter=${filter}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${this.state.token}`,
@@ -88,9 +87,13 @@ class Api {
         },
       });
       const data = await response.json();
-      return data[0].paginatedResults.map(word => {return {...word, id: word._id}} );
-    } catch (e) {
-      console.log(e);
+      const result = {
+        count: data[0].totalCount[0].count,
+        words: data[0].paginatedResults.map(word => {return {...word, id: word._id}})
+      }
+      return result;
+    } catch (err) {
+      console.log(err);
     }
   }
 
@@ -108,9 +111,19 @@ class Api {
     return data;
   }
 
+  refreshTokens = async () => {
+    const response = await fetch(`${this.baseUrl}users/${this.state.userId} `, {
+      method: 'GET',
+      headers: {
+        'Authorization': `Bearer ${this.state.refreshToken}`,
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+    });
+    const data = await response.json();
+    return data;
+  }
 
 }
-
-  
-  
+ 
 export default Api;

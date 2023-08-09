@@ -1,15 +1,16 @@
 import styles from "./index.module.scss";
 import SvgBottom from "./assets/SvgBottom";
-import { btnsData, filterBtnsData } from "./utils/consts";
-import SectionLevelBtn from "../../../../shared/components/SectionLevelBtn";
+import { filterBtnsData, btnsData } from "./utils/consts";
 import useCreateStore from "./store/index";
-import BookWordItem from "../../../../shared/components/BookWordItem";
-import BookWordCard from "../../../../shared/components/BookWordCard";
 import Api from "../../../../shared/api";
-import StatusFilterBtn from "./components/StatusFilterBtn";
 import { useEffect, useState } from 'react';
 import { useAppSelector } from "../../../../shared/stores/types";
 import { Pagination } from "@mui/material";
+import SectionLevelBtnList from "./components/SectionLevelBtnList";
+import GlossaryPage from "./components/GlossaryPage";
+import WordsNotFound from "./components/WordsNotFound";
+import StatusFilterBtnList from "./components/StatusFilterBtnList";
+import WordCardBtn from "./components/WordCardBtn";
 
 const Glossary = () => {
   const {
@@ -17,34 +18,34 @@ const Glossary = () => {
     wordsDispatch,
     pageDispatch,
     wordDispatch,
-    wordDifficultyDispatch,
+    wordDeleteDispatch,
+    filterDispatch,
     state,
   } = useCreateStore();
-  const { page, words, section, curentWord } = state;
+  const { page, words, section, curentWord, currentFilter, totalCount } = state;
   const auth = useAppSelector((store) => store.signIn.authData);
   const [loadStatus, setLoadStatus] = useState(false);
-
   useEffect(() => {
     const fetch = async () => {
       const api = new Api(auth);
-      const wordsRequest = auth
-        ? await api.getAggregatedWords(section, page)
-        : await api.getWords(section, page);
+      const wordsRequest = await api.getAggregatedWords(section, page, 20, currentFilter);
+      if (wordsRequest) {
+        wordsDispatch(wordsRequest);
+        setLoadStatus(true);
+      } else {
+        setLoadStatus(false);
+      }
 
-      wordsDispatch(wordsRequest);
-      setLoadStatus(true);
     };
     fetch();
-  }, [section, page]);
+  }, [section, page, currentFilter]);
 
   const changepage = (e, page) => {
     pageDispatch(page - 1);
   };
 
-  const addWordStatus = (id, status) => {
-    const api = new Api(auth);
-    api.createUserWord(id, status);
-    wordDifficultyDispatch(id, status);
+  const deleteWord = (id) => {
+    wordDeleteDispatch(id);
   };
 
   return (
@@ -57,77 +58,44 @@ const Glossary = () => {
               Уровни сложности слов
             </h2>
             <div className={styles["glossary__navbtns-wrapper"]}>
-              {btnsData.map((btnData, index) => (
-                <SectionLevelBtn
-                  key={index}
-                  setBookSection={sectionDispatch}
-                  section={btnData.section}
-                  isCurrentSection={btnData.section === section}
-                  title={btnData.title}
-                  amount={btnData.amount}
-                  level={btnData.level}
-                ></SectionLevelBtn>
-              ))}
+              <SectionLevelBtnList
+                btnsData={btnsData}
+                currentSection={section}
+                sectionDispatch={sectionDispatch}
+              ></SectionLevelBtnList>
             </div>
           </nav>
 
           <div className={styles["glossary__status-filter-btns-container"]}>
-          {filterBtnsData.map((btnData, index) => (
-                <StatusFilterBtn
-                  isCurrentFilter={false}
-                  title={btnData.title}
-                  abbreviation={btnData.abbreviation}
-                  setGlossaryFilter={()=>{}}
-                ></StatusFilterBtn>
-              ))}
+            <StatusFilterBtnList
+              filterBtnsData={filterBtnsData}
+              currentFilter={currentFilter}
+              filterDispatch={filterDispatch}
+            ></StatusFilterBtnList>
           </div>
+          {loadStatus ? (
+            <>
+              <GlossaryPage
+                words={words}
+                curentWordId={curentWord.id}
+                wordDispatch={wordDispatch}
+                curentWord={curentWord}
+                auth={auth}
+                btnsConfig={[{text: 'удалить из раздела', onClick: deleteWord, isActive: true}]}
+              ></GlossaryPage>
+              <div className={styles.glossary__pagination}>
+              <Pagination
+                count={Math.ceil(totalCount / 20)}
+                page={page + 1}
+                onChange={changepage}
+                color="primary"
+              />
+            </div>
+            </>
+          ) : (
+            <WordsNotFound />
+          )}
 
-          <div className={styles["glossary__page"]}>
-            <div className={styles["glossary__page-wrapper"]}>
-              <h3 className={styles["glossary__page-title"]}>Слова</h3>
-              <ul className={styles["glossary__page-words-list"]}>
-                {words.map((word) => (
-                  <li key={word.id}>
-                    <BookWordItem
-                      id={word.id}
-                      word={word.word}
-                      translate={word.wordTranslate}
-                      difficulty={word.userWord?.difficulty}
-                      isChoosen={curentWord.id === word.id}
-                      onClick={wordDispatch}
-                    ></BookWordItem>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className={styles["glossary__card-wrapper"]}>
-              {loadStatus && (
-                <BookWordCard
-                  id={curentWord.id}
-                  image={curentWord.image}
-                  word={curentWord.word}
-                  textMeaning={curentWord.textMeaning}
-                  wordTranslate={curentWord.wordTranslate}
-                  textMeaningTranslate={curentWord.textMeaningTranslate}
-                  userWord={curentWord.userWord}
-                  textExample={curentWord.textExample}
-                  textExampleTranslate={curentWord.textExampleTranslate}
-                  isAuth={auth}
-                  transcription={curentWord.transcription}
-                  audio={curentWord.audio}
-                  addWordStatus={addWordStatus}
-                ></BookWordCard>
-              )}
-            </div>
-          </div>
-          <div className={styles.glossary__pagination}>
-            <Pagination
-              count={30}
-              page={page + 1}
-              onChange={changepage}
-              color="primary"
-            />
-          </div>
         </div>
       </div>
     </section>

@@ -5,6 +5,7 @@ const StatusFilterBtn = ({
   title,
   abbreviation,
   setGlossaryFilter,
+  filter
 }) => {
   return (
     <div
@@ -14,13 +15,12 @@ const StatusFilterBtn = ({
           : `${styles["filter-btn"]}`
       }
       onClick={() => {
-        setGlossaryFilter("");
+        setGlossaryFilter(filter);
       }}
     >
       <p className={styles["filter-btn__abbreviation"]}>{abbreviation}</p>
       <div className={styles["filter-btn__info"]}>
         <p className={styles["filter-btn__title"]}>{title}</p>
-        <p className={styles["filter-btn__words-info"]}>Слов: {0}</p>
       </div>
       <div className={styles["filter-btn__circle"]}></div>
     </div>
