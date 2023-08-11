@@ -1,11 +1,11 @@
 import styles from "./index.module.scss";
-import NavItemsValue from "../../../../utils/consts";
 import NavItem from "../NavItem";
 import NavButton from "../NavButton";
 import { useAppSelector } from "../../../../../../stores/types";
 import { useDispatch } from "react-redux";
 import { setAuthData } from "../../../../../../../pages/SignIn/widgets/SignInForm/store";
-
+import { useState} from 'react';
+import { NavLink  } from 'react-router-dom';
 const Nav = () => {
   const { authData } = useAppSelector((store) => store.signIn);
   const dicpatch = useDispatch();
@@ -32,8 +32,13 @@ const Nav = () => {
         <li className={styles["nav__list-item"]}>
           <NavItem path="/stats" text="Статистика"></NavItem>
         </li>
-        <li className={styles["nav__list-item"]}>
+        <li
+          className={styles["nav__list-item"]}
+          onMouseEnter={() => setGameListVision(true)}
+          
+        >
           <NavItem path="/games" text="Игры"></NavItem>
+
         </li>
       </ul>
       {authData ? (

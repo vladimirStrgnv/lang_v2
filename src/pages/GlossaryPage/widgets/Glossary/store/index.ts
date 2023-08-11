@@ -19,7 +19,6 @@ const initialState: GlossaryState = {
 }
 
 function reducer(state, action) {
-  console.log(action.value)
   switch (action.type) {
     case "CHANGE_SECTION":
       return { ...state, section: action.value, page: 0 };
@@ -30,9 +29,10 @@ function reducer(state, action) {
     case "CHANGE_WORD":
       return { ...state, curentWord: state.words.find(word => word.id === action.value) };
     case "DELETE_WORD":
-      return { ...state, words: state.words.filter(word => word.id !== action.value), curentWord:  state.words[0] };
+      const newArrayWords = state.words.filter(word => word.id !== action.value);
+      return { ...state, words: newArrayWords, curentWord:  newArrayWords[0] };
     case "CHANGE_FILTER":
-      return { ...state, words: action.value.words, curentWord:  action.value.words[0], totalCount: action.value.count};
+      return { ...state, currentFilter: action.value};
     default:
       return state;
   }

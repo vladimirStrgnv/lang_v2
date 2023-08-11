@@ -29,7 +29,6 @@ const Book = () => {
       const wordsRequest = auth
         ? await api.getAggregatedWords(section, page)
         : await api.getWords(section, page);
-      console.log(wordsRequest);
       wordsDispatch(wordsRequest);
       setLoadStatus(true);
     };
@@ -40,12 +39,12 @@ const Book = () => {
     pageDispatch(page - 1);
   };
 
-  const addWordStatus = (id, status) => {
+  function addWordStatus (id, status)  {
     const api = new Api(auth);
     api.createUserWord(id, status);
     wordDifficultyDispatch(id, status);
   };
-
+  
   return (
     <section className={styles.book}>
       <SvgBottom />
@@ -101,7 +100,10 @@ const Book = () => {
                   isAuth={auth}
                   transcription={curentWord.transcription}
                   audio={curentWord.audio}
-                  btnsConfig={[{text: 'удалить из раздела', onclick: console.log(1), isActive: true}]}
+                  btnsConfig={[
+                    {text: 'добавить в сложные', onClick: addWordStatus.bind(null, curentWord.id, 'difficult'), isActive: !curentWord.userWord},
+                    {text: 'добавить в изучаемые', onClick: addWordStatus.bind(null, curentWord.id, 'studied'), isActive: !curentWord.userWord}
+                  ]}
                   ></BookWordCard>
               )}
             </div>

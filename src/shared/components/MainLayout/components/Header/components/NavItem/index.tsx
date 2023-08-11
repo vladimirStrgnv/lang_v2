@@ -6,7 +6,7 @@ const NavItem = (props) => {
     <NavLink
       to={props.path}
       className={({ isActive, isPending }) =>
-        isActive ? styles['nav__link-active'] : '' 
+        isActive ? `${styles['nav__link-active']} ${styles['nav__link']}` : styles['nav__link']
       }
     >
       {props.text}

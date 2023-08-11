@@ -59,7 +59,7 @@ const BookWordCard = ({
                       : `${styles.inactive} ${styles["wordcard__btn"]}`
                   }
                   onClick={() => {
-                    btnConfig.onClick(id)
+                    btnConfig.onClick()
                   }}
                 >
                   {btnConfig.text}

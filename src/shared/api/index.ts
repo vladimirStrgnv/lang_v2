@@ -12,11 +12,6 @@ class Api {
   constructor(auth) {
     this.baseUrl = "http://localhost:2000/";
     this.state = auth;
-    this.token = '';
-    this.userId = '';
-    this.refreshToken = '';
-
-
   }
 
   createUser = async (
@@ -93,7 +88,11 @@ class Api {
       }
       return result;
     } catch (err) {
-      console.log(err);
+      const result = {
+        count: 0,
+        words: []
+      }
+      return result;    
     }
   }
 
@@ -111,17 +110,16 @@ class Api {
     return data;
   }
 
-  refreshTokens = async () => {
-    const response = await fetch(`${this.baseUrl}users/${this.state.userId} `, {
-      method: 'GET',
+  deleteUserWord = async (wordId) => {
+    const response = await fetch(`${this.baseUrl}users/${this.state.userId}/words/${wordId}`, {
+      method: 'DELETE',
       headers: {
-        'Authorization': `Bearer ${this.state.refreshToken}`,
+        'Authorization': `Bearer ${this.state.token}`,
         'Accept': 'application/json',
         'Content-Type': 'application/json',
       },
     });
-    const data = await response.json();
-    return data;
+    return response;
   }
 
 }

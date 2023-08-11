@@ -2,8 +2,6 @@ import { configureStore } from '@reduxjs/toolkit';
 import signUpReducer from '../../pages/SignUp/widgets/SignUpForm/store/index';
 import signInReducer from '../../pages/SignIn/widgets/SignInForm/store/index';
 
-
-
 const store = configureStore({
   reducer: {
     signUp: signUpReducer,

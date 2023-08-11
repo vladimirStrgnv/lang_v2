@@ -10,7 +10,6 @@ import SectionLevelBtnList from "./components/SectionLevelBtnList";
 import GlossaryPage from "./components/GlossaryPage";
 import WordsNotFound from "./components/WordsNotFound";
 import StatusFilterBtnList from "./components/StatusFilterBtnList";
-import WordCardBtn from "./components/WordCardBtn";
 
 const Glossary = () => {
   const {
@@ -29,7 +28,7 @@ const Glossary = () => {
     const fetch = async () => {
       const api = new Api(auth);
       const wordsRequest = await api.getAggregatedWords(section, page, 20, currentFilter);
-      if (wordsRequest) {
+      if (wordsRequest.words.length) {
         wordsDispatch(wordsRequest);
         setLoadStatus(true);
       } else {
@@ -44,7 +43,9 @@ const Glossary = () => {
     pageDispatch(page - 1);
   };
 
-  const deleteWord = (id) => {
+  function deleteWord (id)  {
+    const api = new Api(auth);
+    api.deleteUserWord(id);
     wordDeleteDispatch(id);
   };
 
@@ -73,7 +74,7 @@ const Glossary = () => {
               filterDispatch={filterDispatch}
             ></StatusFilterBtnList>
           </div>
-          {loadStatus ? (
+          {loadStatus && words.length ? (
             <>
               <GlossaryPage
                 words={words}
@@ -81,7 +82,7 @@ const Glossary = () => {
                 wordDispatch={wordDispatch}
                 curentWord={curentWord}
                 auth={auth}
-                btnsConfig={[{text: 'удалить из раздела', onClick: deleteWord, isActive: true}]}
+                btnsConfig={[{text: 'удалить из раздела', onClick: deleteWord.bind(null,curentWord.id), isActive: true}]}
               ></GlossaryPage>
               <div className={styles.glossary__pagination}>
               <Pagination
