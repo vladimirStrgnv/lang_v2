@@ -9,6 +9,7 @@ import { NavLink  } from 'react-router-dom';
 const Nav = () => {
   const { authData } = useAppSelector((store) => store.signIn);
   const dicpatch = useDispatch();
+  const [isGameListOpen, setGameListVision] = useState(false);
 
   const logOut = () => {
     localStorage.removeItem("authData");
@@ -38,7 +39,25 @@ const Nav = () => {
           
         >
           <NavItem path="/games" text="Игры"></NavItem>
-
+          <p>
+            <i className={`${styles.arrow} ${styles.down}`}></i>
+          </p>
+          {isGameListOpen && (
+            <ul className={styles["nav__game-list"]} onMouseLeave={() => console.log(1)}>
+              <li className={styles["nav__game-list-item"]}>
+                <NavLink to="audiocall">audiocall</NavLink>
+              </li>
+              <li className={styles["nav__game-list-item"]}>
+                <NavLink to="savanaah">savanaah</NavLink>
+              </li>
+              <li className={styles["nav__game-list-item"]}>
+                <NavLink to="savanaah">savanaah</NavLink>
+              </li>
+              <li className={styles["nav__game-list-item"]}>
+                <NavLink to="savanaah">savanaah</NavLink>
+              </li>
+            </ul>
+          )}
         </li>
       </ul>
       {authData ? (
