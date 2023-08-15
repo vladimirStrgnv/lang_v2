@@ -34,6 +34,10 @@ module.exports = {
         ]
       },
       {
+        test: /\.mp3$/,
+        loader: 'file-loader'
+      },
+      {
         test: /\.(c|sa|sc)ss$/i,
         use: [
           "style-loader", 

@@ -1,0 +1,17 @@
+.volume-btn {
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid white;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.3s;
+    }
+
+    &-img {
+        height: 100%;
+        padding: 0.5rem;
+        fill: #fff;
+
+    }
+}

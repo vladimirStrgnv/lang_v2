@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../shared/components/MainLayout";
 import SignUp from "../pages/SignUp/index";
 import SignIn from "../pages/SignIn";
-import SavannahPage from "../pages/SavannahPage";
+import AudiocallPage from "../pages/AudiocallPage";
 
  const BrowserRouter = createBrowserRouter([
   {
@@ -38,12 +38,21 @@ import SavannahPage from "../pages/SavannahPage";
     )
   },
   {
-    path: '/savannah',
+    path: '/audiocall',
     element: (
-      <SavannahPage />
-    )
+      <AudiocallPage />
+    ),
+    children: [
+      {
+        index: true,
+        lazy: () => import("../pages/AudiocallPage/widgets/StartPage/index"),
+      },
+      {
+        path: 'play',
+        lazy: () => import("../pages/AudiocallPage/widgets/GameDisplay"),
+      }
+    ]
   }
 ]);
-
 
 export default BrowserRouter;

@@ -32,10 +32,10 @@ const Nav = () => {
           <NavItem path="/games" text="Игры"></NavItem>
           <ul className={styles["nav__game-list"]}>
             <li className={styles["nav__game-list-item"]}>
-              <NavItem path="/savannah" text="Саванна"></NavItem>
+              <NavItem path="/audiocall" text="Аудиовызов"></NavItem>
             </li>
             <li className={styles["nav__game-list-item"]}>
-              <NavItem path="/audiocall" text="Аудивызов "></NavItem>
+              <NavItem path="/sprint" text="Спринт "></NavItem>
             </li>
           </ul>
         </li>

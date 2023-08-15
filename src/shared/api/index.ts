@@ -1,5 +1,4 @@
-import { IUser } from "./types";
-import store from "../stores";
+import {  } from "./types";
 
 class Api {
   baseUrl: string;

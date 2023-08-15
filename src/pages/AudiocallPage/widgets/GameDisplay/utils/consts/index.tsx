@@ -1,0 +1,1 @@
+export const INCORRECTS_ANSWERS_COUNT = 4;
