@@ -50,6 +50,10 @@ import AudiocallPage from "../pages/AudiocallPage";
       {
         path: 'play',
         lazy: () => import("../pages/AudiocallPage/widgets/GameDisplay"),
+      },
+      {
+        path: 'results',
+        lazy: () => import("../pages/AudiocallPage/widgets/Results"),
       }
     ]
   }

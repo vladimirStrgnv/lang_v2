@@ -5,19 +5,21 @@ import { INCORRECTS_ANSWERS_COUNT } from "../../utils/consts";
 export function audiocallReducer(state: IAudiocallState, action) {
   switch (action.type) {
     case "SEND_ANSWER":
-      console.log(state.gameHistory);
       return {
         ...state,
-        isAnswerSended: true,
-        gameHistory: [
+        gameHistory: [          
           ...state.gameHistory,
-          state.correctWord.id === action.value,
+          {
+          word: state.correctWord,
+          result: state.correctWord.id === action.value.id,
+          }
         ],
+        choosenWord: action.value
       };
     case "SKIP_ANSWER":
       return {
         ...state,
-        isAnswerSended: true,
+        choosenWord: {},
         gameHistory: [
           ...state.gameHistory,
           action.value
@@ -26,17 +28,16 @@ export function audiocallReducer(state: IAudiocallState, action) {
     case "GET_NEXT_STEP":
       return {
         ...state,
-        currentStep: action.value,
-        correctWord: state.words[action.value],
+        currentStep: state.currentStep + action.value,
+        correctWord: state.words[state.currentStep + action.value],
         answerOptions: Randomizers.shuffleArr([
-          state.words[action.value],
+          state.words[state.currentStep + action.value],
           ...Randomizers.genRandomElements(
-            state.words,
+            state.words.filter(word => word.id !== state.words[state.currentStep + action.value].id),
             INCORRECTS_ANSWERS_COUNT,
-            action.value
           ),
         ]),
-        isAnswerSended: false,
+        choosenWord: null
       };
     default:
       return state;

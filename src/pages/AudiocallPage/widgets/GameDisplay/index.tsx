@@ -1,11 +1,14 @@
 import {useLocation} from 'react-router-dom';
-import VolumeBtn from './components/VolumeBtn';
+import SoundBtn from '../../../../shared/components/SoundBtn';
 import styles from './index.module.scss';
 import { useReducer } from 'react';
 import { audiocallReducer, answerAction, getNextStepAction, skipAnswerAction } from './store/reducer';
 import {initAudicallState } from './store/initState';
 import OptionBtn from './components/OptionBtn';
-import { playAudio } from '../../../../shared/utils/services/audio';
+import { playWord, playCorrectSound, playIncorrectSound } from '../../../../shared/utils/services/audio';
+import { STEP} from './utils/consts';
+import { Navigate } from "react-router-dom";
+import AnswerCard from './components/AnswerCard';
 
 const GameDisplay = () => {
   const location = useLocation();
@@ -13,35 +16,66 @@ const GameDisplay = () => {
 
   function sendCorrectAnswer(id) {
     dispatch(answerAction(id));
-    playAudio('files/correct.mp3')
+    playCorrectSound();
   }
-  console.log(state.correctWord)
+
+  function sendIncorrectAnswer(id) {
+    dispatch(answerAction(id));
+    playIncorrectSound();
+  }
+  // state.gameSteps === state.currentStep
   return (
     <div className={styles["game-display"]}>
+      {true && (
+        <Navigate to="/audiocall/results" state={{words:location.state.words}} />
+      )}
       <div className={styles["game-display__wrapper"]}>
         <div className={styles["game-display__inner"]}>
-          <VolumeBtn onClick={playAudio.bind(null, `${state.correctWord.audio}`)}></VolumeBtn>
+          {state.choosenWord ? (
+            <AnswerCard
+              image={state.correctWord.image}
+              word={state.correctWord.word}
+              onClick={playWord.bind(null, `${state.correctWord.audio}`)}
+            ></AnswerCard>
+          ) : (
+            <div className={styles["game-display__play-word-btn"]}>
+              <SoundBtn
+                onClick={playWord.bind(null, `${state.correctWord.audio}`)}
+              ></SoundBtn>
+            </div>
+          )}
           <ul className={styles["game-display__answer-options"]}>
-            {state.answerOptions.map((word, index) => {
+            {state.answerOptions.map((word) => {
               return (
-                <li key={index}>
+                <li key={word.id}>
                   <OptionBtn
                     wordId={word.id}
-                    isAnswerSended={state.isAnswerSended}
+                    isChoosenWord={state.choosenWord?.id === word.id}
+                    choosenWord={state.choosenWord}
                     correctWordId={state.correctWord.id}
                     word={word.wordTranslate}
-                    onClick={sendCorrectAnswer.bind(null, word.id)}
+                    onClick={
+                      word?.id === state.correctWord.id
+                        ? sendCorrectAnswer.bind(null, word)
+                        : sendIncorrectAnswer.bind(null, word)
+                    }
                   ></OptionBtn>
                 </li>
               );
             })}
           </ul>
-          {state.isAnswerSended ? (
-            <button onClick={()=> dispatch(getNextStepAction( state.currentStep + 1))} className={styles["game-display__get-answer-btn"]}>
+          {state.choosenWord ? (
+            <button
+              onClick={() => dispatch(getNextStepAction(STEP))}
+              className={styles["game-display__get-answer-btn"]}
+            >
               Дальше
             </button>
           ) : (
-            <button className={styles["game-display__get-answer-btn"]} onClick={() => dispatch(skipAnswerAction(false))}>
+            <button
+              className={styles["game-display__get-answer-btn"]}
+              onClick={() => dispatch(skipAnswerAction(false))}
+            >
               Не знаю
             </button>
           )}

@@ -46,7 +46,7 @@ const SignInForm = () => {
 
   return (
     <form className={styles["signin-form"]} onSubmit={sendRequest}>
-      <PopUp text={popUpOption.text} isOpen={popUpOption.isActive} setActive={setPopUpActive}></PopUp>
+      <PopUp children={popUpOption.text} isOpen={popUpOption.isActive} setActive={setPopUpActive}></PopUp>
       <h2 className={styles["signin-form__title"]}>Уже с нами?</h2>
       <h3 className={styles["signin-form__subtitle"]}>
         Войди в свой аккаунт Lang!

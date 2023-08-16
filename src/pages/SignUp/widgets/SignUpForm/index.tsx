@@ -39,7 +39,7 @@ const SignUpForm = () => {
   
   return (
     <form className={styles['signup-form']} onSubmit={sendRequest}>
-      <PopUp text={popUpOption.text} isOpen={popUpOption.isActive} setActive={setPopUpActive}></PopUp>
+      <PopUp children={popUpOption.text} isOpen={popUpOption.isActive} setActive={setPopUpActive}></PopUp>
       <h2 className={styles['signup-form__title']}>Зарегистрируйся в Ulearning</h2>
       <h3 className={styles['signup-form__subtitle']}>и изучай английский, используя все возможности приложения!</h3>
       <div className={styles['signup-form__container-input']}>

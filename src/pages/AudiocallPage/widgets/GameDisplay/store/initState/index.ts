@@ -7,9 +7,9 @@ export interface IAudiocallState {
     words: IWord[];
     answerOptions: IWord[];
     correctWord: IWord;
-    isAnswerSended: boolean;
     gameSteps:  number;
-    gameHistory: boolean[]
+    gameHistory: boolean[];
+    choosenWord: IWord
 }
 
 export function initAudicallState (words) {
@@ -18,10 +18,10 @@ export function initAudicallState (words) {
         words: Randomizers.shuffleArr(words),
         currentStep: 0,
         correctWord : words[0],
-        answerOptions : Randomizers.shuffleArr([words[0], ...Randomizers.genRandomElements(words, INCORRECTS_ANSWERS_COUNT, 0)]),
-        isAnswerSended : false,
+        answerOptions : Randomizers.shuffleArr([words[0], ...Randomizers.genRandomElements(words.filter(word => word.id !== words[0].id), INCORRECTS_ANSWERS_COUNT)]),
         gameSteps : words.length - 1,
-        gameHistory: []
+        gameHistory: [],
+        choosenWord: null
     }
 
 }

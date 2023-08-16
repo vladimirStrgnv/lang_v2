@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { Randomizers } from "../../../../shared/utils/services/randomizers";
 import { useNavigate } from 'react-router-dom';
 import Api from '../../../../shared/api';
-import { NavLink } from 'react-router-dom';
   
 const StartPage = () => {
   const [{section, page}, setWordsOptions] = useState({section: null, page: null});

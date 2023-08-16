@@ -1,14 +1,15 @@
 import styles from './index.module.scss';
 
-const OptionBtn = ({wordId, isAnswerSended, correctWordId, word, onClick}) => {
-    console.log('render')
+const OptionBtn = ({wordId, isChoosenWord, correctWordId, word, onClick, choosenWord}) => {
   return (
     <button
       className={
-        isAnswerSended && wordId === correctWordId
+         (wordId === correctWordId && choosenWord != null)
           ? `${styles["game-display__answer-options-item"]} ${styles["game-display__answer-options-item--correct"]}`
-          : isAnswerSended && wordId !== correctWordId
+          : isChoosenWord && wordId !== correctWordId
           ? `${styles["game-display__answer-options-item"]} ${styles["game-display__answer-options-item--incorrect"]}`
+          : choosenWord != null && wordId !== correctWordId
+          ? `${styles["game-display__answer-options-item"]} ${styles["game-display__answer-options-item--inactive"]}`
           : styles["game-display__answer-options-item"]
       }
       onClick={() => onClick()}

@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 
-const VolumeBtn = ({ onClick }) => {
+const SoundBtn = ({ onClick }) => {
   return (
     <button onClick={onClick} className={`${styles["volume-btn"]}`}>
       <svg
@@ -14,4 +14,4 @@ const VolumeBtn = ({ onClick }) => {
   );
 };
 
-export default VolumeBtn;
+export default SoundBtn;

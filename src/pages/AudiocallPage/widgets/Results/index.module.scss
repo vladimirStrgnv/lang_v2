@@ -1,0 +1,54 @@
+.audiocall-results {
+    width: 350px;
+    height: 400px;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.233);
+    background-color: rgba(116, 23, 23, 0.473);
+    border-radius: 20px;
+
+    &__wrapper {
+        margin: 10px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+        font-family: 'Gilroy-Bold';
+        font-size: 24px;
+        color: rgb(255, 255, 255);
+    }
+
+    &__statistic-title {
+        font-family: 'Gilroy-Regular';
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        text-align: left;
+        margin-bottom: 7px;
+        
+    }
+
+    &__option-btns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 160px;
+
+        &-item {
+            padding: 10px 10px;
+            background-color: #FFC53D;
+            box-shadow: inset 0px -1px 1px rgba(255, 255, 255, 0.28), inset 0px 1px 2px rgba(0, 0, 0, 0.25);
+            font-size: 14px;
+            color: rgb(80, 88, 95);
+            font-family: "Gilroy-Bold";
+            border-radius: 20px;
+            &:hover {
+                color: rgb(238, 230, 230);
+                transition: 0.4s;
+            }
+        }
+    }
+
+}

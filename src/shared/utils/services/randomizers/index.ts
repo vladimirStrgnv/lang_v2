@@ -16,18 +16,15 @@ export class Randomizers {
     return arr;
   };
 
-  static genRandomElements = (list, count, exception) => {
+  static genRandomElements = (list, count) => {
     let arrayCopy = [...list];
     let newArray = [];
     for (let i = 0; newArray.length < count; i++) {
       let randNum = Math.floor(Math.random() * arrayCopy.length);
-      if (exception === randNum) {
-        continue;
-      }
+ 
       let splicedItem = arrayCopy.splice(randNum, 1)[0];
       newArray.push(splicedItem);
     }
     return newArray;
   };
-
 }
