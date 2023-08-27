@@ -23,11 +23,22 @@ const GameDisplay = () => {
     dispatch(answerAction(id));
     playIncorrectSound();
   }
-  // state.gameSteps === state.currentStep
+
   return (
     <div className={styles["game-display"]}>
-      {true && (
-        <Navigate to="/audiocall/results" state={{words:location.state.words}} />
+      {state.gameIsEnd && (
+        <Navigate
+          to="/audiocall/results"
+          state={{
+            gameResults: {
+              gameHistory: state.gameHistory,
+              combo: state.maxCombo,
+              incorrectAnswers: state.incorrectAnswers,
+              correctAnswers: state.correctAnswers,
+              words: state.words
+            },
+          }}
+        />
       )}
       <div className={styles["game-display__wrapper"]}>
         <div className={styles["game-display__inner"]}>

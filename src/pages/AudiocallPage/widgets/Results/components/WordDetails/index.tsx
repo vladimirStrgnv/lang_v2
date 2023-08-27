@@ -1,16 +1,28 @@
 import styles from './index.module.scss';
-import SoundBtn from '../../../../../../shared/components/SoundBtn';
+import { playWord } from '../../../../../../shared/utils/services/audio';
 
-const WordDetails = () => {
-  return <div className={styles["word-details"]}>
-    <div className={`${styles["word-details__item"]}`}>1</div>
-    <div className={`${styles["word-details__item"]}`}>Жопа</div>
-    <div className={`${styles["word-details__item"]}`}>Jopa</div>
-    <div className={`${styles["word-details__item"]}`}>ddddd</div>
-    <div className={`${styles["word-details__item"]}`}><SoundBtn onClick={()=> {1}} /></div>
-    <div className={`${styles["word-details__item"]}`}>result</div>
-
-  </div>;
+const WordDetails = ({index, word, wordTranslate, transcription, audio, isCorrect}) => {
+  return (
+    <div className={styles["word-details"]}>
+      <div className={`${styles["word-details__item"]} `}>{index}</div>
+      <div className={`${styles["word-details__item"]} `}>{word}</div>
+      <div className={`${styles["word-details__item"]} `}>{wordTranslate}</div>
+      <div className={`${styles["word-details__item"]}`}>{transcription}</div>
+      <div
+        className={`${styles["word-details__item"]} ${styles["word-details__audio"]}`}
+        onClick={() => {
+          playWord(audio);
+        }}
+      ></div>
+      <div
+        className={
+          isCorrect
+            ? `${styles["word-details__item"]} ${styles["word-details__correct"]}`
+            : `${styles["word-details__item"]} ${styles["word-details__incorrect"]}`
+        }
+      ></div>
+    </div>
+  );
 }
 
 export default WordDetails;

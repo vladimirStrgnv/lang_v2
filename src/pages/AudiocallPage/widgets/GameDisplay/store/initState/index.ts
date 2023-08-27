@@ -9,7 +9,13 @@ export interface IAudiocallState {
     correctWord: IWord;
     gameSteps:  number;
     gameHistory: boolean[];
-    choosenWord: IWord
+    choosenWord: IWord;
+    gameIsEnd: boolean;
+    correctAnswers: number;
+    incorrectAnswers: number;
+    maxCombo: number;
+    currentCombo: number;
+
 }
 
 export function initAudicallState (words) {
@@ -21,7 +27,12 @@ export function initAudicallState (words) {
         answerOptions : Randomizers.shuffleArr([words[0], ...Randomizers.genRandomElements(words.filter(word => word.id !== words[0].id), INCORRECTS_ANSWERS_COUNT)]),
         gameSteps : words.length - 1,
         gameHistory: [],
-        choosenWord: null
+        choosenWord: null,
+        gameIsEnd: false,
+        correctAnswers: 0,
+        incorrectAnswers: 0,
+        currentCombo: 0,
+        maxCombo: 0
     }
 
 }

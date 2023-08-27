@@ -1,0 +1,7 @@
+.book {
+    &__page-words-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 65px 10px;
+    }
+}

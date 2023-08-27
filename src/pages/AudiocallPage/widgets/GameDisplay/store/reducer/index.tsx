@@ -5,16 +5,24 @@ import { INCORRECTS_ANSWERS_COUNT } from "../../utils/consts";
 export function audiocallReducer(state: IAudiocallState, action) {
   switch (action.type) {
     case "SEND_ANSWER":
+      const isCorrectAnswer = state.correctWord.id === action.value.id;
+      const currentCombo = isCorrectAnswer? state.currentCombo + 1 : 0;
       return {
         ...state,
         gameHistory: [          
           ...state.gameHistory,
           {
+          index: state.currentStep,
           word: state.correctWord,
-          result: state.correctWord.id === action.value.id,
+          isCorrect: isCorrectAnswer,
           }
         ],
-        choosenWord: action.value
+        choosenWord: action.value,
+        currentCombo: currentCombo,
+        maxCombo: currentCombo > state.maxCombo? currentCombo: state.maxCombo ,
+        correctAnswers: isCorrectAnswer? state.correctAnswers + 1 : state.correctAnswers,
+        incorrectAnswers: !isCorrectAnswer? state.incorrectAnswers + 1 : state.incorrectAnswers,
+
       };
     case "SKIP_ANSWER":
       return {
@@ -22,23 +30,38 @@ export function audiocallReducer(state: IAudiocallState, action) {
         choosenWord: {},
         gameHistory: [
           ...state.gameHistory,
-          action.value
+          {
+          index: state.currentStep,
+          word: state.correctWord,
+          isCorrect: action.value,
+          }
         ],
+        currentCombo: 0,
+        incorrectAnswers: state.incorrectAnswers + 1
       };
     case "GET_NEXT_STEP":
-      return {
-        ...state,
-        currentStep: state.currentStep + action.value,
-        correctWord: state.words[state.currentStep + action.value],
-        answerOptions: Randomizers.shuffleArr([
-          state.words[state.currentStep + action.value],
-          ...Randomizers.genRandomElements(
-            state.words.filter(word => word.id !== state.words[state.currentStep + action.value].id),
-            INCORRECTS_ANSWERS_COUNT,
-          ),
-        ]),
-        choosenWord: null
-      };
+      const currentStep = state.currentStep + action.value;
+      if (state.words.length > currentStep) {
+        return {
+          ...state,
+          currentStep: currentStep,
+          correctWord: state.words[currentStep],
+          answerOptions: Randomizers.shuffleArr([
+            state.words[currentStep],
+            ...Randomizers.genRandomElements(
+              state.words.filter(word => word.id !== state.words[currentStep].id),
+              INCORRECTS_ANSWERS_COUNT,
+            ),
+          ]),
+          choosenWord: null
+        };
+      } else {
+        return {
+          ...state,
+          gameIsEnd: true
+        }
+      }
+
     default:
       return state;
   }

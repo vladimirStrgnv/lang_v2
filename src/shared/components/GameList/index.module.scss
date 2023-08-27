@@ -1,0 +1,23 @@
+.games-section-wrapper {
+    &__title{
+        margin-bottom: 20px;
+        display: block;
+        color: #2c2647;
+        font-size: 2rem;
+        font-family: 'Gilroy-Bold';
+    }
+
+    &__subtitle{
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-family: 'Gilroy-Bold';
+        color: #2c2647;
+    }
+}
+
+
+.images-wrapper {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}

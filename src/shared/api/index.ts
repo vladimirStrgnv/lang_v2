@@ -63,64 +63,88 @@ class Api {
         `${this.baseUrl}words/?group=${group}&page=${page}`
       );
       const data = await response.json();
-      return data;
-    } catch (err) {
-      return [];
-    }
-  };
-
-  getAggregatedWords = async (section, page, wordsPerPage = 20, filterParams='') => {
-    try {
-      const filter = filterParams?`%7B%22%24and%22%3A%5B%7B%22userWord.difficulty%22%3A%22${filterParams}%22%7D%5D%7D`: '';
-      const response = await fetch(`${this.baseUrl}users/${this.state.userId}/aggregatedWords?group=${section}&page=${page}&wordsPerPage=${wordsPerPage}&filter=${filter}`, {
-        method: 'GET',
-        headers: {
-          'Authorization': `Bearer ${this.state.token}`,
-          'Accept': 'application/json',
-          'Content-Type': 'application/json',
-        },
-      });
-      const data = await response.json();
       const result = {
-        count: data[0].totalCount[0].count,
-        words: data[0].paginatedResults.map(word => {return {...word, id: word._id}})
-      }
+        words: data,
+      };
       return result;
     } catch (err) {
       const result = {
         count: 0,
-        words: []
-      }
-      return result;    
+        words: [],
+      };
+      return result;
     }
-  }
+  };
 
-  createUserWord = async (wordId, difficulty = '' ) => {
-    const response = await fetch(`${this.baseUrl}users/${this.state.userId}/words/${wordId}`, {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer ${this.state.token}`,
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({difficulty: difficulty}),
-    });
+  getAggregatedWords = async (
+    section,
+    page,
+    wordsPerPage = 20,
+    filterParams = ""
+  ) => {
+    try {
+      const filter = filterParams
+        ? `%7B%22%24and%22%3A%5B%7B%22userWord.difficulty%22%3A%22${filterParams}%22%7D%5D%7D`
+        : "";
+      const response = await fetch(
+        `${this.baseUrl}users/${this.state.userId}/aggregatedWords?group=${section}&page=${page}&wordsPerPage=${wordsPerPage}&filter=${filter}`,
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${this.state.token}`,
+            Accept: "application/json",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      const data = await response.json();
+      const result = {
+        count: data[0].totalCount[0].count,
+        words: data[0].paginatedResults.map((word) => {
+          return { ...word, id: word._id };
+        }),
+      };
+      return result;
+    } catch (err) {
+      const result = {
+        count: 0,
+        words: [],
+      };
+      return result;
+    }
+  };
+
+  createUserWord = async (wordId, difficulty = "") => {
+    const response = await fetch(
+      `${this.baseUrl}users/${this.state.userId}/words/${wordId}`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${this.state.token}`,
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ difficulty: difficulty }),
+      }
+    );
     const data = await response.json();
     return data;
-  }
+  };
 
   deleteUserWord = async (wordId) => {
-    const response = await fetch(`${this.baseUrl}users/${this.state.userId}/words/${wordId}`, {
-      method: 'DELETE',
-      headers: {
-        'Authorization': `Bearer ${this.state.token}`,
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-      },
-    });
+    const response = await fetch(
+      `${this.baseUrl}users/${this.state.userId}/words/${wordId}`,
+      {
+        method: "DELETE",
+        headers: {
+          Authorization: `Bearer ${this.state.token}`,
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    );
     return response;
-  }
-
+  };
 }
  
 export default Api;

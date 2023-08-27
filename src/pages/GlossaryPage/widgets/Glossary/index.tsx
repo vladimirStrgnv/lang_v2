@@ -3,13 +3,14 @@ import SvgBottom from "./assets/SvgBottom";
 import { filterBtnsData, btnsData } from "./utils/consts";
 import useCreateStore from "./store/index";
 import Api from "../../../../shared/api";
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 import { useAppSelector } from "../../../../shared/stores/types";
 import { Pagination } from "@mui/material";
 import SectionLevelBtnList from "./components/SectionLevelBtnList";
 import GlossaryPage from "./components/GlossaryPage";
 import WordsNotFound from "./components/WordsNotFound";
 import StatusFilterBtnList from "./components/StatusFilterBtnList";
+import GameList from "../../../../shared/components/GameList";
 
 const Glossary = () => {
   const {
@@ -27,14 +28,18 @@ const Glossary = () => {
   useEffect(() => {
     const fetch = async () => {
       const api = new Api(auth);
-      const wordsRequest = await api.getAggregatedWords(section, page, 20, currentFilter);
+      const wordsRequest = await api.getAggregatedWords(
+        section,
+        page,
+        20,
+        currentFilter
+      );
       if (wordsRequest.words.length) {
         wordsDispatch(wordsRequest);
         setLoadStatus(true);
       } else {
         setLoadStatus(false);
       }
-
     };
     fetch();
   }, [section, page, currentFilter]);
@@ -43,11 +48,11 @@ const Glossary = () => {
     pageDispatch(page - 1);
   };
 
-  function deleteWord (id)  {
+  function deleteWord(id) {
     const api = new Api(auth);
     api.deleteUserWord(id);
     wordDeleteDispatch(id);
-  };
+  }
 
   return (
     <section className={styles.glossary}>
@@ -82,21 +87,27 @@ const Glossary = () => {
                 wordDispatch={wordDispatch}
                 curentWord={curentWord}
                 auth={auth}
-                btnsConfig={[{text: 'удалить из раздела', onClick: deleteWord.bind(null,curentWord.id), isActive: true}]}
+                btnsConfig={[
+                  {
+                    text: "удалить из раздела",
+                    onClick: deleteWord.bind(null, curentWord.id),
+                    isActive: true,
+                  },
+                ]}
               ></GlossaryPage>
               <div className={styles.glossary__pagination}>
-              <Pagination
-                count={Math.ceil(totalCount / 20)}
-                page={page + 1}
-                onChange={changepage}
-                color="primary"
-              />
-            </div>
+                <Pagination
+                  count={Math.ceil(totalCount / 20)}
+                  page={page + 1}
+                  onChange={changepage}
+                  color="primary"
+                />
+              </div>
             </>
           ) : (
             <WordsNotFound />
           )}
-
+          <GameList words={words}></GameList>
         </div>
       </div>
     </section>

@@ -1,0 +1,20 @@
+.book {
+
+
+    &__page {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    &__page-wrapper {
+        width: 75%;
+    }
+
+    &__page-title {
+        color: #2c2647;
+        font-size: 30px;
+        font-family: 'Gilroy-Heavy';
+    }
+
+
+}

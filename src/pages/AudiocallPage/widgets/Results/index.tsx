@@ -10,6 +10,8 @@ const Results = () => {
   const [detatilStatsIsActive, setActive] = useState(false);
   const location = useLocation();
 
+  const {gameHistory, combo, incorrectAnswers, correctAnswers, words} = location.state.gameResults;
+  console.log()
   const showStats = () => {
     setActive(true);
   };
@@ -20,14 +22,15 @@ const Results = () => {
 
   const repeateGame = () => {
     return navigate("/audiocall/play", {
-      state: { words: location.state.words },
+      state: { words: words },
     });
   };
 
+  console.log(location.state.words)
   return (
     <div className={styles["audiocall-results"]}>
       <PopUp
-        children={<ResultDetails></ResultDetails>}
+        children={<ResultDetails results={gameHistory}></ResultDetails>}
         isOpen={detatilStatsIsActive}
         setActive={setActive}
       ></PopUp>
@@ -35,16 +38,16 @@ const Results = () => {
         <div className={styles["audiocall-results__inner"]}>
           <h3 className={styles["audiocall-results__title"]}>Ваш результат</h3>
           <h4 className={styles["audiocall-results__statistic-title"]}>
-            Правильных ответов: 1
+            Правильных ответов: {correctAnswers}
           </h4>
           <h4 className={styles["audiocall-results__statistic-title"]}>
-            Неправильных ответов: 1
+            Неправильных ответов: {incorrectAnswers}
           </h4>
           <h4 className={styles["audiocall-results__statistic-title"]}>
-            Общая точность: 1
+            Общая точность: {Math.ceil((correctAnswers / gameHistory.length)* 100)}%
           </h4>
           <h4 className={styles["audiocall-results__statistic-title"]}>
-            Правильных ответов подряд: 1
+            Максимальное комбо: {combo}
           </h4>
           <div className={styles["audiocall-results__option-btns"]}>
             <button
