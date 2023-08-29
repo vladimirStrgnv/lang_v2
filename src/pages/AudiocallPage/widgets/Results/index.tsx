@@ -11,7 +11,7 @@ const Results = () => {
   const location = useLocation();
 
   const {gameHistory, combo, incorrectAnswers, correctAnswers, words} = location.state.gameResults;
-  console.log()
+  
   const showStats = () => {
     setActive(true);
   };
@@ -26,7 +26,6 @@ const Results = () => {
     });
   };
 
-  console.log(location.state.words)
   return (
     <div className={styles["audiocall-results"]}>
       <PopUp

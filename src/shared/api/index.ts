@@ -145,6 +145,60 @@ class Api {
     );
     return response;
   };
+
+  updateUserWord = async (
+    wordId: string,
+    body
+  ) => {
+    const response = await fetch(
+      `${this.baseUrl}users/${this.state.userId}/words/${wordId}`,
+      {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${this.state.token}`,
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      }
+    );
+    const data = await response.json();
+    return data;
+  };
+
+  getStatistics = async (userId: string, token: string) => {
+    const response = await fetch(
+      `${this.baseUrl}users/${this.state.userId}/statistics`,
+      {
+        headers: {
+          Authorization: `Bearer ${this.state.token}`,
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    if (response.ok) {
+      return response.json();
+    } else {
+      return null;
+    }
+  };
+
+  updateStatistics = async (body) => {
+    try {
+      await fetch(`${this.baseUrl}users/${this.state.userId}/statistics`, {
+        method: "PUT",
+        headers: {
+          Authorization: `Bearer ${this.state.token}`,
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(body),
+      });
+    } catch (err) {
+      throw err;
+    }
+  };
 }
  
 export default Api;

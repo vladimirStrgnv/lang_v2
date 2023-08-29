@@ -2,7 +2,13 @@ import styles from './index.module.scss';
 import  ReactDOM  from 'react-dom';
 import CrossSvg from './assets/Cross';
 
-const PopUp = ({children, isOpen, setActive}) => {
+interface PopUpProps {
+  isOpen: boolean,
+  setActive: any,
+  children: React.ReactNode
+}
+
+const PopUp: React.FC<PopUpProps> = ({ isOpen, setActive, children}) => {
   return ReactDOM.createPortal(
     <>
     <div className={isOpen ? `${styles.modal} ${styles.active}` : `${styles.modal}`} >

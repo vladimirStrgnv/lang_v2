@@ -9,6 +9,7 @@ const ResultDetails = ({ results }) => {
         {results.map((result, index) => {
           return (
             <WordDetails
+              key={index}
               index={result.index + 1}
               word={result.word.word}
               wordTranslate={result.word.wordTranslate}

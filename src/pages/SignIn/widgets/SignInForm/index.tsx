@@ -11,7 +11,7 @@ import PopUp from '../../../../shared/components/PopUp';
 
 const SignInForm = () => {
   const { email, password, authData } = useAppSelector((store) => store.signIn);
-  const [popUpOption, setPopUpOption] = useState({isActive: false, text: ''});
+  const [popUpOption, setPopUpOption] = useState({ isActive: false, text: "" });
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -24,13 +24,12 @@ const SignInForm = () => {
     event: React.FormEvent<EventTarget>
   ): Promise<void> => {
     event.preventDefault();
-    const api = new Api(authData)
+    const api = new Api(authData);
     const signInRequest = await api.signIn(email.value, password.value);
     if (signInRequest.ok) {
-        const authData = await signInRequest.json();
-        dispatch(setAuthData({value: authData}));
-        localStorage.setItem('authData', JSON.stringify(authData));
-
+      const authData = await signInRequest.json();
+      dispatch(setAuthData({ value: authData }));
+      localStorage.setItem("authData", JSON.stringify(authData));
       navigate("/");
     } else {
       setPopUpOption({
@@ -41,12 +40,16 @@ const SignInForm = () => {
   };
 
   const setPopUpActive = () => {
-    setPopUpOption({...popUpOption, isActive: !popUpOption.isActive});
+    setPopUpOption({ ...popUpOption, isActive: !popUpOption.isActive });
   };
 
   return (
     <form className={styles["signin-form"]} onSubmit={sendRequest}>
-      <PopUp children={popUpOption.text} isOpen={popUpOption.isActive} setActive={setPopUpActive}></PopUp>
+      <PopUp
+        children={popUpOption.text}
+        isOpen={popUpOption.isActive}
+        setActive={setPopUpActive}
+      ></PopUp>
       <h2 className={styles["signin-form__title"]}>Уже с нами?</h2>
       <h3 className={styles["signin-form__subtitle"]}>
         Войди в свой аккаунт Lang!

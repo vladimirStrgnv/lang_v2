@@ -15,7 +15,7 @@ const StartPage = () => {
 
   const redirectToGameDisplay = async () => {
     const api = new Api({});
-    const words = await api.getWords(section, page);
+    const {words} = await api.getWords(section, page);
     return navigate("play",{state:{words}});
   };
 

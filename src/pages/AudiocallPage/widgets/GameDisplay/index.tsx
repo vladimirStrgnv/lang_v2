@@ -9,19 +9,67 @@ import { playWord, playCorrectSound, playIncorrectSound } from '../../../../shar
 import { STEP} from './utils/consts';
 import { Navigate } from "react-router-dom";
 import AnswerCard from './components/AnswerCard';
+import { useAppSelector } from '../../../../shared/stores/types';
+import Api from '../../../../shared/api';
 
 const GameDisplay = () => {
   const location = useLocation();
   const [state, dispatch] = useReducer(audiocallReducer,location.state.words, initAudicallState);
+  const auth = useAppSelector((store) => store.signIn.authData);
+  console.log(location.state.words)
+  async function sendAnswer(word, isCorrect) {
+    dispatch(answerAction(word));
 
-  function sendCorrectAnswer(id) {
-    dispatch(answerAction(id));
-    playCorrectSound();
-  }
-
-  function sendIncorrectAnswer(id) {
-    dispatch(answerAction(id));
-    playIncorrectSound();
+    if (isCorrect) {
+      playCorrectSound();
+      if (auth) {
+        const api = new Api(auth);
+        if (!state.correctWord.userWord.optional) {
+          await api.updateUserWord(state.correctWord.id, {
+            optional: {
+              correctInRow: 1,
+              incorrectInRow: 0,
+              totalCorrect: 1,
+              totalIncorrect: 0,
+            },
+          });
+        } else {
+          await api.updateUserWord(state.correctWord.id, {
+            optional: {
+              ...state.correctWord.userWord.optional,
+              incorrectInRow: 0,
+              correctInRow: state.correctWord.userWord.optional.correctInRow + 1,
+              totalCorrect: state.correctWord.userWord.optional.totalCorrect + 1,
+            },
+          });
+        }
+      }
+    } else {
+      playIncorrectSound();
+      if (auth) {
+        const api = new Api(auth);
+        if (!state.correctWord.userWord.optional) {
+          await api.updateUserWord(state.correctWord.id, {
+            optional: {
+              correctInRow: 0,
+              incorrectInRow: 1,
+              totalCorrect: 0,
+              totalIncorrect: 1,
+            },
+          });
+        } else {
+          console.log(state.correctWord.id)
+          await api.updateUserWord(word.id, {
+            optional: {
+              ...state.correctWord.userWord.optional,
+              correctInRow: 0,
+              incorrectInRow: state.correctWord.userWord.optional.incorrectInRow + 1,
+              totalIncorrect: state.correctWord.userWord.optional.totalIncorrect + 1,
+            },
+          });
+        }
+      }
+    }
   }
 
   return (
@@ -66,9 +114,7 @@ const GameDisplay = () => {
                     correctWordId={state.correctWord.id}
                     word={word.wordTranslate}
                     onClick={
-                      word?.id === state.correctWord.id
-                        ? sendCorrectAnswer.bind(null, word)
-                        : sendIncorrectAnswer.bind(null, word)
+                      sendAnswer.bind(null, word, word?.id === state.correctWord.id)
                     }
                   ></OptionBtn>
                 </li>
@@ -87,7 +133,7 @@ const GameDisplay = () => {
               className={styles["game-display__get-answer-btn"]}
               onClick={() => dispatch(skipAnswerAction(false))}
             >
-              Не знаю
+              Пропустить
             </button>
           )}
         </div>
