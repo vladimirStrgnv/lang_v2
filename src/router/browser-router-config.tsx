@@ -23,6 +23,10 @@ import AudiocallPage from "../pages/AudiocallPage";
         path: "/glossary",
         lazy: () => import("../pages/GlossaryPage"),
       },
+      {
+        path: "/statistics",
+        lazy: () => import("../pages/Statistics/index"),
+      }
     ]
   },
   {

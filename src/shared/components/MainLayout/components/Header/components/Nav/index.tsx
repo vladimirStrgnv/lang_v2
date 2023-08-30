@@ -40,7 +40,7 @@ const Nav = () => {
           </ul>
         </li>
         <li className={styles["nav__list-item"]}>
-          <NavItem path="/stats" text="Статистика"></NavItem>
+          <NavItem path="/statistics" text="Статистика"></NavItem>
         </li>
       </ul>
       {authData ? (
