@@ -1,15 +1,16 @@
 import styles from './index.module.scss';
 import { NavLink  } from 'react-router-dom';
 
-const NavItem = (props) => {
+const NavItem = ({path, text, state={}}) => {
   return (
     <NavLink
-      to={props.path}
+      state={state}
+      to={path}
       className={({ isActive, isPending }) =>
         isActive ? `${styles['nav__link-active']} ${styles['nav__link']}` : styles['nav__link']
       }
     >
-      {props.text}
+      {text}
     </NavLink>
   );
 };

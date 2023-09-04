@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 import SvgBottom from "./assets/SvgBottom";
-import { filterBtnsData, btnsData } from "./utils/consts";
+import { filterBtnsData, btnsData, WORD_COUNTS } from "./utils/consts";
 import useCreateStore from "./store/index";
 import Api from "../../../../shared/api";
 import { useEffect, useState } from "react";
@@ -31,7 +31,7 @@ const Glossary = () => {
       const wordsRequest = await api.getAggregatedWords(
         section,
         page,
-        20,
+        WORD_COUNTS,
         currentFilter
       );
       if (wordsRequest.words.length) {
@@ -97,7 +97,7 @@ const Glossary = () => {
               ></GlossaryPage>
               <div className={styles.glossary__pagination}>
                 <Pagination
-                  count={Math.ceil(totalCount / 20)}
+                  count={Math.ceil(totalCount / WORD_COUNTS)}
                   page={page + 1}
                   onChange={changepage}
                   color="primary"
@@ -107,7 +107,7 @@ const Glossary = () => {
           ) : (
             <WordsNotFound />
           )}
-          <GameList words={words}></GameList>
+          <GameList wordsCounts={words.length} wordsParams={{section, page, wordCounts: WORD_COUNTS, filter: currentFilter}}></GameList>
         </div>
       </div>
     </section>

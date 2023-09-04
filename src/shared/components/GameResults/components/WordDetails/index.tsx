@@ -1,5 +1,5 @@
 import styles from './index.module.scss';
-import { playWord } from '../../../../../../shared/utils/services/audio';
+import { playWord } from '../../../../../shared/utils/services/audio';
 
 const WordDetails = ({index, word, wordTranslate, transcription, audio, isCorrect}) => {
   return (

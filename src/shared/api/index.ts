@@ -1,4 +1,4 @@
-import {  } from "./types";
+import dayjs from "dayjs";
 
 class Api {
   baseUrl: string;
@@ -31,7 +31,6 @@ class Api {
           password: userPass,
         }),
       });
-
       return response;
     } catch (err) {
       return err;
@@ -51,7 +50,23 @@ class Api {
           password: userPass,
         }),
       });
-      return response;
+      const authData = await response.json();
+      const userStat = await this.getStatistics(authData.userId, authData.token);
+      if (!userStat) {
+        await this.updateStatistics(
+          {
+            learnedWords: 0,
+            optional: {
+              learned: { [dayjs().format("DD:MM:YYYY")]: 0 },
+              studied: { [dayjs().format("DD:MM:YYYY")]: 0 },
+              difficult: { [dayjs().format("DD:MM:YYYY")]: 0 },
+            },
+          },
+          authData.userId,
+          authData.token
+        );
+      }
+      return authData;
     } catch (err) {
       return err;
     }
@@ -104,6 +119,7 @@ class Api {
           return { ...word, id: word._id };
         }),
       };
+
       return result;
     } catch (err) {
       const result = {
@@ -114,7 +130,7 @@ class Api {
     }
   };
 
-  createUserWord = async (wordId, difficulty = "") => {
+  createUserWord = async (wordId, options) => {
     const response = await fetch(
       `${this.baseUrl}users/${this.state.userId}/words/${wordId}`,
       {
@@ -124,7 +140,7 @@ class Api {
           Accept: "application/json",
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ difficulty: difficulty }),
+        body: JSON.stringify(options),
       }
     );
     const data = await response.json();
@@ -144,6 +160,22 @@ class Api {
       }
     );
     return response;
+  };
+
+  getUserWord = async (wordId) => {
+    const response = await fetch(
+      `${this.baseUrl}users/${this.state.userId}/words/${wordId}`,
+      {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${this.state.token}`,
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const word = await response.json();
+    return {...word, id: word.wordId};
   };
 
   updateUserWord = async (
@@ -166,17 +198,19 @@ class Api {
     return data;
   };
 
-  getStatistics = async (userId: string, token: string) => {
+  getStatistics = async (userId?, token?) => {
     const response = await fetch(
-      `${this.baseUrl}users/${this.state.userId}/statistics`,
+      `${this.baseUrl}users/${this.state?.userId?this.state?.userId:userId}/statistics`,
       {
         headers: {
-          Authorization: `Bearer ${this.state.token}`,
+          method: "GET",
+          Authorization: `Bearer ${this.state?.token?this.state?.token:token}`,
           Accept: "application/json",
           "Content-Type": "application/json",
         },
       }
     );
+    console.log(444)
     if (response.ok) {
       return response.json();
     } else {
@@ -184,19 +218,19 @@ class Api {
     }
   };
 
-  updateStatistics = async (body) => {
+  updateStatistics = async (body, userId?, token?) => {
     try {
-      await fetch(`${this.baseUrl}users/${this.state.userId}/statistics`, {
+      await fetch(`${this.baseUrl}users/${this.state?.userId?this.state?.userId:userId}/statistics`, {
         method: "PUT",
         headers: {
-          Authorization: `Bearer ${this.state.token}`,
+          Authorization: `Bearer ${this.state?.token?this.state?.token:token}`,
           Accept: "application/json",
           "Content-Type": "application/json",
         },
         body: JSON.stringify(body),
       });
     } catch (err) {
-      throw err;
+      return null;
     }
   };
 }

@@ -5,8 +5,8 @@ import { INCORRECTS_ANSWERS_COUNT } from "../../utils/consts";
 export function audiocallReducer(state: IAudiocallState, action) {
   switch (action.type) {
     case "SEND_ANSWER":
-      const isCorrectAnswer = state.correctWord.id === action.value.id;
-      const currentCombo = isCorrectAnswer? state.currentCombo + 1 : 0;
+      const {choosenWord, isCorrect, updatedInfo} = action.value;
+      const currentCombo = isCorrect? state.currentCombo + 1 : 0;
       return {
         ...state,
         gameHistory: [          
@@ -14,15 +14,14 @@ export function audiocallReducer(state: IAudiocallState, action) {
           {
           index: state.currentStep,
           word: state.correctWord,
-          isCorrect: isCorrectAnswer,
+          isCorrect: isCorrect,
           }
         ],
-        choosenWord: action.value,
+        choosenWord,
         currentCombo: currentCombo,
         maxCombo: currentCombo > state.maxCombo? currentCombo: state.maxCombo ,
-        correctAnswers: isCorrectAnswer? state.correctAnswers + 1 : state.correctAnswers,
-        incorrectAnswers: !isCorrectAnswer? state.incorrectAnswers + 1 : state.incorrectAnswers,
-
+        correctAnswers: isCorrect? state.correctAnswers + 1 : state.correctAnswers,
+        incorrectAnswers: !isCorrect? state.incorrectAnswers + 1 : state.incorrectAnswers,
       };
     case "SKIP_ANSWER":
       return {

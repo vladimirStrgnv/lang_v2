@@ -45,6 +45,21 @@
 
 
     }
+
+    &__games-list-item {
+        cursor: pointer;
+        border-bottom: 2px transparent solid;
+        font-size: 16px;
+    
+        &-active {
+            color: #ffb108;
+        }
+    
+        &:hover {
+            border-color: rgb(202, 163, 32);
+            transition: 1s;
+        }
+    }
 }
 
 

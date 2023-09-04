@@ -35,18 +35,18 @@
     }
 
     &__audio {
-        background: url('../../../../../../shared/assets/audio.svg') no-repeat center;
+        background: url('../../../../assets/audio.svg') no-repeat center;
         background-size: 70%;
         cursor: pointer;
     }
 
     &__incorrect {
-        background: url('../../../../../../shared/assets/cross.svg') no-repeat center;
+        background: url('../../../../assets/cross.svg') no-repeat center;
         background-size: 70%;
     }
 
     &__correct {
-        background: url('../../../../../../shared/assets/check.svg') no-repeat center;
+        background: url('../../../../assets/check.svg') no-repeat center;
         background-size: 70%;
     }
 

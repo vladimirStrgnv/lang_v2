@@ -21,8 +21,23 @@ import {
     Filler,
     Legend
   );
+import Api from '../../shared/api';
+import { useAppSelector } from '../../shared/stores/types';
+import { useEffect, useState } from 'react';
 
 const Statistics = () => {
+  const auth = useAppSelector((store) => store.signIn.authData);
+  const [stat, setStateStat] = useState([]);
+
+  useEffect(() => {
+    const fetch = async () => {
+      const api = new Api(auth);
+      const userStat = await api.getStatistics();
+      setStateStat(Object.entries(userStat.optional.studied));
+    };
+    fetch();
+  }, []);
+  
   const options = {
     responsive: true,
     plugins: {
@@ -34,23 +49,25 @@ const Statistics = () => {
         text: "Статистика по выученным словам",
       },
     },
+    scales: {
+      y: {
+        suggestedMin: 0,
+        suggestedMax: 10,
+        ticks: {
+          precision: 0
+        }
+      }
+    }
   };
-  const labels = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-  ];
+
   const data = {
-    labels,
+    labels: stat.map(dayStat => dayStat[0]),
     datasets: [
       {
+
         fill: true,
         display: false,
-        data: labels.map(() => 1 + Math.random()),
+        data: stat.map(dayStat => dayStat[1]),
         borderColor: "rgb(53, 162, 235)",
         backgroundColor: "rgba(53, 162, 235, 0.5)",
       },
@@ -62,6 +79,7 @@ const Statistics = () => {
       <div className={styles.statistics__wrapper}>
         <div className={styles.statistics__inner}>
           <Line options={options} data={data} />
+
         </div>
       </div>
     </section>

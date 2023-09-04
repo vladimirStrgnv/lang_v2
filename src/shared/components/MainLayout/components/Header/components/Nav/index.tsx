@@ -29,10 +29,10 @@ const Nav = () => {
           </li>
         )}
         <li className={styles["nav__list-item"]}>
-          <NavItem path="/games" text="Игры"></NavItem>
+          <a href="#" className={styles["nav__games-list-item"]}>Игры</a>
           <ul className={styles["nav__game-list"]}>
             <li className={styles["nav__game-list-item"]}>
-              <NavItem path="/audiocall" text="Аудиовызов"></NavItem>
+              <NavItem path="/audiocall" text="Аудиовызов" state={{wordsParams: null}}></NavItem>
             </li>
             <li className={styles["nav__game-list-item"]}>
               <NavItem path="/sprint" text="Спринт "></NavItem>

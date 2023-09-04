@@ -3,13 +3,13 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from "react";
 import PopUp from "../PopUp";
 
-const GameCard = ({ link, imgLink, meaning, title, descrpt, words }) => {
+const GameCard = ({ link, imgLink, meaning, title, descrpt, wordsCounts, wordsParams }) => {
   const navigate = useNavigate();
   const [active, setActive] = useState(false);
 
   const redirectToGamePage = () => {
-    if (words.length > 4) {
-      navigate(link, { state: { words: words } });
+    if (wordsCounts > 4) {
+      navigate(link, { state: { wordsParams: wordsParams } });
     } else {
       setActive(true);
     }

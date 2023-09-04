@@ -26,10 +26,10 @@ const SignInForm = () => {
     event.preventDefault();
     const api = new Api(authData);
     const signInRequest = await api.signIn(email.value, password.value);
-    if (signInRequest.ok) {
-      const authData = await signInRequest.json();
-      dispatch(setAuthData({ value: authData }));
-      localStorage.setItem("authData", JSON.stringify(authData));
+    if (signInRequest) {
+      console.log(signInRequest)
+      dispatch(setAuthData({ value: signInRequest }));
+      localStorage.setItem("authData", JSON.stringify(signInRequest));
       navigate("/");
     } else {
       setPopUpOption({

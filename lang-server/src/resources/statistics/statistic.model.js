@@ -12,8 +12,7 @@ const StatisticSchema = new Schema(
       type: Number
     },
     optional: {
-      type: Object,
-      required: false
+      type: Object    
     }
   },
   { collection: 'statistic' }

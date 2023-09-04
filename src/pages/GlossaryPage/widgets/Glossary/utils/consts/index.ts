@@ -56,3 +56,5 @@ export const filterBtnsData = [
     },
 ]
 
+export const WORD_COUNTS = 20;
+

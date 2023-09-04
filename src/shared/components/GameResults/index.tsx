@@ -1,16 +1,14 @@
 import styles from "./index.module.scss";
 import { useNavigate } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-import PopUp from "../../../../shared/components/PopUp";
+import PopUp from "../PopUp";
 import { useState } from "react";
 import ResultDetails from "./components/ResultDetails";
     
-const Results = () => {
+const GameResults = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers }) => {
+  console.log(gameHistory, maxCombo, incorrectAnswers, correctAnswers )
   const navigate = useNavigate();
   const [detatilStatsIsActive, setActive] = useState(false);
-  const location = useLocation();
 
-  const {gameHistory, combo, incorrectAnswers, correctAnswers, words} = location.state.gameResults;
   
   const showStats = () => {
     setActive(true);
@@ -20,11 +18,7 @@ const Results = () => {
     return navigate("/");
   };
 
-  const repeateGame = () => {
-    return navigate("/audiocall/play", {
-      state: { words: words },
-    });
-  };
+
 
   return (
     <div className={styles["audiocall-results"]}>
@@ -46,15 +40,15 @@ const Results = () => {
             Общая точность: {Math.ceil((correctAnswers / gameHistory.length)* 100)}%
           </h4>
           <h4 className={styles["audiocall-results__statistic-title"]}>
-            Максимальное комбо: {combo}
+            Максимальное комбо: {maxCombo}
           </h4>
           <div className={styles["audiocall-results__option-btns"]}>
-            <button
+            {/* <button
               className={styles["audiocall-results__option-btns-item"]}
               onClick={() => repeateGame()}
             >
               Потворить
-            </button>
+            </button> */}
             <button
               className={styles["audiocall-results__option-btns-item"]}
               onClick={() => showStats()}
@@ -74,4 +68,4 @@ const Results = () => {
   );
 };
 
-export const Component = Results;
+export default GameResults;

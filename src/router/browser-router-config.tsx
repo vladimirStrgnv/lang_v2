@@ -46,20 +46,6 @@ import AudiocallPage from "../pages/AudiocallPage";
     element: (
       <AudiocallPage />
     ),
-    children: [
-      {
-        index: true,
-        lazy: () => import("../pages/AudiocallPage/widgets/StartPage/index"),
-      },
-      {
-        path: 'play',
-        lazy: () => import("../pages/AudiocallPage/widgets/GameDisplay"),
-      },
-      {
-        path: 'results',
-        lazy: () => import("../pages/AudiocallPage/widgets/Results"),
-      }
-    ]
   }
 ]);
 

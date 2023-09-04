@@ -10,6 +10,7 @@ import { useAppSelector } from "../../../../shared/stores/types";
 import SectionLevelBtnList from './components/SectionLevelBtnList';
 import BookPage from './components/BookPage';
 import GameList from '../../../../shared/components/GameList';
+import { UserHelpers } from '../../../../shared/utils/services/userHelpers';
 
 const Book = () => {
   const {
@@ -29,10 +30,8 @@ const Book = () => {
       const wordsRequest = auth
         ? await api.getAggregatedWords(section, page)
         : await api.getWords(section, page);
-        console.log(wordsRequest)
       wordsDispatch(wordsRequest.words);
       setLoadStatus(true);
-
     };
     fetch();
   }, [section, page]);
@@ -41,12 +40,25 @@ const Book = () => {
     pageDispatch(page - 1);
   };
 
-  function addWordStatus (id, status)  {
+  async function addWordStatus(id, status) {
+    const wordStat = {
+      difficulty: status,
+      optional: {
+        correctInRow: 0,
+        incorrectInRow: 0,
+        totalCorrect: 0,
+        totalIncorrect: 0,
+      },
+    };
     const api = new Api(auth);
-    api.createUserWord(id, status);
+    await api.createUserWord(id, wordStat);
+    const userStat = await api.getStatistics();
+    console.log(userStat)
+    const updatedStat = UserHelpers.getUpdatedStats(userStat, status);
+    await api.updateStatistics(updatedStat);
     wordDifficultyDispatch(id, status);
-  };
-  
+  }
+
   return (
     <section className={styles.book}>
       <SvgBottom />
@@ -57,22 +69,30 @@ const Book = () => {
               Уровни сложности слов
             </h2>
             <div className={styles["book__navbtns-wrapper"]}>
-            <SectionLevelBtnList
+              <SectionLevelBtnList
                 btnsData={btnsData}
                 currentSection={section}
                 sectionDispatch={sectionDispatch}
               ></SectionLevelBtnList>
             </div>
           </nav>
-          <BookPage 
+          <BookPage
             words={words}
             curentWordId={curentWord.id}
             wordDispatch={wordDispatch}
             curentWord={curentWord}
             auth={auth}
             btnsConfig={[
-              {text: 'добавить в сложные', onClick: addWordStatus.bind(null, curentWord.id, 'difficult'), isActive: !curentWord.userWord},
-              {text: 'добавить в изучаемые', onClick: addWordStatus.bind(null, curentWord.id, 'studied'), isActive: !curentWord.userWord}
+              {
+                text: "добавить в сложные",
+                onClick: addWordStatus.bind(null, curentWord.id, "difficult"),
+                isActive: !curentWord.userWord,
+              },
+              {
+                text: "добавить в изучаемые",
+                onClick: addWordStatus.bind(null, curentWord.id, "studied"),
+                isActive: !curentWord.userWord,
+              },
             ]}
           ></BookPage>
           <div className={styles.book__pagination}>
@@ -83,7 +103,10 @@ const Book = () => {
               color="primary"
             />
           </div>
-          <GameList words={words}></GameList>
+          <GameList
+            wordsCounts={words.length}
+            wordsParams={{ section, page, filter: "", wordCounts: 20 }}
+          ></GameList>
         </div>
       </div>
     </section>

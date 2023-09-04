@@ -1,15 +1,16 @@
 import styles from './index.module.scss';
 import GameCard from '../GameCard';
 
-const GameList = ({words}) => {
+const GameList = ({wordsCounts, wordsParams}) => {
   return (
     <div className={styles["games-section-wrapper"]}>
       <h2 className={styles["games-section-wrapper__title"]}>Игры</h2>
       <h3 className={styles["games-section-wrapper__subtitle"]}>Закрепи новые слова при помощи игр.</h3>
       <div className={styles["images-wrapper"]}>
         <GameCard
-          words={words}
-          link={"/games/savannah"}
+          wordsParams={wordsParams}
+          wordsCounts={wordsCounts}
+          link={"/savannah"}
           meaning={"Угадывания на скорость"}
           title={"Спринт"}
           descrpt={"Угадай как можно больше слов за 30 секунд"}
@@ -18,8 +19,9 @@ const GameList = ({words}) => {
           }
         ></GameCard>
         <GameCard
-          words={words}
-          link={"/audiocall/play"}
+          wordsParams={wordsParams}
+          wordsCounts={wordsCounts}
+          link={"/audiocall"}
           meaning={"Аудирование"}
           title={"Аудиовызов"}
           descrpt={"Попробуй понять, какое слово было произнесено."}
