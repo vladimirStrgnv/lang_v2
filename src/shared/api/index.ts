@@ -55,11 +55,20 @@ class Api {
       if (!userStat) {
         await this.updateStatistics(
           {
-            learnedWords: 0,
             optional: {
-              learned: { [dayjs().format("DD:MM:YYYY")]: 0 },
-              studied: { [dayjs().format("DD:MM:YYYY")]: 0 },
-              difficult: { [dayjs().format("DD:MM:YYYY")]: 0 },
+              allTime: {
+                learned: 0,
+                studied:0,
+                difficult: 0
+              },
+              days: {
+                [dayjs().format("DD:MM:YYYY")]: {
+                  learned: 0,
+                  studied: 0,
+                  difficult: 0
+                }
+              }
+
             },
           },
           authData.userId,

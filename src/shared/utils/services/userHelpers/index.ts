@@ -3,19 +3,28 @@ import dayjs from "dayjs";
 export class UserHelpers {
 
     static getUpdatedStats(userStat, wordStatus) {
-        const currentDay = dayjs().format("DD:MM:YYYY");
-        console.log(userStat)
+        const currentDay = dayjs().add(1, 'day').format("DD:MM:YYYY");
 
          const currentDayStat =
-          userStat.optional[wordStatus][currentDay];
-          console.log(currentDayStat)
+          userStat.optional.days[currentDay];
         return {
           optional: {
-            ...userStat.optional,
-            [wordStatus]: {
-              ...userStat.optional[wordStatus],
-              [currentDay]: currentDayStat ? currentDayStat + 1 : 1,
+            allTime: {
+              ...userStat.optional.allTime,
+              [wordStatus]: userStat.optional.allTime[wordStatus] + 1
             },
+            days: {
+              ...userStat.optional.days,
+              [currentDay]: currentDayStat? {
+                ...userStat.optional.days[currentDay],
+                [wordStatus]: userStat.optional.days[currentDay][wordStatus] + 1
+              }:
+              {
+                studied: wordStatus === 'studied'?1:0,
+                learned: wordStatus === 'learned'?1:0,
+                difficult: wordStatus === 'difficult'?1:0
+              }
+            }
           },
         };
     }

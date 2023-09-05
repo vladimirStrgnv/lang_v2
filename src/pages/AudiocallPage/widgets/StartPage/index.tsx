@@ -4,8 +4,10 @@ import { audiocallDescription, audiocallTitle, startScreensSectionBtns } from '.
 import { useState } from 'react';
 import { Randomizers } from "../../../../shared/utils/services/randomizers";
 import Api from '../../../../shared/api';
+import PopUp from '../../../../shared/components/PopUp';
   
 const StartPage = ({ setStateWords, auth, wordsParams }) => {
+  const [popupIsActive, setPopupActive] = useState(false);
   const [{ section, page, wordCounts,filter }, setWordsOptions] = useState({
     section: wordsParams?wordsParams.section: null,
     page: wordsParams?wordsParams.page: null,
@@ -22,49 +24,60 @@ const StartPage = ({ setStateWords, auth, wordsParams }) => {
     });
   };
 
+  const closePopup = () => {
+    setPopupActive(false);
+  };
+
   const startGame = async () => {
     const api = new Api(auth);
     const { words } = auth
       ? await api.getAggregatedWords(section, page, wordCounts, filter)
       : await api.getWords(section, page);
-    setStateWords(words);
+    if (words.length > 4) {
+      setStateWords(words);
+    } else {
+      setPopupActive(true);
+    }
   };
 
   return (
-    <div className={styles["audiocall__start-screen"]}>
-      <GameInfo
-        title={audiocallTitle}
-        description={audiocallDescription}
-      ></GameInfo>
-      <div className={styles["audiocall__btns-container"]}>
-        <h2>Выбери уровень</h2>
-        <div className={styles["audiocall__level-btns"]}>
-          {startScreensSectionBtns.map((btn) => (
-            <button
-              className={
-                btn.sectionNum === section
-                  ? `${styles["audiocall__level-btns__item"]} ${styles["audiocall__level-btns__item--active"]}`
-                  : styles["audiocall__level-btns__item"]
-              }
-              key={btn.title}
-              onClick={() => setSection(btn.sectionNum)}
-            >
-              {btn.title}
-            </button>
-          ))}
+    <>
+      <PopUp isOpen={popupIsActive} setActive={closePopup} children={'Необходимо больше 4х слов для старта игры'}></PopUp>
+      <div className={styles["audiocall__start-screen"]}>
+        <GameInfo
+          title={audiocallTitle}
+          description={audiocallDescription}
+        ></GameInfo>
+        <div className={styles["audiocall__btns-container"]}>
+          <h2>Выбери уровень</h2>
+          <div className={styles["audiocall__level-btns"]}>
+            {startScreensSectionBtns.map((btn) => (
+              <button
+                className={
+                  btn.sectionNum === section
+                    ? `${styles["audiocall__level-btns__item"]} ${styles["audiocall__level-btns__item--active"]}`
+                    : styles["audiocall__level-btns__item"]
+                }
+                key={btn.title}
+                onClick={() => setSection(btn.sectionNum)}
+              >
+                {btn.title}
+              </button>
+            ))}
+          </div>
+          <button
+            onClick={() => startGame()}
+            className={
+              section !== null
+                ? `${styles["audiocall__start-game-btn"]} ${styles["audiocall__start-game-btn--active"]}`
+                : styles["audiocall__start-game-btn"]
+            }
+          >
+            Начать
+          </button>
         </div>
-        <button
-          onClick={() => startGame()}
-          className={
-            section !== null
-              ? `${styles["audiocall__start-game-btn"]} ${styles["audiocall__start-game-btn--active"]}`
-              : styles["audiocall__start-game-btn"]
-          }
-        >
-          Начать
-        </button>
       </div>
-    </div>
+    </>
   );
 };
 
