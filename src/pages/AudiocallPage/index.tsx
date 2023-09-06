@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
 import BgAnimation from './components/BgAnimation';
 import Header from './components/Header';
-import StartPage from './widgets/StartPage';
+import GameStartPage from '../../shared/components/GameStartPage';
 import AudiocallGame from './widgets/AudiocallGame';
 import { useState } from 'react';
 import { useAppSelector } from '../../shared/stores/types';
@@ -23,7 +23,7 @@ const AudiocallPage = () => {
                 {words.length ? (
                   <AudiocallGame words={words} ></AudiocallGame>
                 ) : (
-                  <StartPage setStateWords={setStateWords} auth={auth} wordsParams={location.state.wordsParams}></StartPage>
+                  <GameStartPage setStateWords={setStateWords} auth={auth} wordsParams={location.state.wordsParams}></GameStartPage>
                 )}
               </div>
             </div>

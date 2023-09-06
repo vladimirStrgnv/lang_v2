@@ -77,7 +77,7 @@ class Api {
       }
       return authData;
     } catch (err) {
-      return err;
+      return null;
     }
   };
 

@@ -3,6 +3,7 @@ import Layout from "../shared/components/MainLayout";
 import SignUp from "../pages/SignUp/index";
 import SignIn from "../pages/SignIn";
 import AudiocallPage from "../pages/AudiocallPage";
+import SprintPage from "../pages/SprintPage";
 
  const BrowserRouter = createBrowserRouter([
   {
@@ -46,7 +47,20 @@ import AudiocallPage from "../pages/AudiocallPage";
     element: (
       <AudiocallPage />
     ),
+  },
+  {
+    path: '/audiocall',
+    element: (
+      <AudiocallPage />
+    ),
+  },
+  {
+    path: '/sprint',
+    element: (
+      <SprintPage />
+    ),
   }
+
 ]);
 
 export default BrowserRouter;

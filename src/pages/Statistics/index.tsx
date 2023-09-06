@@ -37,7 +37,8 @@ const Statistics = () => {
       const api = new Api(auth);
       const userStat = await api.getStatistics();
       setStateLineStat(Object.entries(userStat.optional.days));
-      setStatePieStat({learned: userStat.optional.allTime.learned, studied: userStat.optional.allTime.studied, difficult: userStat.optional.allTime.difficult});
+      const {learned, studied, difficult} = userStat.optional.allTime;
+      setStatePieStat({learned, studied, difficult});
     };
     fetch();
   }, []);
@@ -99,20 +100,18 @@ const Statistics = () => {
   };
 
   const pieData = {
-    labels: ['Неизученные', 'Изучаемые', 'Выученные', 'Сложные'],
+    labels: ['Изучаемые', 'Выученные', 'Сложные'],
     datasets: [
       {
         label: 'От всех слов',
-        data: [3600- pieStat.learned - pieStat.studied - pieStat.difficult, pieStat.learned, pieStat.studied, pieStat.difficult],
+        data: [ pieStat.learned, pieStat.studied, pieStat.difficult],
         backgroundColor: [
-          'rgba(237, 231, 225)',
           'rgba(44, 38, 71, 0.9)',
           'rgba(0, 201, 0, 0.5)',
           'rgba(201, 0, 0, 0.5)',
 
         ],
         borderColor: [
-          'rgba(237, 231, 225)',
           'rgba(44, 38, 71)',
           'rgba(0, 201, 0)',
           'rgba(201, 0, 0)',
@@ -127,8 +126,9 @@ const Statistics = () => {
       <div className={styles.statistics__wrapper}>
         <div className={styles.statistics__inner}>
           <Line options={lineOptions} data={lineData} />
-          <Pie options={pieOptions} data={pieData} />
-
+          <div className={styles.statistics__global}>
+            <Pie options={pieOptions} data={pieData} />
+          </div>
         </div>
       </div>
     </section>

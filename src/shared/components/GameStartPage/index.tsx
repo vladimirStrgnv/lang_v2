@@ -1,12 +1,12 @@
 import styles from './index.module.scss';
-import GameInfo from '../../../../shared/components/GameInfo';
+import GameInfo from '../GameInfo';
 import { audiocallDescription, audiocallTitle, startScreensSectionBtns } from './utils/consts';
 import { useState } from 'react';
-import { Randomizers } from "../../../../shared/utils/services/randomizers";
-import Api from '../../../../shared/api';
-import PopUp from '../../../../shared/components/PopUp';
+import { Randomizers } from '../../utils/services/randomizers'; 
+import Api from '../../api';
+import PopUp from '../PopUp';
   
-const StartPage = ({ setStateWords, auth, wordsParams }) => {
+const GameStartPage = ({ setStateWords, auth, wordsParams }) => {
   const [popupIsActive, setPopupActive] = useState(false);
   const [{ section, page, wordCounts,filter }, setWordsOptions] = useState({
     section: wordsParams?wordsParams.section: null,
@@ -81,4 +81,4 @@ const StartPage = ({ setStateWords, auth, wordsParams }) => {
   );
 };
 
-export default StartPage;
+export default GameStartPage;

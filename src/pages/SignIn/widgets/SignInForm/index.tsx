@@ -9,7 +9,7 @@ import { useState } from 'react';
 import Api from '../../../../shared/api';
 import PopUp from '../../../../shared/components/PopUp';
 
-const SignInForm = () => {
+const SignInForm = () => {  
   const { email, password, authData } = useAppSelector((store) => store.signIn);
   const [popUpOption, setPopUpOption] = useState({ isActive: false, text: "" });
   const navigate = useNavigate();
@@ -27,7 +27,6 @@ const SignInForm = () => {
     const api = new Api(authData);
     const signInRequest = await api.signIn(email.value, password.value);
     if (signInRequest) {
-      console.log(signInRequest)
       dispatch(setAuthData({ value: signInRequest }));
       localStorage.setItem("authData", JSON.stringify(signInRequest));
       navigate("/");

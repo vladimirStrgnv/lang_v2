@@ -6,6 +6,7 @@ const Button: React.FC<NavBtnProps> = ({ path, text, callBack }) => {
   return (
     <NavLink
       to={path} 
+      state={{wordsParams: null}}
     >
       <button className={styles.nav__btn} onClick={callBack}>
         {text}
