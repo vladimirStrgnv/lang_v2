@@ -37,7 +37,7 @@ const GameResults = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers })
             Неправильных ответов: {incorrectAnswers}
           </h4>
           <h4 className={styles["audiocall-results__statistic-title"]}>
-            Общая точность: {Math.ceil((correctAnswers / gameHistory.length)* 100)}%
+            Общая точность: {gameHistory.length?Math.ceil((correctAnswers / gameHistory.length)* 100):0}%
           </h4>
           <h4 className={styles["audiocall-results__statistic-title"]}>
             Максимальное комбо: {maxCombo}

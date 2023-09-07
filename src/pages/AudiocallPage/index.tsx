@@ -6,6 +6,7 @@ import AudiocallGame from './widgets/AudiocallGame';
 import { useState } from 'react';
 import { useAppSelector } from '../../shared/stores/types';
 import { useLocation } from 'react-router-dom';
+import { audiocallTitle, audiocallDescription, startScreensSectionBtns } from './utils/consts';
 
 const AudiocallPage = () => {
   const [words, setStateWords] = useState([]);
@@ -21,9 +22,16 @@ const AudiocallPage = () => {
             <div className={`${styles.audiocall__wrapper}`}>
               <div className={`${styles.audiocall__inner}`}>
                 {words.length ? (
-                  <AudiocallGame words={words} ></AudiocallGame>
+                  <AudiocallGame words={words}></AudiocallGame>
                 ) : (
-                  <GameStartPage setStateWords={setStateWords} auth={auth} wordsParams={location.state.wordsParams}></GameStartPage>
+                  <GameStartPage
+                    setStateWords={setStateWords}
+                    auth={auth}
+                    wordsParams={location.state.wordsParams}
+                    title={audiocallTitle}
+                    description={audiocallDescription}
+                    startScreensSectionBtns={startScreensSectionBtns}
+                  ></GameStartPage>
                 )}
               </div>
             </div>

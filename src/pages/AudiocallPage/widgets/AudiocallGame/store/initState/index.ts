@@ -19,12 +19,12 @@ export interface IAudiocallState {
 }
 
 export function initAudicallState (words) {
-
+    const shuffleWords = Randomizers.shuffleArr(words);
     return {
-        words: Randomizers.shuffleArr(words),
+        words: shuffleWords,
         currentStep: 0,
-        correctWord : words[0],
-        answerOptions : Randomizers.shuffleArr([words[0], ...Randomizers.genRandomElements(words.filter(word => word.id !== words[0].id), INCORRECTS_ANSWERS_COUNT)]),
+        correctWord : shuffleWords[0],
+        answerOptions : Randomizers.shuffleArr([shuffleWords[0], ...Randomizers.genRandomElements(words.filter(word => word.id !== words[0].id), INCORRECTS_ANSWERS_COUNT)]),
         gameSteps : words.length - 1,
         gameHistory: [],
         choosenWord: null,

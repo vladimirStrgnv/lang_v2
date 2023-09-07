@@ -1,26 +1,25 @@
 import styles from './index.module.scss';
 import GameInfo from '../GameInfo';
-import { audiocallDescription, audiocallTitle, startScreensSectionBtns } from './utils/consts';
 import { useState } from 'react';
 import { Randomizers } from '../../utils/services/randomizers'; 
 import Api from '../../api';
 import PopUp from '../PopUp';
   
-const GameStartPage = ({ setStateWords, auth, wordsParams }) => {
+const GameStartPage = ({ setStateWords, auth, wordsParams, description, title, startScreensSectionBtns }) => {
   const [popupIsActive, setPopupActive] = useState(false);
   const [{ section, page, wordCounts,filter }, setWordsOptions] = useState({
     section: wordsParams?wordsParams.section: null,
     page: wordsParams?wordsParams.page: null,
-    wordCounts: wordsParams?wordsParams.wordCounts: null,
-    filter: wordsParams?wordsParams.filter: null
+    wordCounts: wordsParams?wordsParams.wordCounts: 20,
+    filter: wordsParams?wordsParams.filter: ''
   });
 
   const setSection = (sectionNum) => {
     setWordsOptions({
       page: Randomizers.getRandomInt(0, 20),
       section: sectionNum,
-      wordCounts: null,
-      filter: null
+      wordCounts,
+      filter
     });
   };
 
@@ -43,20 +42,20 @@ const GameStartPage = ({ setStateWords, auth, wordsParams }) => {
   return (
     <>
       <PopUp isOpen={popupIsActive} setActive={closePopup} children={'Необходимо больше 4х слов для старта игры'}></PopUp>
-      <div className={styles["audiocall__start-screen"]}>
+      <div className={styles["page__start-screen"]}>
         <GameInfo
-          title={audiocallTitle}
-          description={audiocallDescription}
+          title={title}
+          description={description}
         ></GameInfo>
-        <div className={styles["audiocall__btns-container"]}>
+        <div className={styles["page__btns-container"]}>
           <h2>Выбери уровень</h2>
-          <div className={styles["audiocall__level-btns"]}>
+          <div className={styles["page__level-btns"]}>
             {startScreensSectionBtns.map((btn) => (
               <button
                 className={
                   btn.sectionNum === section
-                    ? `${styles["audiocall__level-btns__item"]} ${styles["audiocall__level-btns__item--active"]}`
-                    : styles["audiocall__level-btns__item"]
+                    ? `${styles["page__level-btns__item"]} ${styles["page__level-btns__item--active"]}`
+                    : styles["page__level-btns__item"]
                 }
                 key={btn.title}
                 onClick={() => setSection(btn.sectionNum)}
@@ -69,8 +68,8 @@ const GameStartPage = ({ setStateWords, auth, wordsParams }) => {
             onClick={() => startGame()}
             className={
               section !== null
-                ? `${styles["audiocall__start-game-btn"]} ${styles["audiocall__start-game-btn--active"]}`
-                : styles["audiocall__start-game-btn"]
+                ? `${styles["page__start-game-btn"]} ${styles["page__start-game-btn--active"]}`
+                : styles["page__start-game-btn"]
             }
           >
             Начать

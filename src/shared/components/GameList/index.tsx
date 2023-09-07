@@ -10,7 +10,7 @@ const GameList = ({wordsCounts, wordsParams}) => {
         <GameCard
           wordsParams={wordsParams}
           wordsCounts={wordsCounts}
-          link={"/savannah"}
+          link={"/sprint"}
           meaning={"Угадывания на скорость"}
           title={"Спринт"}
           descrpt={"Угадай как можно больше слов за 30 секунд"}

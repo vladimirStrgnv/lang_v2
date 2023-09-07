@@ -36,7 +36,6 @@ const AudiocallGame = ({ words }) => {
     maxCombo,
     incorrectAnswers,
   } = state;
-
   async function sendAnswer(choosenWord, isCorrect) {
     if (isCorrect) {
       playCorrectSound();

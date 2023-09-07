@@ -35,7 +35,7 @@ const BurgerMenu = ({isActive, onClick}) => {
             <ul className={styles["menu__games-link-list"]}>
               <li className={styles["menu__games-link-list-item"]}>
                 <Link
-                  to="/games/audiocall"
+                  to="/audiocall"
                   state={{ data: [] }}
                   className={styles["menu__games-link"]}
                 >
@@ -44,7 +44,7 @@ const BurgerMenu = ({isActive, onClick}) => {
               </li>
               <li className={styles["menu__games-link-list-item"]}>
                 <Link
-                  to="/games/savannah"
+                  to="/sprint"
                   className={styles["menu__games-link"]}
                 >
                   Саванна
