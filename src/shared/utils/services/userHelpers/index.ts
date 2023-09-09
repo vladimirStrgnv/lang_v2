@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 export class UserHelpers {
 
     static getUpdatedStats(userStat, wordStatus) {
-        const currentDay = dayjs().add(1, 'day').format("DD:MM:YYYY");
+        const currentDay = dayjs().format("DD:MM:YYYY");
 
          const currentDayStat =
           userStat.optional.days[currentDay];

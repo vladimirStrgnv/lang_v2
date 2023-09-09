@@ -39,9 +39,11 @@ const Nav = () => {
             </li>
           </ul>
         </li>
-        <li className={styles["nav__list-item"]}>
-          <NavItem path="/statistics" text="Статистика"></NavItem>
-        </li>
+        {authData && (
+          <li className={styles["nav__list-item"]}>
+            <NavItem path="/statistics" text="Статистика"></NavItem>
+          </li>
+        )}
       </ul>
       {authData ? (
         <NavButton text={"Выйти"} path={"sign-in"} callBack={logOut} />

@@ -104,7 +104,7 @@ const Statistics = () => {
     datasets: [
       {
         label: 'От всех слов',
-        data: [ pieStat.learned, pieStat.studied, pieStat.difficult],
+        data: [ pieStat.studied, pieStat.learned, pieStat.difficult],
         backgroundColor: [
           'rgba(44, 38, 71, 0.9)',
           'rgba(0, 201, 0, 0.5)',

@@ -1,0 +1,48 @@
+.advantages-item {
+    padding: 20px;
+    height: 400px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+    box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f9f8fa;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &__img {
+        width: 100%;
+        height: 40%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        font-family: 'Gilroy-Heavy';
+        color: #29244e;
+        margin-bottom: 20px;
+    
+    }
+
+    &__text {
+        font-family: 'Gilroy-Medium';
+        color: #29244e;
+    }
+
+}
+
+@media (max-width: 768px) { 
+    .advantages-item {
+        margin-bottom: 15px;
+    }
+}

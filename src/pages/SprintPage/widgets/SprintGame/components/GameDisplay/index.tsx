@@ -1,6 +1,19 @@
 import styles from './index.module.scss';
+import React, { useState, useEffect } from 'react'
 
-const GameDisplay = ({seconds, answerWord, questionWord, sendCorrectAnswer, sendIncorrectAnswer}) => {
+const GameDisplay = ({endGame, answerWord, questionWord, sendCorrectAnswer, sendIncorrectAnswer}) => {
+  const [seconds, setSeconds] = useState(30);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setSeconds(seconds - 1);
+    }, 1000);
+    if (seconds === 0) {
+      endGame();
+    }
+    return () => clearInterval(timer);
+  }, [seconds]);
+
   return (
     <div className={styles["sprint-display__inner"]}>
       <div className={styles["sprint-display__time"]}>

@@ -4,7 +4,7 @@ import PopUp from "../PopUp";
 import { useState } from "react";
 import ResultDetails from "./components/ResultDetails";
     
-const GameResults = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers }) => {
+const GameResults = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers, restartGame }) => {
   console.log(gameHistory, maxCombo, incorrectAnswers, correctAnswers )
   const navigate = useNavigate();
   const [detatilStatsIsActive, setActive] = useState(false);
@@ -43,12 +43,12 @@ const GameResults = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers })
             Максимальное комбо: {maxCombo}
           </h4>
           <div className={styles["audiocall-results__option-btns"]}>
-            {/* <button
+            <button
               className={styles["audiocall-results__option-btns-item"]}
-              onClick={() => repeateGame()}
+              onClick={() => restartGame()}
             >
               Потворить
-            </button> */}
+            </button>
             <button
               className={styles["audiocall-results__option-btns-item"]}
               onClick={() => showStats()}

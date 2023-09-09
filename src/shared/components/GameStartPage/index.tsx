@@ -6,6 +6,8 @@ import Api from '../../api';
 import PopUp from '../PopUp';
   
 const GameStartPage = ({ setStateWords, auth, wordsParams, description, title, startScreensSectionBtns }) => {
+  console.log(wordsParams)
+
   const [popupIsActive, setPopupActive] = useState(false);
   const [{ section, page, wordCounts,filter }, setWordsOptions] = useState({
     section: wordsParams?wordsParams.section: null,

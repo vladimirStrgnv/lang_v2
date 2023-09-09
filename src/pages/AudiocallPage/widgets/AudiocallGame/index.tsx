@@ -1,11 +1,3 @@
-import { useReducer } from "react";
-import {
-  audiocallReducer,
-  answerAction,
-  getNextStepAction,
-  skipAnswerAction,
-} from "./store/reducer";
-import { initAudicallState } from "./store/initState";
 import {
   playWord,
   playCorrectSound,
@@ -18,25 +10,28 @@ import { WordHelpers } from "../../../../shared/utils/services/wordHelpers";
 import GameDisplay from "./components/GameDisplay";
 import GameResults from "../../../../shared/components/GameResults";
 import { UserHelpers } from "../../../../shared/utils/services/userHelpers";
+import { createAudiocallState } from "./store";
 
 const AudiocallGame = ({ words }) => {
-  const [state, dispatch] = useReducer(
-    audiocallReducer,
-    words,
-    initAudicallState
-  );
-  const auth = useAppSelector((store) => store.signIn.authData);
   const {
+    answerAction,
+    getNextStepAction,
+    skipAnswerAction,
+    restartGame,
     choosenWord,
-    answerOptions,
     correctWord,
-    gameIsEnd,
     gameHistory,
-    correctAnswers,
+    gameIsEnd,
     maxCombo,
     incorrectAnswers,
-  } = state;
+    correctAnswers,
+    answerOptions,
+  } = createAudiocallState(words);
+  const auth = useAppSelector((store) => store.signIn.authData);
+
   async function sendAnswer(choosenWord, isCorrect) {
+    answerAction({ choosenWord, isCorrect, updatedInfo: null });
+
     if (isCorrect) {
       playCorrectSound();
     } else {
@@ -46,28 +41,27 @@ const AudiocallGame = ({ words }) => {
       const api = new Api(auth);
       const isUserWord = correctWord.userWord;
       const updatedInfo = WordHelpers.getUpdatedStat(correctWord, isCorrect);
-      console.log(updatedInfo)
-      dispatch(answerAction({ choosenWord, isCorrect, updatedInfo }));
       isUserWord
         ? await api.updateUserWord(correctWord.id, updatedInfo)
         : await api.createUserWord(correctWord.id, updatedInfo);
       const wordStatus = WordHelpers.getWordStatus(updatedInfo, correctWord);
       if (wordStatus.isUpdated) {
         const userStat = await api.getStatistics();
-        const updatedStats = UserHelpers.getUpdatedStats(userStat,wordStatus.status); 
+        const updatedStats = UserHelpers.getUpdatedStats(
+          userStat,
+          wordStatus.status
+        );
         await api.updateStatistics(updatedStats);
       }
-    } else {
-      dispatch(answerAction({ choosenWord, isCorrect, updatedInfo: null }));
     }
   }
 
   function getNextStep() {
-    dispatch(getNextStepAction(STEP));
+    getNextStepAction(STEP);
   }
 
   function skipAnswer() {
-    dispatch(skipAnswerAction(false));
+    skipAnswerAction(false);
   }
 
   return (
@@ -78,6 +72,7 @@ const AudiocallGame = ({ words }) => {
           maxCombo={maxCombo}
           incorrectAnswers={incorrectAnswers}
           correctAnswers={correctAnswers}
+          restartGame={restartGame}
         />
       ) : (
         <GameDisplay

@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
 import Logo from '../../../Logo/index';
 import FooterTopSvg from './assets/FooterTopSvg';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -11,14 +12,20 @@ const Footer = () => {
         <nav className={styles.footer__nav}>
           <h2 className={styles.footer__title}>Меню</h2>
           <ul>
-            <li className={styles['footer__nav-item']}>Главная</li>
-            <li className={styles['footer__nav-item']}>Учебник</li>
-            <li className={styles['footer__nav-item']}> Статистика</li>
+            <li className={styles["footer__nav-item"]}>
+              <NavLink to="/">Главная </NavLink>
+            </li>
+            <li className={styles["footer__nav-item"]}>
+              <NavLink to="/book">Учебник</NavLink>
+            </li>
+            <li className={styles["footer__nav-item"]}>
+              <NavLink to="/sign-in"> Войти</NavLink>
+            </li>
           </ul>
         </nav>
       </div>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer

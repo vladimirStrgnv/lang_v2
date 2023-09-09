@@ -44,6 +44,11 @@
         font-family: "Gilroy-Heavy";
         color: #2c2647;
         text-transform: uppercase;
+        transition: 0.3s;
+
+        &:hover {
+            color: #FFC53D;;
+        }
     }
 
     &__logo {
@@ -65,6 +70,9 @@
         font-family: "Gilroy-Regular";
         color: #999;
         text-transform: uppercase;
+        &:hover {
+            color: #FFC53D;;
+        }
     }
 
     &__blur {

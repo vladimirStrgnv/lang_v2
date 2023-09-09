@@ -4,7 +4,7 @@ import BurgerIcon from '../BurgerIcon';
 import {useState} from "react";
 import BurgerMenu from '../../../../shared/components/BurgerMenu';
 
-const Header = () => {
+const Header = ({isAuth}) => {
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenuActive = () => {
@@ -21,7 +21,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      <BurgerMenu isActive={menuActive} onClick={toggleMenuActive}></BurgerMenu>
+      <BurgerMenu isActive={menuActive} onClick={toggleMenuActive} isAuth={isAuth}></BurgerMenu>
     </header>
   );
 };

@@ -3,18 +3,17 @@ import Logo from "../Logo";
 import CrossSvg from './assets/Cross';
 import { Link } from "react-router-dom";
 
-const BurgerMenu = ({isActive, onClick}) => {
+const BurgerMenu = ({isActive, onClick, isAuth}) => {
   return (
-    <div className={isActive? `${styles.menu} ${styles.active}` : `${styles.menu}`}>
-      <div
-        className={styles.menu__blur}
-        onClick={() => onClick()}
-      ></div>
+    <div
+      className={
+        isActive ? `${styles.menu} ${styles.active}` : `${styles.menu}`
+      }
+    >
+      <div className={styles.menu__blur} onClick={() => onClick()}></div>
       <div className={styles.menu__content}>
         <div className={styles.menu__header}>
-          <CrossSvg
-            setActive={onClick}
-          ></CrossSvg>
+          <CrossSvg setActive={onClick}></CrossSvg>
           <Logo style={styles.menu__logo}></Logo>
         </div>
         <ul className={styles["menu__link-list"]}>
@@ -24,13 +23,13 @@ const BurgerMenu = ({isActive, onClick}) => {
             </Link>
           </li>
           <li className={styles["menu__link-list-item"]}>
-            <Link to="/teach/book" className={styles["menu__link"]}>
-              {"Учебник"}
+            <Link to="/book" className={styles["menu__link"]}>
+              Учебник
             </Link>
           </li>
           <li className={styles["menu__link-list-item"]}>
             <Link to="/games" className={styles["menu__link"]}>
-              {"Игры"}
+              Игры
             </Link>
             <ul className={styles["menu__games-link-list"]}>
               <li className={styles["menu__games-link-list-item"]}>
@@ -43,20 +42,26 @@ const BurgerMenu = ({isActive, onClick}) => {
                 </Link>
               </li>
               <li className={styles["menu__games-link-list-item"]}>
-                <Link
-                  to="/sprint"
-                  className={styles["menu__games-link"]}
-                >
-                  Саванна
+                <Link to="/sprint" className={styles["menu__games-link"]}>
+                  Спринт
                 </Link>
               </li>
             </ul>
           </li>
-          <li className={styles["menu__link-list-item"]}>
-            <Link to="/stats" className={styles["menu__link"]}>
-              {"Статистика"}
-            </Link>
-          </li>
+          {isAuth && (
+            <li className={styles["menu__link-list-item"]}>
+              <Link to="/statistics" className={styles["menu__link"]}>
+                Статистика
+              </Link>
+            </li>
+          )}
+          {isAuth && (
+            <li className={styles["menu__link-list-item"]}>
+              <Link to="/glossary" className={styles["menu__link"]}>
+                Словарь
+              </Link>
+            </li>
+          )}
         </ul>
       </div>
     </div>
