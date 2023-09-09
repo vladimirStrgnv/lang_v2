@@ -66,8 +66,6 @@
 
 @media (max-width: 768px) { 
     .nav {
-        &__list-item {
-            margin: 0 5px;
-        }
+        display: none;
     }
 }

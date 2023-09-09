@@ -1,6 +1,6 @@
 import styles from './index.module.scss';
 import Logo from '../../../../shared/components/Logo';
-import BurgerIcon from '../BurgerIcon';
+import BurgerIcon from '../../../SprintPage/components/BurgerIcon';
 import {useState} from "react";
 import BurgerMenu from '../../../../shared/components/BurgerMenu';
 
