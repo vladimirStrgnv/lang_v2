@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
 
 const BookWordItem = ({word, id,  translate, difficulty, isChoosen, onClick}) => {
+  console.log(`wordcard__circle--${difficulty}`)
   return (
     <button
       className={
@@ -15,7 +16,7 @@ const BookWordItem = ({word, id,  translate, difficulty, isChoosen, onClick}) =>
       <div
         className={
           difficulty
-            ? `${styles.word__circle}  ${styles[difficulty]}`
+            ? `${styles.word__circle}  ${styles[`word__circle--${difficulty}`]}`
             : `${styles.word__circle} `
         }
       ></div>

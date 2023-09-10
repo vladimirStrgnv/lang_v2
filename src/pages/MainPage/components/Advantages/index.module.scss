@@ -1,7 +1,6 @@
 .advantages {
-    width: 100%;
     background-color: rgb(255, 255, 255);
-
+    position: relative;
     &__wrapper {
         max-width: 1200px;
         width: 90%;
@@ -34,6 +33,7 @@
         justify-content: space-between;
         align-items: center;
         flex-wrap: wrap;
+        gap: 10px;
     }
 }
 

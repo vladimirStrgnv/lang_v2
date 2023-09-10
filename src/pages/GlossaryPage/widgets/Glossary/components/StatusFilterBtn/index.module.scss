@@ -14,7 +14,6 @@
     font-size: 1rem;
     font-family: 'Gilroy-Bold';
     overflow: hidden;
-    border: none;
     cursor: pointer;
 
     &__abbreviation {
@@ -42,7 +41,50 @@
     }
 }
 
+@media (max-width: 1080px) { 
+    .filter-btn {
+        width: 190px;
+    }
 
+}
 
+@media (max-width: 768px) { 
+    .filter-btn {
+        width: 150px;
 
+        &__circle {
+            border-radius: 43px;
+            height: 90px;
+            width: 90px;
+            position: absolute;
+            top: -10px;
+            left: -40px;
+        }
 
+        &__title {
+            font-size: 14px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .filter-btn {
+        padding: 4px; 
+        width: 90px;
+        justify-content: center;
+
+        &__circle {
+            display: none;
+        }
+
+        &__abbreviation {
+            display: none;
+        }
+
+        &__title {
+            font-size: 12px;
+        }
+    }
+
+}

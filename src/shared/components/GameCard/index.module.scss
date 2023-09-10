@@ -6,7 +6,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column-reverse;
-    padding: 1rem;
+    padding: 10px;
     position: relative;
     align-items: center;
     overflow: hidden;
@@ -16,7 +16,7 @@
     &__text {
         display: flex;
         flex-direction: column;
-        padding-top: 1rem;
+        padding-top: 20px;
     }
 
     &__img {
@@ -24,7 +24,6 @@
     }
 
     &__meaning {
-        display: inline-block;
         background-color: #FFC53D;
         width: fit-content;
         font-family: 'Gilroy-Regular';
@@ -38,7 +37,6 @@
         font-size: 1.7rem;
         font-family: 'Gilroy-Bold';
         color: #2c2647;
-
     }
 
     
@@ -55,3 +53,28 @@
 }
 
 
+@media (max-width: 768px) { 
+    .gamecard {
+        &__title {
+            font-size: 18px;
+            font-family: 'Gilroy-Bold';
+            color: #2c2647;
+            
+        }
+
+        &__meaning {
+            background-color: #FFC53D;
+            font-family: 'Gilroy-Regular';
+            font-size: 11px;
+            padding: 0.2rem;
+            border-radius: 5px;
+            color: #2c2647;
+            white-space: nowrap;
+        }
+
+        &__img {
+            width: 350px;
+        }
+    }
+
+}

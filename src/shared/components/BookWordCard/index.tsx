@@ -28,20 +28,20 @@ const BookWordCard = ({
           alt="advantages_img"
         />
         <div className={styles.wordcard__info}>
-          {<h2>{word}</h2>}
+          <h2 className={styles.wordcard__word}>{word}</h2>
           <p>{wordTranslate}</p>
           <div className={styles["wordcard__transcription-container"]}>
             <p>{transcription}</p>
             <img
               src={require("./assets/volume.png")}
               alt="volume_icon"
-              className={styles.worcard__volume}
+              className={styles.wordcard__volume}
               onClick={() => {
                 new Audio(`http://localhost:2000/${audio}`).play();
               }}
             />
           </div>
-          <h3>Значение</h3>
+          <h3 className={styles.wordcard__meaning}>Значение</h3>
           <p dangerouslySetInnerHTML={createMarkup(textMeaning)}></p>
           <p dangerouslySetInnerHTML={createMarkup(textMeaningTranslate)}></p>
           <h3>Пример</h3>
@@ -56,7 +56,7 @@ const BookWordCard = ({
                   className={
                     btnConfig.isActive
                       ? styles["wordcard__btn"]
-                      : `${styles.inactive} ${styles["wordcard__btn"]}`
+                      : `${styles["wordcard__btn--inactive"]} ${styles["wordcard__btn"]}`
                   }
                   onClick={() => {
                     btnConfig.onClick()

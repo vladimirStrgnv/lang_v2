@@ -90,3 +90,61 @@
         }
     }
 }
+
+@media (max-width: 768px) { 
+    .sprint-display { 
+        max-width: 500px;
+
+        &__question {
+    
+            &-word {
+                font-size: 24px;
+            }
+    
+            &-is {
+                font-size: 12px;
+            }
+    
+            &-mark {
+                font-size: 12px;
+            }
+        }
+
+        &__answer-btns-container {
+            width: 200px;
+        }
+
+        &__true-answer-btn {
+            width: 90px;
+            font-size: 14px
+        }
+    
+        &__false-answer-btn {
+            width: 90px;
+            font-size: 14px
+
+        }
+
+    }
+}
+
+@media (max-width: 576px) { 
+    .sprint-display { 
+        max-width: 320px;
+        &__question {
+    
+            &-word {
+                font-size: 20px;
+            }
+    
+            &-is {
+                font-size: 10px;
+            }
+    
+            &-mark {
+                font-size: 10px;
+            }
+        }
+
+    }
+}

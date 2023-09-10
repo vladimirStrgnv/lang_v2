@@ -11,4 +11,18 @@
         align-items: center;
         padding: 20px 0;
     }
+
+    &__burger-icon-wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) { 
+    .header {
+
+    
+        &__burger-icon-wrapper {
+            display: block;
+        }
+    }
 }

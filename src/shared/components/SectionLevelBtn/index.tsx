@@ -4,11 +4,11 @@ const LevelBtn = ({setBookSection, section, isCurrentSection, title, amount, lev
   return (
     <div className={isCurrentSection? `${styles.card} ${styles.card__active}` : `${styles.card}`}  onClick={() => {setBookSection(section)}}>
         <div className={styles.card__descrpt}>
-            <h3>{title}</h3>
-            <p>{amount}</p>
+            <h3 className={styles.card__title}>{title}</h3>
+            <p className={styles.card__amount}>{amount}</p>
         </div >
-        <div className={styles.card__level}>
-            <h3>{level}</h3>
+        <div className={styles['card__level-wrapper']}>
+            <h4 className={styles['card__level-title']}>{level}</h4>
         </div>
         <div className={styles.card__circle}></div>
     </div>

@@ -1,8 +1,9 @@
 .game-display {
-
+    width: 700px;
     &__answer-options {
         &-item {
             padding: 5px 20px;
+            height: 40px;
             color: #e0e0e0;
             border: 2px solid rgba(255, 255, 255, 0.445);
             border-radius: 20px;
@@ -34,6 +35,36 @@
             }
         }
     }
+}
 
+@media (max-width: 768px) {
+    .game-display {
+        
+        &__answer-options {
+    
+            &-item {
+                width: 80px;
+                padding: 3px;
+                font-size: 9px;
 
+            }
+        }
+    
+    }
+}
+
+@media (max-width: 576px) {
+    .game-display {
+        
+        &__answer-options {
+    
+            &-item {
+                width: 65px;
+                padding: 2px;
+                font-size: 7px;
+
+            }
+        }
+    
+    }
 }
