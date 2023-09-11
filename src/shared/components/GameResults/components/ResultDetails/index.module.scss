@@ -1,0 +1,11 @@
+.audiocall-results__details {
+    min-height: 500px;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 10px;
+
+}
+
+.audiocall-results__details-list {
+    display: flex;
+    flex-direction: column;
+}

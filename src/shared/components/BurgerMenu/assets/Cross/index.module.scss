@@ -1,0 +1,17 @@
+.svg {
+    display: block;
+    width: 15px;
+    cursor: pointer;
+
+    line {
+        stroke: #501d1d;
+        stroke-width: 5;
+    }
+
+    &:hover line {
+        transition: 0.3s;
+        stroke: red;
+    }
+}
+
+

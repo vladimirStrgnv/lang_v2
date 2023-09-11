@@ -1,0 +1,46 @@
+.advantages {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    &__wrapper {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+    }
+
+    &__title {
+        font-family: "Gilroy-Heavy";
+        font-size: 40px;
+        text-align: center;
+        color: #332d4ef5;
+        white-space: pre-line;
+    }
+
+    &__subtitle {
+        font-size: 22px;
+        color: #fcbd02;
+        font-family: "Gilroy-Regular";
+        margin-bottom: 60px;
+    }
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 768px) { 
+    .advantages__list { 
+        justify-content: center;
+
+    }
+}

@@ -1,0 +1,1899 @@
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T11:29:17.843Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T11:29:19.831Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T11:30:12.618Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T11:30:20.831Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T11:30:22.815Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T11:30:33.816Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T11:30:33.896Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:23.210Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:23.555Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:24.015Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:27.623Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:28.001Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:28.331Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:30.196Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:31.966Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:32.317Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T13:17:32.759Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:05:47.386Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:05:47.668Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:06:54.962Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:07:38.247Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:07:40.597Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:09:43.633Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:09:46.179Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:10:28.853Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:10:33.847Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:10:38.840Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:10:40.932Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:10:47.766Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:10:54.843Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:10:57.060Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:14:07.106Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:14:48.884Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:14:51.298Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:16:06.914Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:39:31.947Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:39:34.001Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-07T15:39:36.174Z'
+}
+{
+  message: 'SyntaxError: Unexpected token u in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:10:21.939Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:10:28.919Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:10:32.940Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:10:32.945Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:13:00.358Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:13:00.364Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:13:47.198Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:13:49.709Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:13:49.715Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:13:52.458Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:13:52.463Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:14:27.040Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:14:27.045Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:15:42.942Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:15:45.660Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:15:45.668Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:16:07.930Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:16:14.082Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:18:11.917Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:20:07.930Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:20:21.916Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:20:25.723Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:20:25.729Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:30:28.926Z'
+}
+{
+  message: 'SyntaxError: Unexpected token h in JSON at position 0\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:31:15.931Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:36:07.553Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:36:09.085Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:36:09.465Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:36:23.900Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:36:41.703Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:37:31.014Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:37:36.643Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:37:55.238Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:38:29.909Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:38:30.549Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:38:35.732Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:38:36.734Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:39:06.003Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:39:16.778Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:39:28.779Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:40:07.992Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:40:51.870Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:41:03.186Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:41:12.005Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:41:33.000Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:41:34.411Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:41:35.684Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:41:49.315Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:41:54.664Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:42:15.497Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:42:30.929Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:43:41.328Z'
+}
+{
+  message: 'CastError: Cast to ObjectId failed for value "undefined" at path "_id" for model "Words"\n' +
+    '    at model.Query.exec (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4358:21)\n' +
+    '    at model.Query.Query.then (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\mongoose\\lib\\query.js:4450:15)\n' +
+    '    at runMicrotasks (<anonymous>)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)',
+  level: 'error',
+  timestamp: '2023-05-08T12:43:52.011Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:47:52.920Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:47:54.104Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:47:57.039Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:47:57.045Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:48:02.444Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:48:33.068Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:48:33.074Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:57:50.927Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:58:12.929Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T12:58:30.934Z'
+}
+{
+  message: 'SyntaxError: Unexpected token d in JSON at position 18\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-08T13:04:14.163Z'
+}
+{
+  message: 'SyntaxError: Unexpected token N in JSON at position 29\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-09T20:22:59.910Z'
+}
+{
+  message: 'SyntaxError: Unexpected token N in JSON at position 29\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-09T20:25:39.729Z'
+}
+{
+  message: 'SyntaxError: Unexpected token N in JSON at position 29\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-09T20:26:08.242Z'
+}
+{
+  message: 'SyntaxError: Unexpected token N in JSON at position 29\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang-project\\react-rslang-be\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-05-09T20:26:57.895Z'
+}
+{
+  message: 'ValidationError: users validation failed: password: Path `password` is required.\n' +
+    '    at model.Document.invalidate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\document.js:2689:32)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\document.js:2509:17\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongoose\\lib\\schematype.js:1259:9\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:78:11)',
+  level: 'error',
+  timestamp: '2023-07-29T13:45:48.071Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:46:50.514Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:47:37.990Z'
+}
+{
+  message: 'Error: data and hash arguments required\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:208:17)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:29:12\n' +
+    '    at new Promise (<anonymous>)\n' +
+    '    at Object.module.exports.promise (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\promises.js:20:12)\n' +
+    '    at Object.compare (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\bcrypt\\bcrypt.js:204:25)\n' +
+    '    at Object.authenticate (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\users\\user.service.js:12:36)\n' +
+    '    at processTicksAndRejections (node:internal/process/task_queues:96:5)\n' +
+    '    at async C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\authentication\\signin.router.js:7:16',
+  level: 'error',
+  timestamp: '2023-07-29T13:50:36.634Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 33\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:32:51.303Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 33\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:35:11.036Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 33\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:35:28.951Z'
+}
+{
+  message: 'SyntaxError: Unexpected token { in JSON at position 33\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:35:46.126Z'
+}
+{
+  message: 'SyntaxError: Unexpected token a in JSON at position 33\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:38:56.286Z'
+}
+{
+  message: 'SyntaxError: Unexpected token a in JSON at position 33\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:39:01.529Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 47\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:40:42.224Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 52\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:41:07.808Z'
+}
+{
+  message: 'SyntaxError: Unexpected end of JSON input\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T17:43:22.638Z'
+}
+{
+  message: 'SyntaxError: Unexpected token { in JSON at position 33\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:01:29.917Z'
+}
+{
+  message: 'SyntaxError: Unexpected token { in JSON at position 46\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:04:37.357Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 48\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:05:13.869Z'
+}
+{
+  message: 'SyntaxError: Unexpected token { in JSON at position 46\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:05:18.746Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 47\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:05:21.565Z'
+}
+{
+  message: 'SyntaxError: Unexpected token $ in JSON at position 47\n' +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:05:24.786Z'
+}
+{
+  message: 'MongoError: the limit must be positive\n' +
+    '    at MessageStream.messageHandler (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongodb\\lib\\cmap\\connection.js:268:20)\n' +
+    '    at MessageStream.emit (node:events:527:28)\n' +
+    '    at processIncomingData (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:144:12)\n' +
+    '    at MessageStream._write (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\mongodb\\lib\\cmap\\message_stream.js:42:5)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:389:12)\n' +
+    '    at _write (node:internal/streams/writable:330:10)\n' +
+    '    at MessageStream.Writable.write (node:internal/streams/writable:334:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:754:22)\n' +
+    '    at TLSSocket.emit (node:events:527:28)\n' +
+    '    at addChunk (node:internal/streams/readable:315:12)\n' +
+    '    at readableAddChunk (node:internal/streams/readable:289:9)\n' +
+    '    at TLSSocket.Readable.push (node:internal/streams/readable:228:10)\n' +
+    '    at TLSWrap.onStreamRead (node:internal/stream_base_commons:190:23)',
+  level: 'error',
+  timestamp: '2023-08-08T18:11:55.228Z'
+}
+{
+  message: "SyntaxError: Unexpected token ' in JSON at position 0\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:12:29.699Z'
+}
+{
+  message: "SyntaxError: Unexpected token ' in JSON at position 0\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:12:33.014Z'
+}
+{
+  message: "SyntaxError: Unexpected token ' in JSON at position 0\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:12:57.715Z'
+}
+{
+  message: "SyntaxError: Unexpected token ' in JSON at position 0\n" +
+    '    at JSON.parse (<anonymous>)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\src\\resources\\aggregatedWords\\aggregatedWord.router.js:21:42\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:137:13)\n' +
+    '    at Route.dispatch (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\route.js:112:3)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:281:22\n' +
+    '    at Function.process_params (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:335:12)\n' +
+    '    at next (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:275:10)\n' +
+    '    at Function.handle (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:174:3)\n' +
+    '    at router (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:47:12)\n' +
+    '    at newFn (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express-async-errors\\index.js:16:20)\n' +
+    '    at Layer.handle [as handle_request] (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\layer.js:95:5)\n' +
+    '    at trim_prefix (C:\\Users\\Владимир666\\Desktop\\lang_v2\\lang-server\\node_modules\\express\\lib\\router\\index.js:317:13)',
+  level: 'error',
+  timestamp: '2023-08-08T18:12:59.546Z'
+}

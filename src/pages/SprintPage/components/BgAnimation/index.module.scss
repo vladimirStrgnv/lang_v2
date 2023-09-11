@@ -1,0 +1,76 @@
+.anim {
+    &__inner {
+        height: inherit;
+        width: 100%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background-image: radial-gradient(var(--dot-color) 1.5px, transparent 2px);
+            background-size: var(--point-gap-width) var(--point-gap-height);
+            background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);
+            animation: 3.2s linear move infinite;
+
+        }
+
+    }
+
+    &__bg-img {
+        background-image: linear-gradient(315deg, #001a86 50%, #132a8c 50%);        
+        animation: slide 20s ease-in-out infinite alternate;
+        bottom: 0;
+        left: -50%;
+        opacity: 0.5;
+        position: fixed;
+        right: -50%;
+        top: 0;
+        z-index: -2;
+    }
+
+    &:after {
+        background-image: url(https://sonictonic.io/wp-content/uploads/2019/11/white-noise.jpg);
+        content: "";
+        height: 300%;
+        left: -50%;
+        opacity: 0.015;
+        position: fixed;
+        top: -110%;
+        width: 300%;
+    }
+
+    &__bg2 {
+        animation-direction: alternate-reverse;
+        animation-duration: 20s;
+    }
+
+    &__bg3 {
+        animation-duration: 15s;
+    }
+
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+@keyframes move {
+    0% {
+        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2);
+    }
+
+    100% {
+        background-position: calc(var(--point-gap-width) / 2) calc(var(--point-gap-height) / 2 * -1);
+    }
+}

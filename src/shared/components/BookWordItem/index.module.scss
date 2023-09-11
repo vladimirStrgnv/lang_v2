@@ -1,0 +1,59 @@
+.word {
+    &__container{
+        position: relative;
+        width: 160px;
+        height: 80px;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f3f4f8;
+        font-family: 'Gilroy-Regular';
+        cursor: pointer;
+    }
+
+    &__circle {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        border-top-left-radius: 20px;
+
+        &--active {
+            background-color: #FFC53D;
+        }
+
+        &--difficult {
+            background-color: red;
+        }
+
+        &--studied {
+            background-color: #2c2647;;
+        }
+
+        &--learned {
+            background-color: green;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .word {
+        &__container{
+            width: 130px;
+            height: 70px;
+            padding: 5px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .word {
+        &__container{
+            width: 90px;
+            height: 70px;
+            padding: 5px;
+            font-size: 11px;
+        }
+    }
+}

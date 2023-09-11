@@ -1,0 +1,68 @@
+.book {
+    position: relative;
+    padding-top: 100px;
+
+    &__level-title {
+        margin-bottom: 15px;
+        color: #2c2647;
+        font-size: 30px;
+        font-family: 'Gilroy-Heavy';
+    }
+
+    &__wrapper {
+        background-color: rgb(255, 255, 255);
+        height: 100%;
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    &__inner {
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    &__navbtns-wrapper {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    &__page {
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    &__page-wrapper {
+        width: 75%;
+    }
+
+    &__page-title {
+        color: #2c2647;
+        font-size: 30px;
+        font-family: 'Gilroy-Heavy';
+    }
+
+    &__page-words-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 65px 10px;
+    }
+
+    &__card-wrapper {
+        display: flex;
+        width: 25%;
+        justify-content: flex-end;
+    }
+
+    &__pagination {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1080px) { 
+
+      
+}
