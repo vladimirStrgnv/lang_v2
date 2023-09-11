@@ -1,6 +1,6 @@
 import styles from "./index.module.scss";
 import { BookWordCardProps } from "./types";
-
+import { BASE_SERVER_URL } from "../../const";
 function createMarkup(text) {
   return { __html: text };
 }
@@ -22,7 +22,7 @@ const BookWordCard: React.FC<BookWordCardProps> = ({
     <article className={styles.wordcard}>
       <div className={styles.wordcard__container}>
         <img
-          src={`http://localhost:2000/${image}`}
+          src={`${BASE_SERVER_URL}${image}`}
           className={styles["wordcard__img"]}
           alt="advantages_img"
         />
@@ -36,7 +36,7 @@ const BookWordCard: React.FC<BookWordCardProps> = ({
               alt="volume_icon"
               className={styles.wordcard__volume}
               onClick={() => {
-                new Audio(`http://localhost:2000/${audio}`).play();
+                new Audio(`${BASE_SERVER_URL}${audio}`).play();
               }}
             />
           </div>

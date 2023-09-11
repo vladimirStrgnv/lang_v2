@@ -32,7 +32,6 @@ const signUpSlice = createSlice({
             state.password.isValid = Validators.checkLength(action.payload.value, 5);
         },
         setAuthData(state, action: PayloadAction<{value: authData}>) {
-            console.log(action)
             state.authData = action.payload.value;
         }
     },

@@ -7,7 +7,7 @@ const GameList: React.FC<GameListProps> = ({wordsCounts, wordsParams}) => {
     <div className={styles["games-section-wrapper"]}>
       <h2 className={styles["games-section-wrapper__title"]}>Игры</h2>
       <h3 className={styles["games-section-wrapper__subtitle"]}>Закрепи новые слова при помощи игр.</h3>
-      <div className={styles["games-section__images-wrapper"]}>
+      <div className={styles["games-section-wrapper__images-wrapper"]}>
         <GameCard
           wordsParams={wordsParams}
           wordsCounts={wordsCounts}

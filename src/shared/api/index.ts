@@ -1,5 +1,5 @@
 import dayjs from "dayjs";
-
+import { BASE_SERVER_URL } from "../const";
 class Api {
   baseUrl: string;
   storeSubscription: any;
@@ -9,7 +9,7 @@ class Api {
   state: any;
 
   constructor(auth) {
-    this.baseUrl = "http://localhost:2000/";
+    this.baseUrl = BASE_SERVER_URL;
     this.state = auth;
   }
 
@@ -39,7 +39,7 @@ class Api {
 
   signIn = async (userEmail: string, userPass: string) => {
     try {
-      const response = await fetch(`http://localhost:2000/signin`, {
+      const response = await fetch(`${BASE_SERVER_URL}signin`, {
         method: "POST",
         headers: {
           Accept: "application/json",

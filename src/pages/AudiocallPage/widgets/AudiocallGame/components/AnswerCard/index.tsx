@@ -1,12 +1,13 @@
 import styles from './index.module.scss';
 import SoundBtn from '../../../../../../shared/components/SoundBtn';
+import { BASE_SERVER_URL } from '../../../../../../shared/const';
 
 const AnswerCard = ({image, word, onClick}) => {
   return (
     <div className={styles['game-display__card-asnwer']}>
       <div className={styles['game-display__card-asnwer-img-container']}>
         <img
-          src={`http://localhost:2000/${image}`}
+          src={`${BASE_SERVER_URL}${image}`}
           className={styles['game-display__card-asnwer-img']}
           alt="answer_img"
         />
