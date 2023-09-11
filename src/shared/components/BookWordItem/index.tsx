@@ -6,7 +6,7 @@ const BookWordItem: React.FC<BookWordItemProps> = ({word, id,  translate, diffic
     <button
       className={
         isChoosen
-          ? `${styles["word__container"]} ${styles.active}`
+          ? `${styles["word__container"]} ${styles[`word__circle--active`]}`
           : `${styles["word__container"]}`
       }
       onClick={() => onClick(id)}

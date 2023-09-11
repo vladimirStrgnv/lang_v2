@@ -1,4 +1,4 @@
-const logger = require('./common/logging');
+const logger = require('./src/common/logging');
 
 // uncaughtException is been catching by Winston
 process.on('unhandledRejection', reason => {
@@ -6,8 +6,8 @@ process.on('unhandledRejection', reason => {
 });
 
 const mongoose = require('mongoose');
-const { PORT, MONGO_CONNECTION_STRING } = require('./common/config');
-const app = require('./app');
+const { PORT, MONGO_CONNECTION_STRING } = require('./src/common/config');
+const app = require('./src/app');
 
 mongoose.connect(MONGO_CONNECTION_STRING, {
   useNewUrlParser: true,
