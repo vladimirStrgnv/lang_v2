@@ -1,11 +1,11 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import Layout from "../shared/components/MainLayout";
 import SignUp from "../pages/SignUp/index";
 import SignIn from "../pages/SignIn";
 import AudiocallPage from "../pages/AudiocallPage";
 import SprintPage from "../pages/SprintPage";
 
- const BrowserRouter = createBrowserRouter([
+ const BrowserRouter = createHashRouter([
   {
     path: "/",
     element: (
@@ -14,6 +14,7 @@ import SprintPage from "../pages/SprintPage";
     children: [
       {
         index: true,
+        path: "/",
         lazy: () => import("../pages/MainPage/index"),
       },
       {

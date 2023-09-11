@@ -6,7 +6,7 @@ import  './index.module.scss'
 
 const App = () => {
   return (
-    <RouterProvider router={BrowserRouter} fallbackElement={<div>!!!</div>}></RouterProvider>
+    <RouterProvider router={BrowserRouter} ></RouterProvider>
   )
 }
 
