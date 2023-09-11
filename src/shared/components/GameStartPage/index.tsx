@@ -4,9 +4,9 @@ import { useState } from 'react';
 import { Randomizers } from '../../utils/services/randomizers'; 
 import Api from '../../api';
 import PopUp from '../PopUp';
+import { GameStartPageProps } from './types';
   
-const GameStartPage = ({ setStateWords, auth, wordsParams, description, title, startScreensSectionBtns }) => {
-  console.log(wordsParams)
+const GameStartPage: React.FC<GameStartPageProps> = ({ setStateWords, auth, wordsParams, description, title, startScreensSectionBtns }) => {
 
   const [popupIsActive, setPopupActive] = useState(false);
   const [{ section, page, wordCounts,filter }, setWordsOptions] = useState({

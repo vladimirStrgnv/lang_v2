@@ -1,7 +1,8 @@
 import styles from './index.module.scss';
 import { NavLink  } from 'react-router-dom';
+import { NavItemProps } from './types';
 
-const NavItem = ({path, text, state={}}) => {
+const NavItem: React.FC<NavItemProps> = ({path, text, state={}}) => {
   return (
     <NavLink
       state={state}

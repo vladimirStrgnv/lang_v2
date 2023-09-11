@@ -3,13 +3,12 @@ import { useNavigate } from "react-router-dom";
 import PopUp from "../PopUp";
 import { useState } from "react";
 import ResultDetails from "./components/ResultDetails";
+import { GameResultsProps } from "./types";
     
-const GameResults = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers, restartGame }) => {
-  console.log(gameHistory, maxCombo, incorrectAnswers, correctAnswers )
+const GameResults: React.FC<GameResultsProps> = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers, restartGame }) => {
   const navigate = useNavigate();
   const [detatilStatsIsActive, setActive] = useState(false);
 
-  
   const showStats = () => {
     setActive(true);
   };
@@ -17,8 +16,6 @@ const GameResults = ({gameHistory, maxCombo, incorrectAnswers, correctAnswers, r
   const redirectToMain = () => {
     return navigate("/");
   };
-
-
 
   return (
     <div className={styles["audiocall-results"]}>

@@ -1,12 +1,11 @@
-import React, { useState } from "react";
 import styles from "./index.module.scss";
+import { BookWordCardProps } from "./types";
 
 function createMarkup(text) {
   return { __html: text };
 }
 
-const BookWordCard = ({
-  id,
+const BookWordCard: React.FC<BookWordCardProps> = ({
   image,
   word,
   wordTranslate,

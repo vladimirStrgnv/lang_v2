@@ -1,6 +1,7 @@
 import styles from './index.module.scss'
+import { BurgerIconProps } from './types';
 
-const BurgerIcon = ({onClick}) => {
+const BurgerIcon: React.FC<BurgerIconProps> = ({onClick}) => {
   return (
     <svg viewBox="0 0 100 40" width="40" height="25" fill="white" className={styles.svg} onClick={()=> onClick()}>
       <rect width="80" height="7"></rect>

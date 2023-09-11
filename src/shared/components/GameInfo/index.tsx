@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
+import { GameInfoProps } from './types';
 
-const GameInfo = ({ title, description }) => {
+const GameInfo: React.FC<GameInfoProps> = ({ title, description }) => {
   return (
     <div className={styles.game__info}>
       <p className={styles.game__title}>{title}</p>

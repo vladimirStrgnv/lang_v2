@@ -13,10 +13,10 @@
         font-family: 'Gilroy-Bold';
         color: #2c2647;
     }
-}
 
-.images-wrapper {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    &__images-wrapper {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
 }

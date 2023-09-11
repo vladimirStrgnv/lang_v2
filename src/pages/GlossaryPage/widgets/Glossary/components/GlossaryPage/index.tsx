@@ -15,7 +15,6 @@ const GlossaryPage = ({words,curentWordId,wordDispatch, curentWord,auth, btnsCon
     </div>
     <div className={styles["glossary__card-wrapper"]}>
       <BookWordCard
-        id={curentWord.id}
         image={curentWord.image}
         word={curentWord.word}
         textMeaning={curentWord.textMeaning}

@@ -4,7 +4,12 @@ import BurgerIcon from '../../../SprintPage/components/BurgerIcon';
 import {useState} from "react";
 import BurgerMenu from '../../../../shared/components/BurgerMenu';
 
-const Header = ({isAuth}) => {
+interface HeaderProps {
+  isAuth: boolean,
+}
+
+
+const Header: React.FC<HeaderProps> = ({isAuth}) => {
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenuActive = () => {

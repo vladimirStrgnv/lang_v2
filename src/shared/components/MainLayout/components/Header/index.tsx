@@ -4,8 +4,9 @@ import Logo from '../../../Logo/index';
 import BurgerIcon from '../../../BurgerIcon';
 import { useState } from 'react';
 import BurgerMenu from '../../../BurgerMenu';
+import { MainLayoutHeaderProps } from './types';
 
-const Hedaer = ({isAuth}) => {
+const Hedaer: React.FC<MainLayoutHeaderProps> = ({isAuth}) => {
   const [menuActive, setMenuActive] = useState(false);
 
   const toggleMenuActive = () => {

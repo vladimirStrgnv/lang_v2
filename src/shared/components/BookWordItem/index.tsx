@@ -1,7 +1,7 @@
 import styles from './index.module.scss';
+import { BookWordItemProps } from './types'; 
 
-const BookWordItem = ({word, id,  translate, difficulty, isChoosen, onClick}) => {
-  console.log(`wordcard__circle--${difficulty}`)
+const BookWordItem: React.FC<BookWordItemProps> = ({word, id,  translate, difficulty, isChoosen, onClick}) => {
   return (
     <button
       className={

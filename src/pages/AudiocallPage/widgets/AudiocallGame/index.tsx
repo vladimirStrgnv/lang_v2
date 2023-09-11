@@ -11,8 +11,13 @@ import GameDisplay from "./components/GameDisplay";
 import GameResults from "../../../../shared/components/GameResults";
 import { UserHelpers } from "../../../../shared/utils/services/userHelpers";
 import { createAudiocallState } from "./store";
+import { IWord } from "../../../../shared/api/types";
 
-const AudiocallGame = ({ words }) => {
+interface AudiocallGameProps {
+  words: IWord[],
+}
+
+const AudiocallGame: React.FC<AudiocallGameProps> = ({ words }) => {
   const {
     answerAction,
     getNextStepAction,

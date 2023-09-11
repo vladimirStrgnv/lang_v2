@@ -1,12 +1,7 @@
 import styles from './index.module.scss';
 import  ReactDOM  from 'react-dom';
 import CrossSvg from './assets/Cross';
-
-interface PopUpProps {
-  isOpen: boolean,
-  setActive: any,
-  children: React.ReactNode
-}
+import { PopUpProps } from './types';
 
 const PopUp: React.FC<PopUpProps> = ({ isOpen, setActive, children}) => {
   return ReactDOM.createPortal(

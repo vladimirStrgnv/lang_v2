@@ -3,13 +3,19 @@ import { Randomizers } from "../../../../../shared/utils/services/randomizers";
 import { IWord } from "../../../../../shared/api/types";
 import { INCORRECTS_ANSWERS_COUNT } from "../utils/consts";
 
+export interface GameHistoryStep {
+  index: number,
+  word: IWord,
+  isCorrect: boolean,
+}
+
 export interface IAudiocallState {
     currentStep: number;
     words: IWord[];
     answerOptions: IWord[];
     correctWord: IWord;
     gameSteps:  number;
-    gameHistory: boolean[];
+    gameHistory: GameHistoryStep[];
     choosenWord: IWord;
     gameIsEnd: boolean;
     correctAnswers: number;

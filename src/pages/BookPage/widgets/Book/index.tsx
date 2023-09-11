@@ -53,7 +53,6 @@ const Book = () => {
     const api = new Api(auth);
     await api.createUserWord(id, wordStat);
     const userStat = await api.getStatistics();
-    console.log(userStat)
     const updatedStat = UserHelpers.getUpdatedStats(userStat, status);
     await api.updateStatistics(updatedStat);
     wordDifficultyDispatch(id, status);
@@ -76,25 +75,27 @@ const Book = () => {
               ></SectionLevelBtnList>
             </div>
           </nav>
-          <BookPage
-            words={words}
-            curentWordId={curentWord.id}
-            wordDispatch={wordDispatch}
-            curentWord={curentWord}
-            auth={auth}
-            btnsConfig={[
-              {
-                text: "добавить в сложные",
-                onClick: addWordStatus.bind(null, curentWord.id, "difficult"),
-                isActive: !curentWord.userWord,
-              },
-              {
-                text: "добавить в изучаемые",
-                onClick: addWordStatus.bind(null, curentWord.id, "studied"),
-                isActive: !curentWord.userWord,
-              },
-            ]}
-          ></BookPage>
+          {loadStatus && (
+            <BookPage
+              words={words}
+              curentWordId={curentWord.id}
+              wordDispatch={wordDispatch}
+              curentWord={curentWord}
+              auth={auth}
+              btnsConfig={[
+                {
+                  text: "добавить в сложные",
+                  onClick: addWordStatus.bind(null, curentWord.id, "difficult"),
+                  isActive: !curentWord.userWord,
+                },
+                {
+                  text: "добавить в изучаемые",
+                  onClick: addWordStatus.bind(null, curentWord.id, "studied"),
+                  isActive: !curentWord.userWord,
+                },
+              ]}
+            ></BookPage>
+          )}
           <div className={styles.book__pagination}>
             <Pagination
               count={30}

@@ -15,7 +15,6 @@ const BookPage = ({words, curentWordId, wordDispatch, curentWord, auth, btnsConf
       </div>
       <div className={styles["book__card-wrapper"]}>
         <BookWordCard
-          id={curentWord.id}
           image={curentWord.image}
           word={curentWord.word}
           textMeaning={curentWord.textMeaning}

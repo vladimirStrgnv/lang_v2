@@ -2,8 +2,9 @@ import styles from "./index.module.scss";
 import { useNavigate } from 'react-router-dom';
 import { useState } from "react";
 import PopUp from "../PopUp";
+import { GameCardProps } from "./types";
 
-const GameCard = ({ link, imgLink, meaning, title, descrpt, wordsCounts, wordsParams }) => {
+const GameCard: React.FC<GameCardProps> = ({ link, imgLink, meaning, title, descrpt, wordsCounts, wordsParams }) => {
   const navigate = useNavigate();
   const [active, setActive] = useState(false);
 

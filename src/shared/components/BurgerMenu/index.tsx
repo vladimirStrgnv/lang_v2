@@ -2,8 +2,11 @@ import styles from "./index.module.scss";
 import Logo from "../Logo";
 import CrossSvg from './assets/Cross';
 import { Link } from "react-router-dom";
+import { BurgerMenuProps } from "./types";
 
-const BurgerMenu = ({isActive, onClick, isAuth}) => {
+
+
+const BurgerMenu: React.FC<BurgerMenuProps> = ({isActive, onClick, isAuth}) => {
   return (
     <div
       className={
