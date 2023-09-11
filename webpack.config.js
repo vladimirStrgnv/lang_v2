@@ -5,9 +5,9 @@ module.exports = {
   entry: "./src/index.tsx",
   devtool: "source-map",
   output: {
-    publicPath: '/',
-    filename: "main.js",
+    publicPath: './',
     path: path.resolve(__dirname, "build"),
+    filename: "main.js"
   },
   module: {
     rules: [
@@ -65,13 +65,11 @@ module.exports = {
   },
   resolve: {
     extensions: [".*", ".js", ".jsx", ".ts", ".tsx", '.css', '.scss'],
-
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, "public", "index.html"),
       favicon: path.join(__dirname, "public", "icon.svg")
-
     }),
   ],
   devServer: {
