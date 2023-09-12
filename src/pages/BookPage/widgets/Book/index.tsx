@@ -24,6 +24,7 @@ const Book = () => {
   const auth = useAppSelector((store) => store.signIn.authData);
   const { page, words, section, curentWord } = state;
   const [loadStatus, setLoadStatus] = useState(false);
+
   useEffect(() => {
     const fetch = async () => {
       const api = new Api(auth);

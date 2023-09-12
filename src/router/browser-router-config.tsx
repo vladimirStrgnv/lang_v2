@@ -5,7 +5,7 @@ import SignIn from "../pages/SignIn";
 import AudiocallPage from "../pages/AudiocallPage";
 import SprintPage from "../pages/SprintPage";
 
- const BrowserRouter = createHashRouter([
+ const BrowserRouter = createBrowserRouter([
   {
     path: "/",
     element: (

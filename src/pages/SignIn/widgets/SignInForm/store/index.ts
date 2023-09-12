@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { signInState, authData } from './types';
+import { signInState, AuthData } from './types';
 import { Validators } from '../../../../../shared/utils/services/validators';
 
 const authData = localStorage.getItem('authData')
@@ -31,7 +31,7 @@ const signUpSlice = createSlice({
             state.password.value = action.payload.value;
             state.password.isValid = Validators.checkLength(action.payload.value, 5);
         },
-        setAuthData(state, action: PayloadAction<{value: authData}>) {
+        setAuthData(state, action: PayloadAction<{value: AuthData}>) {
             state.authData = action.payload.value;
         }
     },

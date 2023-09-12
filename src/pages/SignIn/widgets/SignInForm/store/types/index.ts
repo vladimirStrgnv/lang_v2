@@ -9,10 +9,10 @@ export type signInState = {
         value: string,
         isValid: boolean
     },
-    authData: authData | null
+    authData: AuthData | null
 }
 
-export type authData = {
+export type AuthData = {
     token: string,
     refreshToken: string,
     userId: string,

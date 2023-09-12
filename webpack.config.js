@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.tsx",
   devtool: "source-map",
   output: {
-    publicPath: './',
+    publicPath: '/',
     path: path.resolve(__dirname, "build"),
     filename: "main.js"
   },
