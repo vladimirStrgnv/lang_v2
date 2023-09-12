@@ -56,5 +56,11 @@ export const filterBtnsData = [
     },
 ]
 
+export interface FilterBtnData {
+    title: string,
+    abbreviation: string,
+    filter: string
+} 
+
 export const WORD_COUNTS = 20;
 

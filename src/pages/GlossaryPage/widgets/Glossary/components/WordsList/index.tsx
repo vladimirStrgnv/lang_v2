@@ -1,8 +1,9 @@
 import styles from "./index.module.scss";
 import BookWordItem from "../../../../../../shared/components/BookWordItem";
 import { motion } from 'framer-motion';
+import { WordsListProps } from "../../../../../BookPage/widgets/Book/components/WordsList/types";
 
-const WordsList = ({words, curentWordId, wordDispatch}) => {
+const WordsList: React.FC<WordsListProps> = ({words, curentWordId, wordDispatch}) => {
   const listAnimationConfig = {
     visible: i => ({
       opacity: 1,

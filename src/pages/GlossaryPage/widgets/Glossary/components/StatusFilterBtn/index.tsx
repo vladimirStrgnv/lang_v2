@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
+import { StatusFilterBtnProps } from './types';
 
-const StatusFilterBtn = ({
+const StatusFilterBtn: React.FC<StatusFilterBtnProps> = ({
   isCurrentFilter,
   title,
   abbreviation,

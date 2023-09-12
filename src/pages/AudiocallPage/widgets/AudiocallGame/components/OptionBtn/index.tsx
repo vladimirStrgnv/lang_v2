@@ -1,6 +1,7 @@
 import styles from './index.module.scss';
+import { OptionBtnProps } from './types';
 
-const OptionBtn = ({wordId, isChoosenWord, correctWordId, word, onClick, choosenWord}) => {
+const OptionBtn: React.FC<OptionBtnProps> = ({wordId, isChoosenWord, correctWordId, word, onClick, choosenWord}) => {
   return (
     <button
       className={

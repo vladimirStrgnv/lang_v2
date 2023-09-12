@@ -1,7 +1,8 @@
 import styles from './index.module.scss';
 import StatusFilterBtn from '../StatusFilterBtn';
+import { StatusFilterBtnListProps } from './types';
 
-const StatusFilterBtnList = ({filterBtnsData, currentFilter, filterDispatch}) => {
+const StatusFilterBtnList: React.FC<StatusFilterBtnListProps> = ({filterBtnsData, currentFilter, filterDispatch}) => {
   return (
     <>
       {filterBtnsData.map((btnData, index) => (

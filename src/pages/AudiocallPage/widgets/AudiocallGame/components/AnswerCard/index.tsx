@@ -1,8 +1,9 @@
 import styles from './index.module.scss';
 import SoundBtn from '../../../../../../shared/components/SoundBtn';
 import { BASE_SERVER_URL } from '../../../../../../shared/const';
+import { AnswerCardProps } from './types';
 
-const AnswerCard = ({image, word, onClick}) => {
+const AnswerCard: React.FC<AnswerCardProps> = ({image, word, onClick}) => {
   return (
     <div className={styles['game-display__card-asnwer']}>
       <div className={styles['game-display__card-asnwer-img-container']}>
