@@ -35,7 +35,7 @@ const Glossary = () => {
         WORD_COUNTS,
         currentFilter
       );
-      if (wordsRequest.words.length) {
+      if (wordsRequest.words) {
         wordsDispatch(wordsRequest);
         setLoadStatus(true);
       } else {
