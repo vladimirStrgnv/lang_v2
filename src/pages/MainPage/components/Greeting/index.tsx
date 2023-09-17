@@ -2,9 +2,9 @@ import styles from './style.module.scss';
 import { motion } from 'framer-motion';
 import SvgBottom from './assets/SvgBottom';
 
-const textAnimation = { 
+const animationOptions = { 
   hidden: {
-    y: 200,
+    y: 120,
     opacity: 0,
     
   },
@@ -29,18 +29,18 @@ const Greeting = () => {
             <div className={styles.greeting__description}>
                 <motion.h1 
                   className={styles.greeting__title}
-                  variants={textAnimation}
+                  variants={animationOptions}
                 >
                   Изучай английский c <br/>Lang.
                 </motion.h1>
                 <motion.p 
                   className={styles.greeting__text}
-                  variants={textAnimation}
+                  variants={animationOptions}
                 >
                   Приложение для эффективного изучения иностранных слов в игровой форме. Всегда под рукой. На любом устройстве.
                 </motion.p>
             </div>
-            <img className={styles.greeting__img} src={require('../../assets/greeting.png')} alt="greeting-img" />
+            <motion.img className={styles.greeting__img} variants={animationOptions} src={require('../../assets/greeting.png')} alt="greeting-img" />
           </div>
         </div>
         <SvgBottom />

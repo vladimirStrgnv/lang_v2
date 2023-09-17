@@ -5,6 +5,9 @@
         gap: 65px 10px;
         justify-content: space-between;
         padding-right: 20px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 660px;
     }
 }
 

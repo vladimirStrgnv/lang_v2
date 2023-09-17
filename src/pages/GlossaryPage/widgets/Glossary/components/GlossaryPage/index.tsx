@@ -1,8 +1,9 @@
 import styles from './index.module.scss';
 import WordsList from '../WordsList';
 import BookWordCard from '../../../../../../shared/components/BookWordCard';
+import { GlossaryPageProps } from './consts';
 
-const GlossaryPage = ({words,curentWordId,wordDispatch, curentWord,auth, btnsConfig  }) => {
+const GlossaryPage: React.FC<GlossaryPageProps> = ({words,curentWordId,wordDispatch, curentWord,auth, btnsConfig }) => {
   return (
     <div className={styles["glossary__page"]}>
     <div className={styles["glossary__page-wrapper"]}>
@@ -22,7 +23,7 @@ const GlossaryPage = ({words,curentWordId,wordDispatch, curentWord,auth, btnsCon
         textMeaningTranslate={curentWord.textMeaningTranslate}
         textExample={curentWord.textExample}
         textExampleTranslate={curentWord.textExampleTranslate}
-        isAuth={auth}
+        isAuth={!!auth}
         transcription={curentWord.transcription}
         audio={curentWord.audio}
         btnsConfig={btnsConfig}

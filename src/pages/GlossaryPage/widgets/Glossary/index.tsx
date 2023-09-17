@@ -11,6 +11,7 @@ import GlossaryPage from "./components/GlossaryPage";
 import WordsNotFound from "./components/WordsNotFound";
 import StatusFilterBtnList from "./components/StatusFilterBtnList";
 import GameList from "../../../../shared/components/GameList";
+import Preload from "./components/Preload";
 
 const Glossary = () => {
   const {
@@ -34,7 +35,7 @@ const Glossary = () => {
         WORD_COUNTS,
         currentFilter
       );
-      if (wordsRequest.words.length) {
+      if (wordsRequest.words) {
         wordsDispatch(wordsRequest);
         setLoadStatus(true);
       } else {
@@ -79,7 +80,8 @@ const Glossary = () => {
               filterDispatch={filterDispatch}
             ></StatusFilterBtnList>
           </div>
-          {loadStatus && words.length ? (
+          {loadStatus === false? <Preload />
+          : loadStatus && words.length?  (
             <>
               <GlossaryPage
                 words={words}

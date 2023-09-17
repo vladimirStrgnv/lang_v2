@@ -2,8 +2,9 @@ import styles from './index.module.scss';
 import AnswerCard from '../AnswerCard';
 import SoundBtn from '../../../../../../shared/components/SoundBtn';
 import OptionBtn from '../OptionBtn';
+import { GameDisplayProps } from './types';
 
-const GameDisplay = ({choosenWord, correctWord, playWord, answerOptions, sendAnswer, getNextStep, skipAnswer}) => {
+const GameDisplay: React.FC<GameDisplayProps> = ({choosenWord, correctWord, playWord, answerOptions, sendAnswer, getNextStep, skipAnswer}) => {
   return (
     <div className={styles["game-display"]}>
       <div className={styles["game-display__wrapper"]}>

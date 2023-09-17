@@ -1,7 +1,9 @@
 .wordcard {
+    position: relative;
     display: flex;
     height: 660px;
     justify-content: center;
+    z-index: 100;
 
     &__container {
         width: 280px;

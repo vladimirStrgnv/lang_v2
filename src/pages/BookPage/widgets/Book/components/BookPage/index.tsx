@@ -1,8 +1,9 @@
 import styles from './index.module.scss';
 import WordsList from '../WordsList';
 import BookWordCard from '../../../../../../shared/components/BookWordCard';
+import { BookPageProps } from './types';
 
-const BookPage = ({words, curentWordId, wordDispatch, curentWord, auth, btnsConfig}) => {
+const BookPage: React.FC<BookPageProps> = ({words, curentWordId, wordDispatch, curentWord, auth, btnsConfig}) => {
   return (
     <div className={styles["book__page"]}>
       <div className={styles["book__page-wrapper"]}>
@@ -22,7 +23,7 @@ const BookPage = ({words, curentWordId, wordDispatch, curentWord, auth, btnsConf
           textMeaningTranslate={curentWord.textMeaningTranslate}
           textExample={curentWord.textExample}
           textExampleTranslate={curentWord.textExampleTranslate}
-          isAuth={auth}
+          isAuth={!!auth}
           transcription={curentWord.transcription}
           audio={curentWord.audio}
           btnsConfig={btnsConfig}

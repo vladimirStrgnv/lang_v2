@@ -1,6 +1,7 @@
 import SectionLevelBtn from "../../../../../../shared/components/SectionLevelBtn";
+import { SectionLevelBtnListProps } from "../../../../../BookPage/widgets/Book/components/SectionLevelBtnList/types";
 
-const SectionLevelBtnList = ({btnsData, currentSection, sectionDispatch}) => {
+const SectionLevelBtnList: React.FC<SectionLevelBtnListProps> = ({btnsData, currentSection, sectionDispatch}) => {
   return (
     <>
         {btnsData.map((btnData, index) => (

@@ -12,7 +12,6 @@ const SprintPage = () => {
   const [words, setStateWords] = useState([]);
   const auth = useAppSelector((store) => store.signIn.authData);
   const location = useLocation();
-  console.log(location)
 
   return (
     <div className={styles.wrapper}>

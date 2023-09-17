@@ -23,6 +23,15 @@ const Footer = () => {
             </li>
           </ul>
         </nav>
+
+        <div className={styles.footer__dev}>
+          <h2 className={styles.footer__title}>Разработчик</h2>
+          <ul>
+            <li className={styles["footer__nav-item"]}>
+              <a href="https://vladimirstrgnv.github.io/cv/">Владимир Строгонов </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   );

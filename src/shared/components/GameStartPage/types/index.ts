@@ -1,4 +1,4 @@
-import { authData } from "../../../../pages/SignIn/widgets/SignInForm/store/types";
+import { AuthData } from "../../../../pages/SignIn/widgets/SignInForm/store/types";
 import { IWord } from "../../../api/types";
 
 export interface GameStartPageProps {
@@ -12,7 +12,7 @@ export interface GameStartPageProps {
   description: string,
   title: string
   startScreensSectionBtns: btnData[],
-  auth: authData
+  auth: AuthData
 }
 
 interface btnData  {

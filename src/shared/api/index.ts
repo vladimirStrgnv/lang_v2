@@ -219,7 +219,6 @@ class Api {
         },
       }
     );
-    console.log(444)
     if (response.ok) {
       return response.json();
     } else {

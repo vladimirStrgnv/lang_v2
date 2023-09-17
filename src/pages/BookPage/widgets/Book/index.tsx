@@ -1,16 +1,16 @@
-
-import styles from './index.module.scss';
-import SvgBottom from './assets/SvgBottom';
-import btnsData from './utils/consts';
-import useCreateStore from './store/index';
-import { useEffect, useState } from 'react';
+import styles from "./index.module.scss";
+import SvgBottom from "./assets/SvgBottom";
+import btnsData from "./utils/consts";
+import useCreateStore from "./store/index";
+import { useEffect, useState } from "react";
 import Api from "../../../../shared/api";
 import { Pagination } from "@mui/material";
 import { useAppSelector } from "../../../../shared/stores/types";
-import SectionLevelBtnList from './components/SectionLevelBtnList';
-import BookPage from './components/BookPage';
-import GameList from '../../../../shared/components/GameList';
-import { UserHelpers } from '../../../../shared/utils/services/userHelpers';
+import SectionLevelBtnList from "./components/SectionLevelBtnList";
+import BookPage from "./components/BookPage";
+import GameList from "../../../../shared/components/GameList";
+import { UserHelpers } from "../../../../shared/utils/services/userHelpers";
+import Preload from "./components/Preload";
 
 const Book = () => {
   const {
@@ -24,6 +24,7 @@ const Book = () => {
   const auth = useAppSelector((store) => store.signIn.authData);
   const { page, words, section, curentWord } = state;
   const [loadStatus, setLoadStatus] = useState(false);
+
   useEffect(() => {
     const fetch = async () => {
       const api = new Api(auth);
@@ -75,7 +76,9 @@ const Book = () => {
               ></SectionLevelBtnList>
             </div>
           </nav>
-          {loadStatus && (
+          {loadStatus === false ? (
+            <Preload />
+          ) : (
             <BookPage
               words={words}
               curentWordId={curentWord.id}
