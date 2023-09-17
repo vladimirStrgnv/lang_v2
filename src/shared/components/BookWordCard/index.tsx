@@ -1,6 +1,22 @@
 import styles from "./index.module.scss";
 import { BookWordCardProps } from "./types";
 import { BASE_SERVER_URL } from "../../const";
+import { motion } from 'framer-motion';
+
+const animationOptions = { 
+  hidden: {
+    opacity: 0,
+    x: 100
+  },
+  visible: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      duration: 2,
+    }
+  }
+}
+
 function createMarkup(text) {
   return { __html: text };
 }
@@ -19,7 +35,12 @@ const BookWordCard: React.FC<BookWordCardProps> = ({
   btnsConfig
 }) => {
   return (
-    <article className={styles.wordcard}>
+    <motion.article 
+    initial={{ opacity: 0, scale: 0.5 }}
+    animate={{ opacity: 1, scale: 1 }}
+    transition={{ duration: 0.5 }}
+    key={word}
+    className={styles.wordcard}>
       <div className={styles.wordcard__container}>
         <img
           src={`${BASE_SERVER_URL}${image}`}
@@ -68,7 +89,7 @@ const BookWordCard: React.FC<BookWordCardProps> = ({
           )}
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 };
 
